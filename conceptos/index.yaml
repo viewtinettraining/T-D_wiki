@@ -1,0 +1,17 @@
+id: 8BS-S3Y-HJT-EOD
+title: 'Concepts'
+slug: conceptos
+isVisible: true
+  - alarms-system
+  - cli-reference
+  - customized-plugin
+  - data-sources-integration
+  - etl-pipeline
+  - ha-architecture
+  - ipmi-management
+  - plugin-architecture
+  - plugin-categories
+  - plugin-schema
+  - plugin-template
+  - standalone-vs-cluster
+  - ubuntu-compatibility

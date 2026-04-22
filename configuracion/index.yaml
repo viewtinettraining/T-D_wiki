@@ -1,0 +1,20 @@
+id: 8TC-GOR-N7P-R0R
+title: 'Configuration'
+slug: configuracion
+isVisible: true
+  - autodiscovery
+  - configuration-commands
+  - configuration-manager
+  - configuration-tasks
+  - csv-provisioning
+  - groups
+  - gui-overview
+  - inventory-maintenance
+  - inventory-management
+  - license-management
+  - login
+  - manual-provisioning
+  - roles
+  - system-updates
+  - tenants
+  - users

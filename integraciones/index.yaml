@@ -1,0 +1,28 @@
+id: 4R4-ROU-0T6-19R
+title: 'Integrations'
+slug: integraciones
+isVisible: true
+  - active-directory
+  - ad-groups-roles
+  - column-constant-adder
+  - command-executor
+  - csv-extractor
+  - data-producers
+  - data-sources-overview
+  - ethernet-streamer
+  - file-list-extractor
+  - flow-emitter
+  - icmp-extractor
+  - ldap-integration
+  - mfa-configuration
+  - mongodb-extractor
+  - netflow-extractor
+  - python-task-extractor
+  - sflow-extractor
+  - snmp-extractor
+  - snmp-trap-connector
+  - ssh-extractor
+  - syslog-extractor
+  - viewtiauth
+  - windows-remote-management
+  - wmi-extractor

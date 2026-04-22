@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, admin, grupos]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Groups"
+description: "Groups in ViewtiManager make it easier to manage who gets which roles. While roles define what actions and views a user can access, groups bundle users toget..."
+keywords: "configuracion, viewtimanager, admin, grupos"
 ---
 
 # Groups
 
-Groups in ViewtiManager make it easier to manage who gets which [[roles|roles]]. While roles define what actions and views a user can access, groups bundle users together so you can assign or change a role for many users at once. Groups are managed at **Admin → Groups**.
+Groups in ViewtiManager make it easier to manage who gets which [roles](roles.md). While roles define what actions and views a user can access, groups bundle users together so you can assign or change a role for many users at once. Groups are managed at **Admin → Groups**.
 
 Groups are entirely internal to ViewtiManager — they do not affect the GUI directly, but they let you manage role assignments in bulk.
 
@@ -19,7 +17,7 @@ Without groups, changing role assignments for a team of 10 users requires editin
 Groups are optional but highly recommended for:
 - Large deployments with many users
 - Teams that need frequent role changes
-- Environments with [[active-directory|Active Directory]] integration where AD groups map to Viewtinet roles via [[ad-groups-roles]]
+- Environments with [Active Directory](../integraciones/active-directory.md) integration where AD groups map to Viewtinet roles via [Ad Groups Roles](../integraciones/ad-groups-roles.md)
 
 ## Creating a Group
 
@@ -37,21 +35,21 @@ Groups are optional but highly recommended for:
 ### Assigning Roles to the Group
 
 1. Expand the **Group Roles** section.
-2. In the Available column, check the box next to each [[roles|role]] you want this group to inherit.
+2. In the Available column, check the box next to each [role](roles.md) you want this group to inherit.
 3. Click the single-arrow **>** button to move roles to Selected.
 4. Click **Save Changes**.
 
 ## Membership Behavior
 
-When you add or remove a [[users|user]] from a group, they immediately gain or lose every role assigned to that group — no further edits are needed on their individual user account.
+When you add or remove a [user](users.md) from a group, they immediately gain or lose every role assigned to that group — no further edits are needed on their individual user account.
 
 ## Groups and External Identity Providers
 
-When using [[active-directory|Active Directory]], AD security groups can be mapped to Viewtinet roles through the [[ad-groups-roles|AD Groups & Roles]] configuration. For [[ldap-integration|LDAP]], a single default role is assigned at login; group-based role mapping is not supported for LDAP.
+When using [Active Directory](../integraciones/active-directory.md), AD security groups can be mapped to Viewtinet roles through the [AD Groups & Roles](../integraciones/ad-groups-roles.md) configuration. For [LDAP](../integraciones/ldap-integration.md), a single default role is assigned at login; group-based role mapping is not supported for LDAP.
 
 ## Related Pages
 
-- [[roles]] — Permission sets assigned to groups
-- [[users]] — Individual user accounts and group membership
-- [[ad-groups-roles]] — Mapping Active Directory groups to Viewtinet roles
-- [[tenants]] — Multi-tenancy and data isolation
+- [Roles](roles.md) — Permission sets assigned to groups
+- [Users](users.md) — Individual user accounts and group membership
+- [Ad Groups Roles](../integraciones/ad-groups-roles.md) — Mapping Active Directory groups to Viewtinet roles
+- [Tenants](tenants.md) — Multi-tenancy and data isolation

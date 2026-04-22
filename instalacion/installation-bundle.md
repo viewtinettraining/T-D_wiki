@@ -1,22 +1,20 @@
 ---
-tags: [instalacion, bundle]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Installation Bundle"
+description: "The Viewtinet installation bundle is the primary delivery mechanism for the Viewtinet platform. It is a `.zip` archive containing all required scripts, conta..."
+keywords: "instalacion, bundle"
 ---
 
 # Installation Bundle
 
-The Viewtinet installation bundle is the primary delivery mechanism for the Viewtinet platform. It is a `.zip` archive containing all required scripts, container images, and configuration files needed to deploy the full stack on [[ubuntu-compatibility|Ubuntu Server 20.04 or 24.04]].
+The Viewtinet installation bundle is the primary delivery mechanism for the Viewtinet platform. It is a `.zip` archive containing all required scripts, container images, and configuration files needed to deploy the full stack on [Ubuntu Server 20.04 or 24.04](../conceptos/ubuntu-compatibility.md).
 
 ## Prerequisites
 
 Before working with the bundle, ensure the following are complete:
 
-- [[os-setup]] — `viewtinet` user created, OS profile configured
-- [[hdd-partitioning]] — Disk partitions created per the recommended scheme
-- [[system-configuration]] — SSH enabled, NTP configured and synchronized
+- [Os Setup](os-setup.md) — `viewtinet` user created, OS profile configured
+- [Hdd Partitioning](hdd-partitioning.md) — Disk partitions created per the recommended scheme
+- [System Configuration](system-configuration.md) — SSH enabled, NTP configured and synchronized
 
 Internet access is **mandatory** during installation — all dependencies and Docker images are downloaded at runtime.
 
@@ -59,11 +57,11 @@ cd /home/viewtinet
 unzip artifacts.zip
 ```
 
-After extraction, a `bundle/` directory is created. All three installation steps are run from within this directory — see [[installation-bundle-steps]] for details.
+After extraction, a `bundle/` directory is created. All three installation steps are run from within this directory — see [Installation Bundle Steps](installation-bundle-steps.md) for details.
 
 ## Related Pages
 
-- [[server-info]] — Obtain machine identifier for licensing
-- [[user-admin-activation]] — First-login admin activation
-- [[upload-license]] — Upload the .key license file
-- [[installation-guide-hub|Installation Guide Hub]] — Full source index
+- [Server Info](server-info.md) — Obtain machine identifier for licensing
+- [User Admin Activation](user-admin-activation.md) — First-login admin activation
+- [Upload License](upload-license.md) — Upload the .key license file
+- [Installation Guide Hub](../fuentes/installation-guide-hub.md) — Full source index

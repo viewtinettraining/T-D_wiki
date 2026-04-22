@@ -1,23 +1,21 @@
 ---
-tags: [configuracion, viewtimanager, licencias]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "License Management"
+description: "Viewtinet's license enforcement system controls which modules and features remain active, and provides warnings or restrictions as license terms approach or ..."
+keywords: "configuracion, viewtimanager, licencias"
 ---
 
 # License Management
 
-Viewtinet's license enforcement system controls which modules and features remain active, and provides warnings or restrictions as license terms approach or exceed their limits. Licenses are managed from the **License** section of the [[gui-overview|ViewtiManager sidebar]].
+Viewtinet's license enforcement system controls which modules and features remain active, and provides warnings or restrictions as license terms approach or exceed their limits. Licenses are managed from the **License** section of the [ViewtiManager sidebar](gui-overview.md).
 
-For the initial license upload procedure, see [[upload-license]].
+For the initial license upload procedure, see [Upload License](../instalacion/upload-license.md).
 
 ## License Enforcement Behavior
 
 ### Expiration
 
-- When a temporal license **expires**, ViewtiMon, ViewtifyQoS, ViewtiLog, and other modules are disabled. You can still log in to [[viewtimanager-overview|ViewtiManager]] itself.
-- [[viewtisight-overview|ViewtiSight]] becomes entirely inaccessible until a valid license is loaded.
+- When a temporal license **expires**, ViewtiMon, ViewtifyQoS, ViewtiLog, and other modules are disabled. You can still log in to [ViewtiManager](../productos/viewtimanager-overview.md) itself.
+- [ViewtiSight](../productos/viewtisight-overview.md) becomes entirely inaccessible until a valid license is loaded.
 
 ### Expiry Warning
 
@@ -29,10 +27,10 @@ If a module is disabled in the license file, specific database tables are blocke
 
 | Module | Blocked Resources |
 |---|---|
-| [[viewtimon-overview|ViewtiMon]] | `dpi_records`, `voip_records` |
+| [ViewtiMon](../productos/viewtimon-overview.md) | `dpi_records`, `voip_records` |
 | ViewtifyQoS | `qos_records` |
 | ViewtiMon Sniffer | `pcap_storage_records` |
-| [[viewtilog-overview|ViewtiLog]] | All tables except DPI, VoIP, QoS, and self-monitoring |
+| [ViewtiLog](../productos/viewtilog-overview.md) | All tables except DPI, VoIP, QoS, and self-monitoring |
 
 ## License Scenarios
 
@@ -58,7 +56,7 @@ Exceeding warning limits triggers alerts. Exceeding deny limits for seven consec
 
 ## Related Pages
 
-- [[upload-license]] — Initial license file upload procedure
-- [[server-info]] — Server information required to obtain a license
-- [[viewtimanager-overview]] — Platform overview including module list
-- [[system-updates]] — Platform update procedure
+- [Upload License](../instalacion/upload-license.md) — Initial license file upload procedure
+- [Server Info](../instalacion/server-info.md) — Server information required to obtain a license
+- [Viewtimanager Overview](../productos/viewtimanager-overview.md) — Platform overview including module list
+- [System Updates](system-updates.md) — Platform update procedure

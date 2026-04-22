@@ -1,9 +1,7 @@
 ---
-tags: [clientes, vc-lda]
-tipo: tecnica
-fuentes: ["cursos-projects-corpus"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "JCCM — Junta de Comunidades de Castilla-La Mancha"
+description: "The Junta de Comunidades de Castilla-La Mancha (JCCM) is the regional government of the Castilla-La Mancha autonomous community in central Spain. As a public..."
+keywords: "clientes, vc-lda"
 ---
 
 # JCCM — Junta de Comunidades de Castilla-La Mancha
@@ -12,7 +10,7 @@ The Junta de Comunidades de Castilla-La Mancha (JCCM) is the regional government
 
 ## Course Delivered
 
-The training delivered was [[vc-de]] (formerly VC-LDA — Certified Data Engineer), the 16-hour deep technical course. Prior [[vc-oa]] certification is required. The [[vc-de-agenda]] targets data and network engineers who will operate and maintain the Viewtinet platform, covering [[viewtimanager-overview]], [[viewtilog-overview]], and [[viewtisight-overview]].
+The training delivered was [Vc De](../formacion/vc-de.md) (formerly VC-LDA — Certified Data Engineer), the 16-hour deep technical course. Prior [Vc Oa](../formacion/vc-oa.md) certification is required. The [Vc De Agenda](../cursos/vc-de-agenda.md) targets data and network engineers who will operate and maintain the Viewtinet platform, covering [Viewtimanager Overview](../productos/viewtimanager-overview.md), [Viewtilog Overview](../productos/viewtilog-overview.md), and [Viewtisight Overview](../productos/viewtisight-overview.md).
 
 ## Training Materials
 
@@ -27,12 +25,12 @@ The CSV attendance file is a notable artifact: it records participant enrollment
 
 ## Notable Aspects
 
-- The **attendance CSV** (`jccm_8-5-2025 1.csv`) is unique in the VC-LDA corpus — only [[mininterior-lda]] has a comparable supplementary non-presentation file (an inventory CSV). This record indicates formal training tracking practices aligned with public sector compliance requirements.
+- The **attendance CSV** (`jccm_8-5-2025 1.csv`) is unique in the VC-LDA corpus — only [Mininterior Lda](mininterior-lda.md) has a comparable supplementary non-presentation file (an inventory CSV). This record indicates formal training tracking practices aligned with public sector compliance requirements.
 - The training date (May 8, 2025) is the most precisely documented delivery date across all VC-LDA clients.
-- Public administrations like JCCM typically operate large, heterogeneous networks benefiting from [[autodiscovery]], [[inventory-management]], and [[snmp-extractor]] integrations.
-- [[tenants]] and [[roles]] in [[viewtimanager-overview]] are relevant for multi-department public organizations.
-- [[etl-pipeline]] capabilities via [[viewtilog-overview]] support aggregating telemetry from diverse regional infrastructure.
+- Public administrations like JCCM typically operate large, heterogeneous networks benefiting from [Autodiscovery](../configuracion/autodiscovery.md), [Inventory Management](../configuracion/inventory-management.md), and [Snmp Extractor](../integraciones/snmp-extractor.md) integrations.
+- [Tenants](../configuracion/tenants.md) and [Roles](../configuracion/roles.md) in [Viewtimanager Overview](../productos/viewtimanager-overview.md) are relevant for multi-department public organizations.
+- [Etl Pipeline](../conceptos/etl-pipeline.md) capabilities via [Viewtilog Overview](../productos/viewtilog-overview.md) support aggregating telemetry from diverse regional infrastructure.
 
 ## Related Clients
 
-Other Spanish regional and local government clients include [[ayto-madrid]] (local government), [[junta-andalucia]] (regional government), [[mininterior-lda]], and [[ministerio-interior]] (both central government). These public sector clients share compliance, procurement, and multi-site infrastructure management needs.
+Other Spanish regional and local government clients include [Ayto Madrid](ayto-madrid.md) (local government), [Junta Andalucia](junta-andalucia.md) (regional government), [Mininterior Lda](mininterior-lda.md), and [Ministerio Interior](ministerio-interior.md) (both central government). These public sector clients share compliance, procurement, and multi-site infrastructure management needs.

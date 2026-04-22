@@ -1,16 +1,14 @@
 ---
-tags: [integracion, netflow, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "NetFlow Extractor"
+description: "The NetFlow Connector processes flow data (NetFlow, JFlow, NetStream) captured by the Ethernet Streamer pipeline. Before using this connector, a valid Ethern..."
+keywords: "integracion, netflow, extractor, vs-data-broker"
 ---
 
 # NetFlow Extractor
 
-The **NetFlow Connector** processes flow data (NetFlow, JFlow, NetStream) captured by the [[ethernet-streamer|Ethernet Streamer]] pipeline. Before using this connector, a valid Ethernet Streamer pipeline must be configured with the correct port and host filters (default NetFlow port: UDP/2055). The Ethernet Streamer captures binary traffic and stores it in the Collected Path directory for the NetFlow Connector to decode.
+The **NetFlow Connector** processes flow data (NetFlow, JFlow, NetStream) captured by the [Ethernet Streamer](ethernet-streamer.md) pipeline. Before using this connector, a valid Ethernet Streamer pipeline must be configured with the correct port and host filters (default NetFlow port: UDP/2055). The Ethernet Streamer captures binary traffic and stores it in the Collected Path directory for the NetFlow Connector to decode.
 
-**Note**: Viewtinet provides a [[plugin-template|Plugin Template]] for NetFlow integrations — manual configuration is rarely needed.
+**Note**: Viewtinet provides a [Plugin Template](../conceptos/plugin-template.md) for NetFlow integrations — manual configuration is rarely needed.
 
 ## Configuration Parameters
 
@@ -38,8 +36,8 @@ Ethernet Streamer (listener) → Binary files on disk → NetFlow Connector (dec
 
 ## Related Pages
 
-- [[ethernet-streamer]] — Required prerequisite; captures raw NetFlow traffic
-- [[sflow-extractor]] — Similar connector for sFlow protocol
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[plugin-template]] — Pre-built NetFlow plugin template
-- [[data-producers]] — Load stage destinations
+- [Ethernet Streamer](ethernet-streamer.md) — Required prerequisite; captures raw NetFlow traffic
+- [Sflow Extractor](sflow-extractor.md) — Similar connector for sFlow protocol
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Plugin Template](../conceptos/plugin-template.md) — Pre-built NetFlow plugin template
+- [Data Producers](data-producers.md) — Load stage destinations

@@ -1,14 +1,12 @@
 ---
-tags: [integracion, mongodb, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "MongoDB Extractor"
+description: "The MongoDB Connector extracts data directly from a MongoDB collection into the Visual Smart Data Broker ETL pipeline. It is useful for integrating structure..."
+keywords: "integracion, mongodb, extractor, vs-data-broker"
 ---
 
 # MongoDB Extractor
 
-The **MongoDB Connector** extracts data directly from a MongoDB collection into the [[vs-data-broker-overview|Visual Smart Data Broker]] [[etl-pipeline|ETL pipeline]]. It is useful for integrating structured JSON documents from external applications such as alarms, logs, or metadata. Unlike passive listeners such as the [[ethernet-streamer|Ethernet Streamer]], the MongoDB Connector is a **scheduled connector** that runs periodically.
+The **MongoDB Connector** extracts data directly from a MongoDB collection into the [Visual Smart Data Broker](../productos/vs-data-broker-overview.md) [ETL pipeline](../conceptos/etl-pipeline.md). It is useful for integrating structured JSON documents from external applications such as alarms, logs, or metadata. Unlike passive listeners such as the [Ethernet Streamer](ethernet-streamer.md), the MongoDB Connector is a **scheduled connector** that runs periodically.
 
 ## Key Features
 
@@ -44,8 +42,8 @@ The `owner` field is extracted as a JSON string; parsing `owner.name` requires a
 
 ## Related Pages
 
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[ethernet-streamer]] — Passive listener alternative for network traffic
-- [[python-task-extractor]] — Custom extraction for complex data sources
-- [[data-producers]] — Load stage destinations
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Ethernet Streamer](ethernet-streamer.md) — Passive listener alternative for network traffic
+- [Python Task Extractor](python-task-extractor.md) — Custom extraction for complex data sources
+- [Data Producers](data-producers.md) — Load stage destinations
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

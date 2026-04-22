@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, inventario, csv, provisionamiento]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "CSV Provisioning"
+description: "Viewtinet supports bulk onboarding of devices into the Inventory through a simple CSV import. This method is preferred over manual entry when adding multiple..."
+keywords: "configuracion, viewtimanager, inventario, csv, provisionamiento"
 ---
 
 # CSV Provisioning
 
-Viewtinet supports bulk onboarding of devices into the [[inventory-management|Inventory]] through a simple CSV import. This method is preferred over [[manual-provisioning|manual entry]] when adding multiple devices at once, and complements [[autodiscovery|Autodiscovery]] for environments where target IPs are already known.
+Viewtinet supports bulk onboarding of devices into the [Inventory](inventory-management.md) through a simple CSV import. This method is preferred over [manual entry](manual-provisioning.md) when adding multiple devices at once, and complements [Autodiscovery](autodiscovery.md) for environments where target IPs are already known.
 
 ## CSV File Requirements
 
@@ -42,7 +40,7 @@ ip,device,vendor,operating_system,sw_version
 
 ## CSV Import Procedure
 
-1. In the [[viewtimanager-overview|ViewtiManager]] web console, click **Inventory** in the left-hand menu.
+1. In the [ViewtiManager](../productos/viewtimanager-overview.md) web console, click **Inventory** in the left-hand menu.
 2. Click **IMPORT A LIST OF DEVICES AND/OR CREDENTIALS FROM CSV** at the top of the Devices tab.
 3. In the file chooser dialog, locate and select your CSV file, then click **Open**.
 4. In the preview dialog, verify the **Separator** (`,` by default) and **Source name**.
@@ -61,16 +59,16 @@ After importing devices via CSV, you typically need to:
 3. Map **Relations** between devices and credentials.
 4. Install **Plugins** (e.g., Network Monitoring) in the Plugins tab.
 
-These steps are shared with [[autodiscovery]] and [[manual-provisioning]].
+These steps are shared with [Autodiscovery](autodiscovery.md) and [Manual Provisioning](manual-provisioning.md).
 
 ## Filtering After Import
 
-The Inventory Query Builder lets you narrow the device list by any attribute (IP, vendor, OS version, etc.), combine conditions with AND/OR logic, and save filters for reuse. Saved filters are also used by the [[configuration-manager]] for targeting devices in configuration tasks.
+The Inventory Query Builder lets you narrow the device list by any attribute (IP, vendor, OS version, etc.), combine conditions with AND/OR logic, and save filters for reuse. Saved filters are also used by the [Configuration Manager](configuration-manager.md) for targeting devices in configuration tasks.
 
 ## Related Pages
 
-- [[inventory-management]] — Inventory overview
-- [[autodiscovery]] — Automatic discovery alternative
-- [[manual-provisioning]] — One-by-one device entry
-- [[inventory-maintenance]] — Column management and data hygiene
-- [[configuration-manager]] — Uses inventory devices for config tasks
+- [Inventory Management](inventory-management.md) — Inventory overview
+- [Autodiscovery](autodiscovery.md) — Automatic discovery alternative
+- [Manual Provisioning](manual-provisioning.md) — One-by-one device entry
+- [Inventory Maintenance](inventory-maintenance.md) — Column management and data hygiene
+- [Configuration Manager](configuration-manager.md) — Uses inventory devices for config tasks

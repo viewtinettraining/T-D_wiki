@@ -1,14 +1,12 @@
 ---
-tags: [instalacion, os, ubuntu]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Operating System Setup"
+description: "This page covers the Ubuntu Server OS profile configuration required before installing Viewtinet. See ubuntu-compatibility for supported versions."
+keywords: "instalacion, os, ubuntu"
 ---
 
 # Operating System Setup
 
-This page covers the Ubuntu Server OS profile configuration required before installing Viewtinet. See [[ubuntu-compatibility]] for supported versions.
+This page covers the Ubuntu Server OS profile configuration required before installing Viewtinet. See [Ubuntu Compatibility](../conceptos/ubuntu-compatibility.md) for supported versions.
 
 ## Mandatory User Profile
 
@@ -34,7 +32,7 @@ During the OS installer's **SSH Setup** screen, enable remote management:
 - Set import identity to: `No`
 - Check: `[X] Allow password authentication over SSH`
 
-This configuration is mandatory for subsequent [[installation-bundle]] steps that rely on [[server-info]] retrieval and remote access via SCP or SSH tools such as WinSCP and PuTTY.
+This configuration is mandatory for subsequent [Installation Bundle](installation-bundle.md) steps that rely on [Server Info](server-info.md) retrieval and remote access via SCP or SSH tools such as WinSCP and PuTTY.
 
 ## Optional Packages
 
@@ -44,8 +42,8 @@ If the Ubuntu installer presents a "Featured Server Snaps" screen, **do not sele
 
 After completing the OS profile setup, proceed to:
 
-1. [[hdd-partitioning]] — Configure disk partitions according to the recommended scheme
-2. [[system-configuration]] — Apply NTP and SSH post-install configuration
-3. [[installation-bundle]] — Begin the Viewtinet bundle installation
+1. [Hdd Partitioning](hdd-partitioning.md) — Configure disk partitions according to the recommended scheme
+2. [System Configuration](system-configuration.md) — Apply NTP and SSH post-install configuration
+3. [Installation Bundle](installation-bundle.md) — Begin the Viewtinet bundle installation
 
-See also [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See also [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

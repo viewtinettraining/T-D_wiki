@@ -1,18 +1,16 @@
 ---
-tags: [integraciones, autenticacion]
-tipo: concepto
-fuentes: ["viewtiauth-integrations"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "ViewtiAuth Integrations"
+description: "ViewtiAuth is the authentication orchestration layer in Viewtinet. It controls which authentication backends are active, the order in which they are tried, a..."
+keywords: "integraciones, autenticacion"
 ---
 
 # ViewtiAuth Integrations
 
-ViewtiAuth is the authentication orchestration layer in Viewtinet. It controls which authentication backends are active, the order in which they are tried, and what default [[roles|role]] is assigned to users upon successful login.
+ViewtiAuth is the authentication orchestration layer in Viewtinet. It controls which authentication backends are active, the order in which they are tried, and what default [role](../configuracion/roles.md) is assigned to users upon successful login.
 
 ## Overview
 
-The **Viewtiauth Integrations** section is found under **Admin → Auth** in the [[gui-overview|administration interface]]. It presents a table of authentication entries, each defining one backend. Viewtiauth processes entries in ascending order by the **Order** field: `1` is highest priority.
+The **Viewtiauth Integrations** section is found under **Admin → Auth** in the [administration interface](../configuracion/gui-overview.md). It presents a table of authentication entries, each defining one backend. Viewtiauth processes entries in ascending order by the **Order** field: `1` is highest priority.
 
 If an entry is inactive, or authentication fails against its backend, Viewtiauth falls back to the next active entry in the list.
 
@@ -23,13 +21,13 @@ If an entry is inactive, or authentication fails against its backend, Viewtiauth
 | **Active** | Enables or disables this backend. Inactive entries are skipped entirely. |
 | **Order** | Integer defining priority. Lower numbers are tried first. |
 | **Type** | The authentication method to use for this entry. |
-| **Default Role** | The [[roles|role]] automatically assigned to users authenticated via this backend. |
+| **Default Role** | The [role](../configuracion/roles.md) automatically assigned to users authenticated via this backend. |
 
 ### Supported Authentication Types
 
-- `local` — built-in Viewtinet user database, managed through [[users]]
-- `ad` — Microsoft Active Directory, configured via [[active-directory]]
-- `ldap` — external LDAP server, configured via [[ldap-integration]]
+- `local` — built-in Viewtinet user database, managed through [Users](../configuracion/users.md)
+- `ad` — Microsoft Active Directory, configured via [Active Directory](active-directory.md)
+- `ldap` — external LDAP server, configured via [Ldap Integration](ldap-integration.md)
 - `saml2` — SAML 2.0 Identity Provider
 
 ## Authentication Flow
@@ -55,14 +53,14 @@ In this configuration, Viewtiauth tries the `local` backend first (order 2). If 
 
 ## Role Assignment
 
-The **Default Role** per entry determines what [[roles|permissions]] a newly provisioned user receives. For `local` users, [[users|individual role]] assignments can be modified afterward in **Admin → Users**. For LDAP users, role changes must be applied manually after account creation, as described in [[ldap-integration]].
+The **Default Role** per entry determines what [permissions](../configuracion/roles.md) a newly provisioned user receives. For `local` users, [individual role](../configuracion/users.md) assignments can be modified afterward in **Admin → Users**. For LDAP users, role changes must be applied manually after account creation, as described in [Ldap Integration](ldap-integration.md).
 
-For [[active-directory]], group-to-role mappings are available through [[ad-groups-roles]], allowing more granular control compared to LDAP's single default role.
+For [Active Directory](active-directory.md), group-to-role mappings are available through [Ad Groups Roles](ad-groups-roles.md), allowing more granular control compared to LDAP's single default role.
 
 ## Multi-Factor Authentication
 
-MFA is a separate layer applied on top of ViewtiAuth backends. See [[mfa-configuration]] for setup details. MFA does not change the authentication order — it adds a second step after the primary backend succeeds.
+MFA is a separate layer applied on top of ViewtiAuth backends. See [Mfa Configuration](mfa-configuration.md) for setup details. MFA does not change the authentication order — it adds a second step after the primary backend succeeds.
 
 ## Notes
 
-Changes to the authentication sequence affect all users immediately. Disabling or reordering entries without caution can inadvertently lock out administrative accounts. Always verify at least one active `local` entry is present before making changes, especially when configuring [[ldap-integration]] or [[active-directory]] for the first time.
+Changes to the authentication sequence affect all users immediately. Disabling or reordering entries without caution can inadvertently lock out administrative accounts. Always verify at least one active `local` entry is present before making changes, especially when configuring [Ldap Integration](ldap-integration.md) or [Active Directory](active-directory.md) for the first time.

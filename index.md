@@ -1,9 +1,15 @@
+---
+title: "Viewtinet Documentation Wiki — Master Index"
+description: "> Platform: Viewtinet v6.3.5 | Network Monitoring & Management"
+keywords: ""
+---
+
 # Viewtinet Documentation Wiki — Master Index
 
 > **Platform:** Viewtinet v6.3.5 | Network Monitoring & Management  
 > **Pages:** 115 | **Last updated:** 2026-04-22
 
-Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
+Start here → [Viewtinet Platform Overview](productos/viewtinet-platform-overview.md)
 
 ---
 
@@ -11,17 +17,17 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[viewtinet-platform-overview]] | Full platform overview: product suite, architecture, use cases |
-| [[viewtimanager-overview]] | ViewtiManager — main control center and management GUI |
-| [[viewtilog-overview]] | ViewtiLog — log collection, indexing, and storage engine |
-| [[viewtimon-overview]] | ViewtiMon — Deep Packet Inspection real-time traffic analyzer |
-| [[viewtisight-overview]] | ViewtiSight — analytics, dashboards, and BI layer |
-| [[viewtisight-features]] | ViewtiSight features: Dashboard Composer, Metrics Composer, QueryBuilder, PDF Reporter |
-| [[viewtiqos-overview]] | ViewtiQoS — traffic shaping and QoS policy enforcement |
-| [[viewtibot-overview]] | ViewtiBot — AI assistant for Viewtinet (ChatGPT-based) |
-| [[vs-data-broker-overview]] | VS Data Broker — ETL pipeline and plugin management |
-| [[viewtinet-appliance]] | Hardware appliance: layout, racking, IPMI, IP management |
-| [[rest-api]] | ViewtiSight REST API: authentication, endpoints, query format |
+| [Viewtinet Platform Overview](productos/viewtinet-platform-overview.md) | Full platform overview: product suite, architecture, use cases |
+| [Viewtimanager Overview](productos/viewtimanager-overview.md) | ViewtiManager — main control center and management GUI |
+| [Viewtilog Overview](productos/viewtilog-overview.md) | ViewtiLog — log collection, indexing, and storage engine |
+| [Viewtimon Overview](productos/viewtimon-overview.md) | ViewtiMon — Deep Packet Inspection real-time traffic analyzer |
+| [Viewtisight Overview](productos/viewtisight-overview.md) | ViewtiSight — analytics, dashboards, and BI layer |
+| [Viewtisight Features](productos/viewtisight-features.md) | ViewtiSight features: Dashboard Composer, Metrics Composer, QueryBuilder, PDF Reporter |
+| [Viewtiqos Overview](productos/viewtiqos-overview.md) | ViewtiQoS — traffic shaping and QoS policy enforcement |
+| [Viewtibot Overview](productos/viewtibot-overview.md) | ViewtiBot — AI assistant for Viewtinet (ChatGPT-based) |
+| [Vs Data Broker Overview](productos/vs-data-broker-overview.md) | VS Data Broker — ETL pipeline and plugin management |
+| [Viewtinet Appliance](productos/viewtinet-appliance.md) | Hardware appliance: layout, racking, IPMI, IP management |
+| [Rest Api](productos/rest-api.md) | ViewtiSight REST API: authentication, endpoints, query format |
 
 ---
 
@@ -29,19 +35,19 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[os-setup]] | Ubuntu Server OS setup: mandatory `viewtinet` user, profile |
-| [[hdd-partitioning]] | RAID disk groups and partition scheme (OS: RAID1/XFS; Data: RAID10/ext4) |
-| [[system-configuration]] | Post-install SSH and NTP configuration |
-| [[server-info]] | Retrieving server-info.txt for licensing |
-| [[installation-bundle]] | Bundle download, SCP upload, and extraction |
-| [[installation-bundle-steps]] | Three-step installation: `deploy.sh`, `install.sh` × 2 |
-| [[upload-license]] | .key license file upload via ViewtiManager GUI (port 4200) |
-| [[user-admin-activation]] | First-login admin activation (default: `admin / Viewtinet01!`) |
-| [[viewtilog-installation]] | ViewtiLog standalone and HA cluster installation |
-| [[viewtimon-installation]] | ViewtiMon installation, NIC assignment, kernel fine-tuning |
-| [[viewtiqos-installation]] | ViewtiQoS installation and NIC binding sequence |
-| [[viewtisight-installation]] | ViewtiSight cluster installation and port table |
-| [[ubuntu-upgrade]] | Ubuntu 20.04 → 24.04 two-stage upgrade procedure |
+| [Os Setup](instalacion/os-setup.md) | Ubuntu Server OS setup: mandatory `viewtinet` user, profile |
+| [Hdd Partitioning](instalacion/hdd-partitioning.md) | RAID disk groups and partition scheme (OS: RAID1/XFS; Data: RAID10/ext4) |
+| [System Configuration](instalacion/system-configuration.md) | Post-install SSH and NTP configuration |
+| [Server Info](instalacion/server-info.md) | Retrieving server-info.txt for licensing |
+| [Installation Bundle](instalacion/installation-bundle.md) | Bundle download, SCP upload, and extraction |
+| [Installation Bundle Steps](instalacion/installation-bundle-steps.md) | Three-step installation: `deploy.sh`, `install.sh` × 2 |
+| [Upload License](instalacion/upload-license.md) | .key license file upload via ViewtiManager GUI (port 4200) |
+| [User Admin Activation](instalacion/user-admin-activation.md) | First-login admin activation (default: `admin / Viewtinet01!`) |
+| [Viewtilog Installation](instalacion/viewtilog-installation.md) | ViewtiLog standalone and HA cluster installation |
+| [Viewtimon Installation](instalacion/viewtimon-installation.md) | ViewtiMon installation, NIC assignment, kernel fine-tuning |
+| [Viewtiqos Installation](instalacion/viewtiqos-installation.md) | ViewtiQoS installation and NIC binding sequence |
+| [Viewtisight Installation](instalacion/viewtisight-installation.md) | ViewtiSight cluster installation and port table |
+| [Ubuntu Upgrade](instalacion/ubuntu-upgrade.md) | Ubuntu 20.04 → 24.04 two-stage upgrade procedure |
 
 ---
 
@@ -49,22 +55,22 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[login]] | ViewtiManager login: URL, default credentials, first access |
-| [[gui-overview]] | GUI layout, navigation, module sections |
-| [[license-management]] | License upload, enforcement, limits |
-| [[users]] | User creation, management, password policies |
-| [[roles]] | Role-based access control, predefined roles |
-| [[groups]] | User groups and group-based permissions |
-| [[tenants]] | Multi-tenancy: tenant management and isolation |
-| [[system-updates]] | Platform update procedure via GUI |
-| [[inventory-management]] | Device inventory overview and management |
-| [[autodiscovery]] | Automatic device discovery configuration |
-| [[manual-provisioning]] | Manual device provisioning steps |
-| [[csv-provisioning]] | Bulk device provisioning via CSV file |
-| [[inventory-maintenance]] | Inventory maintenance tasks |
-| [[configuration-manager]] | Configuration Manager module overview |
-| [[configuration-commands]] | Commands available in Configuration Manager |
-| [[configuration-tasks]] | Automated tasks in Configuration Manager |
+| [Login](configuracion/login.md) | ViewtiManager login: URL, default credentials, first access |
+| [Gui Overview](configuracion/gui-overview.md) | GUI layout, navigation, module sections |
+| [License Management](configuracion/license-management.md) | License upload, enforcement, limits |
+| [Users](configuracion/users.md) | User creation, management, password policies |
+| [Roles](configuracion/roles.md) | Role-based access control, predefined roles |
+| [Groups](configuracion/groups.md) | User groups and group-based permissions |
+| [Tenants](configuracion/tenants.md) | Multi-tenancy: tenant management and isolation |
+| [System Updates](configuracion/system-updates.md) | Platform update procedure via GUI |
+| [Inventory Management](configuracion/inventory-management.md) | Device inventory overview and management |
+| [Autodiscovery](configuracion/autodiscovery.md) | Automatic device discovery configuration |
+| [Manual Provisioning](configuracion/manual-provisioning.md) | Manual device provisioning steps |
+| [Csv Provisioning](configuracion/csv-provisioning.md) | Bulk device provisioning via CSV file |
+| [Inventory Maintenance](configuracion/inventory-maintenance.md) | Inventory maintenance tasks |
+| [Configuration Manager](configuracion/configuration-manager.md) | Configuration Manager module overview |
+| [Configuration Commands](configuracion/configuration-commands.md) | Commands available in Configuration Manager |
+| [Configuration Tasks](configuracion/configuration-tasks.md) | Automated tasks in Configuration Manager |
 
 ---
 
@@ -73,38 +79,38 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 ### Authentication
 | Page | Summary |
 |------|---------|
-| [[viewtiauth]] | ViewtiAuth: authentication orchestration, fallback flow |
-| [[active-directory]] | Active Directory integration: setup, prerequisites, configuration |
-| [[ad-groups-roles]] | Mapping AD groups to Viewtinet roles |
-| [[ldap-integration]] | LDAP integration: prerequisites and configuration |
-| [[mfa-configuration]] | Multi-factor authentication (SMTP + email OTP) |
+| [Viewtiauth](integraciones/viewtiauth.md) | ViewtiAuth: authentication orchestration, fallback flow |
+| [Active Directory](integraciones/active-directory.md) | Active Directory integration: setup, prerequisites, configuration |
+| [Ad Groups Roles](integraciones/ad-groups-roles.md) | Mapping AD groups to Viewtinet roles |
+| [Ldap Integration](integraciones/ldap-integration.md) | LDAP integration: prerequisites and configuration |
+| [Mfa Configuration](integraciones/mfa-configuration.md) | Multi-factor authentication (SMTP + email OTP) |
 
 ### Data Sources & Extractors
 | Page | Summary |
 |------|---------|
-| [[data-sources-overview]] | All supported data source types organized by category |
-| [[snmp-extractor]] | SNMP polling extractor |
-| [[snmp-trap-connector]] | SNMP Trap listener extractor |
-| [[netflow-extractor]] | NetFlow v5/v9/IPFIX data extraction |
-| [[sflow-extractor]] | sFlow data extraction |
-| [[syslog-extractor]] | Syslog (UDP/TCP) data extraction |
-| [[ssh-extractor]] | SSH-based remote command data extraction |
-| [[wmi-extractor]] | WMI Windows data extraction |
-| [[windows-remote-management]] | Windows Remote Management (WRM) extractor |
-| [[csv-extractor]] | CSV file data extraction |
-| [[mongodb-extractor]] | MongoDB query-based data extraction |
-| [[icmp-extractor]] | ICMP ping/reachability monitoring |
-| [[python-task-extractor]] | Custom Python script extractor |
-| [[ethernet-streamer]] | Continuous binary traffic listener (Syslog/NetFlow/sFlow) |
-| [[flow-emitter]] | Internal ViewtiMon DPI connector |
-| [[file-list-extractor]] | Scheduled directory monitor for file collection |
-| [[command-executor]] | Shell command/script extractor |
+| [Data Sources Overview](integraciones/data-sources-overview.md) | All supported data source types organized by category |
+| [Snmp Extractor](integraciones/snmp-extractor.md) | SNMP polling extractor |
+| [Snmp Trap Connector](integraciones/snmp-trap-connector.md) | SNMP Trap listener extractor |
+| [Netflow Extractor](integraciones/netflow-extractor.md) | NetFlow v5/v9/IPFIX data extraction |
+| [Sflow Extractor](integraciones/sflow-extractor.md) | sFlow data extraction |
+| [Syslog Extractor](integraciones/syslog-extractor.md) | Syslog (UDP/TCP) data extraction |
+| [Ssh Extractor](integraciones/ssh-extractor.md) | SSH-based remote command data extraction |
+| [Wmi Extractor](integraciones/wmi-extractor.md) | WMI Windows data extraction |
+| [Windows Remote Management](integraciones/windows-remote-management.md) | Windows Remote Management (WRM) extractor |
+| [Csv Extractor](integraciones/csv-extractor.md) | CSV file data extraction |
+| [Mongodb Extractor](integraciones/mongodb-extractor.md) | MongoDB query-based data extraction |
+| [Icmp Extractor](integraciones/icmp-extractor.md) | ICMP ping/reachability monitoring |
+| [Python Task Extractor](integraciones/python-task-extractor.md) | Custom Python script extractor |
+| [Ethernet Streamer](integraciones/ethernet-streamer.md) | Continuous binary traffic listener (Syslog/NetFlow/sFlow) |
+| [Flow Emitter](integraciones/flow-emitter.md) | Internal ViewtiMon DPI connector |
+| [File List Extractor](integraciones/file-list-extractor.md) | Scheduled directory monitor for file collection |
+| [Command Executor](integraciones/command-executor.md) | Shell command/script extractor |
 
 ### Transform & Load
 | Page | Summary |
 |------|---------|
-| [[column-constant-adder]] | Transform: add a constant to numeric or string columns |
-| [[data-producers]] | Load phase: 7 producer types (DB, Kafka, CSV, Syslog, SCP…) |
+| [Column Constant Adder](integraciones/column-constant-adder.md) | Transform: add a constant to numeric or string columns |
+| [Data Producers](integraciones/data-producers.md) | Load phase: 7 producer types (DB, Kafka, CSV, Syslog, SCP…) |
 
 ---
 
@@ -112,20 +118,20 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[viewtinet-platform-overview]] | Platform architecture and product relationships |
-| [[ubuntu-compatibility]] | Supported OS: Ubuntu 20.04 LTS and 24.04 LTS |
-| [[standalone-vs-cluster]] | Standalone vs HA cluster deployment modes |
-| [[ha-architecture]] | HA: Keepalived/VIP, HAProxy, active-passive failover |
-| [[ipmi-management]] | IPMI configuration, web UI, remote console |
-| [[plugin-architecture]] | Plugin system: templates vs customized plugins |
-| [[plugin-template]] | Plugin template: base structure and purpose |
-| [[customized-plugin]] | Customized plugin: creation and configuration |
-| [[plugin-schema]] | Plugin data schema definition |
-| [[plugin-categories]] | Plugin category classification system |
-| [[etl-pipeline]] | Extract-Transform-Load pipeline in VS Data Broker |
-| [[alarms-system]] | Alarms: types, severity levels, configuration, notifications |
-| [[data-sources-integration]] | Data source integration: protocols, methods, pipeline |
-| [[cli-reference]] | CLI tool: directory structure, container management, key scripts |
+| [Viewtinet Platform Overview](productos/viewtinet-platform-overview.md) | Platform architecture and product relationships |
+| [Ubuntu Compatibility](conceptos/ubuntu-compatibility.md) | Supported OS: Ubuntu 20.04 LTS and 24.04 LTS |
+| [Standalone Vs Cluster](conceptos/standalone-vs-cluster.md) | Standalone vs HA cluster deployment modes |
+| [Ha Architecture](conceptos/ha-architecture.md) | HA: Keepalived/VIP, HAProxy, active-passive failover |
+| [Ipmi Management](conceptos/ipmi-management.md) | IPMI configuration, web UI, remote console |
+| [Plugin Architecture](conceptos/plugin-architecture.md) | Plugin system: templates vs customized plugins |
+| [Plugin Template](conceptos/plugin-template.md) | Plugin template: base structure and purpose |
+| [Customized Plugin](conceptos/customized-plugin.md) | Customized plugin: creation and configuration |
+| [Plugin Schema](conceptos/plugin-schema.md) | Plugin data schema definition |
+| [Plugin Categories](conceptos/plugin-categories.md) | Plugin category classification system |
+| [Etl Pipeline](conceptos/etl-pipeline.md) | Extract-Transform-Load pipeline in VS Data Broker |
+| [Alarms System](conceptos/alarms-system.md) | Alarms: types, severity levels, configuration, notifications |
+| [Data Sources Integration](conceptos/data-sources-integration.md) | Data source integration: protocols, methods, pipeline |
+| [Cli Reference](conceptos/cli-reference.md) | CLI tool: directory structure, container management, key scripts |
 
 ---
 
@@ -133,13 +139,13 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[training-overview]] | Viewtinet Training & Certification department: mission, delivery formats, beginner-to-expert pathway |
-| [[certification-paths]] | Five certification verticals; VCOA as mandatory core; progression flow |
-| [[vsp]] | VSP — Viewtinet Sales Professional (1h, online, sales positioning) |
-| [[vc-psp]] | VC-PSP — Certified Presales Solutions Professional (8h, full agenda, case studies) |
-| [[vc-oa]] | VC-OA / VCOA — Certified Observability Analyst (16h, 6 modules, mandatory analytical core) |
-| [[vc-de]] | VC-DE — Certified Data Engineer (16h, requires VC-OA, Viewtilog/Smart Data Broker, formerly VC-LDA) |
-| [[vc-wde]] | VC-WDE / VC-WDP — Wire Data Engineer (8h, ViewtiMon + ViewtifyQoS, DPI) |
+| [Training Overview](formacion/training-overview.md) | Viewtinet Training & Certification department: mission, delivery formats, beginner-to-expert pathway |
+| [Certification Paths](formacion/certification-paths.md) | Five certification verticals; VCOA as mandatory core; progression flow |
+| [Vsp](formacion/vsp.md) | VSP — Viewtinet Sales Professional (1h, online, sales positioning) |
+| [Vc Psp](formacion/vc-psp.md) | VC-PSP — Certified Presales Solutions Professional (8h, full agenda, case studies) |
+| [Vc Oa](formacion/vc-oa.md) | VC-OA / VCOA — Certified Observability Analyst (16h, 6 modules, mandatory analytical core) |
+| [Vc De](formacion/vc-de.md) | VC-DE — Certified Data Engineer (16h, requires VC-OA, Viewtilog/Smart Data Broker, formerly VC-LDA) |
+| [Vc Wde](formacion/vc-wde.md) | VC-WDE / VC-WDP — Wire Data Engineer (8h, ViewtiMon + ViewtifyQoS, DPI) |
 
 ---
 
@@ -147,9 +153,9 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[vcoa-modules]] | VCOA 6-module breakdown: theory vs lab, GUI/Metrics/Dashboards/Alarms |
-| [[vc-de-agenda]] | VC-DE full agenda: Viewtimanager deep dive + Viewtilog/Smart Data Broker |
-| [[vc-wde-agenda]] | VC-WDE agenda: hardware, Sniffer/Inline deployment, ViewtiMon, ViewtifyQoS lab |
+| [Vcoa Modules](cursos/vcoa-modules.md) | VCOA 6-module breakdown: theory vs lab, GUI/Metrics/Dashboards/Alarms |
+| [Vc De Agenda](cursos/vc-de-agenda.md) | VC-DE full agenda: Viewtimanager deep dive + Viewtilog/Smart Data Broker |
+| [Vc Wde Agenda](cursos/vc-wde-agenda.md) | VC-WDE agenda: hardware, Sniffer/Inline deployment, ViewtiMon, ViewtifyQoS lab |
 
 ---
 
@@ -157,19 +163,19 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Track | Sector |
 |------|-------|--------|
-| [[giss]] | VC-LDA | Technology — most complete set: 7 PDFs + 7 PPTs + workbook |
-| [[junta-andalucia]] | VC-LDA | Public — 11 PDFs (theory + practice); via Telefónica |
-| [[mapfre-usa]] | VC-LDA | Insurance — 9-module PPT set, US client |
-| [[ayto-madrid]] | VC-LDA | Public — Ayuntamiento de Madrid, 5-module set |
-| [[cepsa]] | VC-LDA | Energy — 4-module compact set |
-| [[md]] | VC-LDA | IT — 7 PPTs, includes Hardware module |
-| [[jccm]] | VC-LDA | Public — Castilla-La Mancha, includes attendance CSV |
-| [[mininterior-lda]] | VC-LDA | Government — includes Linux inventory CSV |
-| [[claro-peru]] | VC-LDA | Telecom — only Latin American client |
-| [[consum]] | VC-LDA | Retail/Cooperative |
-| [[rem-expal]] | VC-LDA | Defense/Explosives |
-| [[ministerio-interior]] | VC-WDP | Government — 7 PDFs + 7 PPTs, most complete Wire Data set |
-| [[gbo-balear]] | VC-WDP | IT Services — 5-module standard Wire Data set |
+| [Giss](clientes/giss.md) | VC-LDA | Technology — most complete set: 7 PDFs + 7 PPTs + workbook |
+| [Junta Andalucia](clientes/junta-andalucia.md) | VC-LDA | Public — 11 PDFs (theory + practice); via Telefónica |
+| [Mapfre Usa](clientes/mapfre-usa.md) | VC-LDA | Insurance — 9-module PPT set, US client |
+| [Ayto Madrid](clientes/ayto-madrid.md) | VC-LDA | Public — Ayuntamiento de Madrid, 5-module set |
+| [Cepsa](clientes/cepsa.md) | VC-LDA | Energy — 4-module compact set |
+| [Md](clientes/md.md) | VC-LDA | IT — 7 PPTs, includes Hardware module |
+| [Jccm](clientes/jccm.md) | VC-LDA | Public — Castilla-La Mancha, includes attendance CSV |
+| [Mininterior Lda](clientes/mininterior-lda.md) | VC-LDA | Government — includes Linux inventory CSV |
+| [Claro Peru](clientes/claro-peru.md) | VC-LDA | Telecom — only Latin American client |
+| [Consum](clientes/consum.md) | VC-LDA | Retail/Cooperative |
+| [Rem Expal](clientes/rem-expal.md) | VC-LDA | Defense/Explosives |
+| [Ministerio Interior](clientes/ministerio-interior.md) | VC-WDP | Government — 7 PDFs + 7 PPTs, most complete Wire Data set |
+| [Gbo Balear](clientes/gbo-balear.md) | VC-WDP | IT Services — 5-module standard Wire Data set |
 
 ---
 
@@ -177,18 +183,18 @@ Start here → [[viewtinet-platform-overview|Viewtinet Platform Overview]]
 
 | Page | Summary |
 |------|---------|
-| [[installation-guide-hub]] | documentation_hub/installation-guide/ — 25 source files |
-| [[viewtimanager-user-guide]] | documentation_hub/viewtimanager-user-guide/ — core sections |
-| [[vs-data-broker-section]] | documentation_hub/v-dot-s-data-broker/ — 31 source files |
-| [[viewtibot-section]] | documentation_hub/viewtibot/about.md |
-| [[ubuntu-upgrade-guide]] | documentation_hub/upgrade-to-ubuntu-24-dot-04/ — 3 source files |
-| [[cli-guide-pdf]] | PDFs_Guides/CLI/viewtinet-cli-guide_en_v6.3.5_v1.0.pdf |
-| [[alarms-guide-pdf]] | PDFs_Guides/Viewtimanager/alarms-user-guide_en_v6.3_1.0.pdf |
-| [[data-sources-guide-pdf]] | PDFs_Guides/Viewtimanager/data-sources-integration-guide_en_v6.3.pdf |
-| [[ad-integration-pdf]] | PDFs_Guides/Viewtimanager/active-directory-integration-guide_en_v6.3.pdf |
-| [[rest-api-pdf]] | Product Features/Viewtinet_Viewtisight_REST_API_Specification-v1.5.pdf |
-| [[viewtisight-guide-pdf]] | PDFs_Guides/Viewtisight/viewtisight-user-guide_en_v6.3.pdf |
-| [[solution-description-pdf]] | Product Features/Viewtinet Solution Description 052019v2.pdf |
-| [[viewtinet-indicators-pdf]] | Product Features/Viewtinet Indicators.pdf |
-| [[portfolio-training-2026]] | Portfolio/6.3.5/Viewtinet_Training_Portfolio_v2026_1.4.pdf — all courses 2026 |
-| [[cursos-projects-corpus]] | Cursos/Projects/ — all customer training project files |
+| [Installation Guide Hub](fuentes/installation-guide-hub.md) | documentation_hub/installation-guide/ — 25 source files |
+| [Viewtimanager User Guide](fuentes/viewtimanager-user-guide.md) | documentation_hub/viewtimanager-user-guide/ — core sections |
+| [Vs Data Broker Section](fuentes/vs-data-broker-section.md) | documentation_hub/v-dot-s-data-broker/ — 31 source files |
+| [Viewtibot Section](fuentes/viewtibot-section.md) | documentation_hub/viewtibot/about.md |
+| [Ubuntu Upgrade Guide](fuentes/ubuntu-upgrade-guide.md) | documentation_hub/upgrade-to-ubuntu-24-dot-04/ — 3 source files |
+| [Cli Guide Pdf](fuentes/cli-guide-pdf.md) | PDFs_Guides/CLI/viewtinet-cli-guide_en_v6.3.5_v1.0.pdf |
+| [Alarms Guide Pdf](fuentes/alarms-guide-pdf.md) | PDFs_Guides/Viewtimanager/alarms-user-guide_en_v6.3_1.0.pdf |
+| [Data Sources Guide Pdf](fuentes/data-sources-guide-pdf.md) | PDFs_Guides/Viewtimanager/data-sources-integration-guide_en_v6.3.pdf |
+| [Ad Integration Pdf](fuentes/ad-integration-pdf.md) | PDFs_Guides/Viewtimanager/active-directory-integration-guide_en_v6.3.pdf |
+| [Rest Api Pdf](fuentes/rest-api-pdf.md) | Product Features/Viewtinet_Viewtisight_REST_API_Specification-v1.5.pdf |
+| [Viewtisight Guide Pdf](fuentes/viewtisight-guide-pdf.md) | PDFs_Guides/Viewtisight/viewtisight-user-guide_en_v6.3.pdf |
+| [Solution Description Pdf](fuentes/solution-description-pdf.md) | Product Features/Viewtinet Solution Description 052019v2.pdf |
+| [Viewtinet Indicators Pdf](fuentes/viewtinet-indicators-pdf.md) | Product Features/Viewtinet Indicators.pdf |
+| [Portfolio Training 2026](fuentes/portfolio-training-2026.md) | Portfolio/6.3.5/Viewtinet_Training_Portfolio_v2026_1.4.pdf — all courses 2026 |
+| [Cursos Projects Corpus](fuentes/cursos-projects-corpus.md) | Cursos/Projects/ — all customer training project files |

@@ -1,16 +1,14 @@
 ---
-tags: [configuracion, viewtimanager, admin, usuarios]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Users"
+description: "The ViewtiManager Users page lets administrators create, manage, and audit local user accounts — whether they are administrators, ViewtiSight analysts, or Vi..."
+keywords: "configuracion, viewtimanager, admin, usuarios"
 ---
 
 # Users
 
-The ViewtiManager Users page lets administrators create, manage, and audit local user accounts — whether they are administrators, [[viewtisight-overview|ViewtiSight]] analysts, or ViewtiLog operators. Users are managed at **Admin → Users**.
+The ViewtiManager Users page lets administrators create, manage, and audit local user accounts — whether they are administrators, [ViewtiSight](../productos/viewtisight-overview.md) analysts, or ViewtiLog operators. Users are managed at **Admin → Users**.
 
-When Viewtinet is integrated with [[active-directory|Active Directory]] or [[ldap-integration|LDAP]], users can be auto-provisioned on first login without manual entry.
+When Viewtinet is integrated with [Active Directory](../integraciones/active-directory.md) or [LDAP](../integraciones/ldap-integration.md), users can be auto-provisioned on first login without manual entry.
 
 ## Creating a New User
 
@@ -25,8 +23,8 @@ When Viewtinet is integrated with [[active-directory|Active Directory]] or [[lda
 | Username | Unique login name (e.g., `jdoe`, `analyst1`) |
 | Password | Must meet the password policy (see below) |
 | Repeat Password | Must match the Password field exactly |
-| Email | Required for [[mfa-configuration|MFA]] code delivery |
-| Tenant | Assign to a [[tenants|tenant]] if using multi-tenant mode |
+| Email | Required for [MFA](../integraciones/mfa-configuration.md) code delivery |
+| Tenant | Assign to a [tenant](tenants.md) if using multi-tenant mode |
 | Name / Last Name | Optional full name fields for reference |
 
 ### Password Policy
@@ -47,8 +45,8 @@ When Viewtinet is integrated with [[active-directory|Active Directory]] or [[lda
 
 ## Assigning Groups and Roles
 
-- **Groups** (optional) — bundle users for bulk role management. See [[groups]].
-- **Roles** (required) — define what the user sees and can do in the GUI. At least one role is mandatory. See [[roles]].
+- **Groups** (optional) — bundle users for bulk role management. See [Groups](groups.md).
+- **Roles** (required) — define what the user sees and can do in the GUI. At least one role is mandatory. See [Roles](roles.md).
 
 Every user must have at least one role to log in or view any dashboards. Use the dual-list selector to move available roles to selected.
 
@@ -60,8 +58,8 @@ Every user must have at least one role to log in or view any dashboards. Use the
 
 ## Related Pages
 
-- [[roles]] — Role-based access control and permission sets
-- [[groups]] — Group-based user management
-- [[tenants]] — Multi-tenant configuration
-- [[mfa-configuration]] — Multi-factor authentication setup
-- [[active-directory]] — Active Directory user auto-provisioning
+- [Roles](roles.md) — Role-based access control and permission sets
+- [Groups](groups.md) — Group-based user management
+- [Tenants](tenants.md) — Multi-tenant configuration
+- [Mfa Configuration](../integraciones/mfa-configuration.md) — Multi-factor authentication setup
+- [Active Directory](../integraciones/active-directory.md) — Active Directory user auto-provisioning

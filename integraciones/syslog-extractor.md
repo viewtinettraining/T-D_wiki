@@ -1,20 +1,18 @@
 ---
-tags: [integracion, syslog, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Syslog Extractor"
+description: "The Syslog Connector processes syslog messages previously captured by the Ethernet Streamer connector. It operates as a scheduled pipeline, running periodica..."
+keywords: "integracion, syslog, extractor, vs-data-broker"
 ---
 
 # Syslog Extractor
 
-The **Syslog Connector** processes syslog messages previously captured by the [[ethernet-streamer|Ethernet Streamer]] connector. It operates as a scheduled pipeline, running periodically to read dumped syslog files, decode the messages, and produce structured fields for further processing in the [[etl-pipeline|ETL pipeline]].
+The **Syslog Connector** processes syslog messages previously captured by the [Ethernet Streamer](ethernet-streamer.md) connector. It operates as a scheduled pipeline, running periodically to read dumped syslog files, decode the messages, and produce structured fields for further processing in the [ETL pipeline](../conceptos/etl-pipeline.md).
 
-Unlike [[netflow-extractor|NetFlow]], syslog does not require a version selection, which simplifies configuration.
+Unlike [NetFlow](netflow-extractor.md), syslog does not require a version selection, which simplifies configuration.
 
 ## Key Characteristics
 
-- Depends on a properly configured [[ethernet-streamer|Ethernet Streamer]] pipeline (typically on UDP port 514).
+- Depends on a properly configured [Ethernet Streamer](ethernet-streamer.md) pipeline (typically on UDP port 514).
 - Supports multi-thread processing for high-volume log environments.
 - Parsed syslog records flow into subsequent Transform and Load stages.
 
@@ -37,12 +35,12 @@ Unlike [[netflow-extractor|NetFlow]], syslog does not require a version selectio
 
 ## Example Scenario
 
-If the Ethernet Streamer captures syslog from multiple devices on port 514 and dumps data into `/opt/vn/dhyana/var/data/syslog/collected`, the Syslog Connector will periodically read those files, decode the messages, and output structured records for the [[data-producers|Load stage]].
+If the Ethernet Streamer captures syslog from multiple devices on port 514 and dumps data into `/opt/vn/dhyana/var/data/syslog/collected`, the Syslog Connector will periodically read those files, decode the messages, and output structured records for the [Load stage](data-producers.md).
 
 ## Related Pages
 
-- [[ethernet-streamer]] — Required prerequisite; captures raw syslog traffic
-- [[netflow-extractor]] — Similar file-based connector for flow protocols
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[plugin-categories]] — Syslog is a dedicated category in VSDB
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Ethernet Streamer](ethernet-streamer.md) — Required prerequisite; captures raw syslog traffic
+- [Netflow Extractor](netflow-extractor.md) — Similar file-based connector for flow protocols
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Plugin Categories](../conceptos/plugin-categories.md) — Syslog is a dedicated category in VSDB
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

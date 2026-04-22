@@ -1,14 +1,12 @@
 ---
-tags: [fuente, ubuntu, instalacion]
-tipo: fuente
-fuentes: ["snazzydocs-ubuntu-upgrade"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Ubuntu Upgrade Guide — Source Section Index"
+description: "This page catalogs the source files processed for the Ubuntu upgrade wiki section, covering the two-stage upgrade from Ubuntu 20.04 LTS to 24.04 LTS."
+keywords: "fuente, ubuntu, instalacion"
 ---
 
 # Ubuntu Upgrade Guide — Source Section Index
 
-This page catalogs the source files processed for the [[ubuntu-upgrade|Ubuntu upgrade]] wiki section, covering the two-stage upgrade from Ubuntu 20.04 LTS to 24.04 LTS.
+This page catalogs the source files processed for the [Ubuntu upgrade](../instalacion/ubuntu-upgrade.md) wiki section, covering the two-stage upgrade from Ubuntu 20.04 LTS to 24.04 LTS.
 
 ## Source Files
 
@@ -33,8 +31,8 @@ This page catalogs the source files processed for the [[ubuntu-upgrade|Ubuntu up
 
 ## Related Pages
 
-- [[ubuntu-upgrade]] — Procedural wiki page for the full upgrade
-- [[os-setup]] — Original Ubuntu OS setup
-- [[ubuntu-compatibility]] — Supported OS versions for Viewtinet
-- [[system-configuration]] — Post-install configuration steps
-- [[viewtinet-appliance]] — Hardware context for the upgrade
+- [Ubuntu Upgrade](../instalacion/ubuntu-upgrade.md) — Procedural wiki page for the full upgrade
+- [Os Setup](../instalacion/os-setup.md) — Original Ubuntu OS setup
+- [Ubuntu Compatibility](../conceptos/ubuntu-compatibility.md) — Supported OS versions for Viewtinet
+- [System Configuration](../instalacion/system-configuration.md) — Post-install configuration steps
+- [Viewtinet Appliance](../productos/viewtinet-appliance.md) — Hardware context for the upgrade

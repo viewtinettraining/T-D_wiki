@@ -1,14 +1,12 @@
 ---
-tags: [concepto, plugin, categorias, vs-data-broker]
-tipo: concepto
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Plugin Categories"
+description: "Every plugin in the Visual Smart Data Broker (VSDB) belongs to exactly one category. Categories are used to organize and filter plugins in the GUI, enabling ..."
+keywords: "concepto, plugin, categorias, vs-data-broker"
 ---
 
 # Plugin Categories
 
-Every [[plugin-architecture|plugin]] in the [[vs-data-broker-overview|Visual Smart Data Broker (VSDB)]] belongs to exactly one category. Categories are used to organize and filter plugins in the GUI, enabling administrators to quickly locate the type of integration they need.
+Every [plugin](plugin-architecture.md) in the [Visual Smart Data Broker (VSDB)](../productos/vs-data-broker-overview.md) belongs to exactly one category. Categories are used to organize and filter plugins in the GUI, enabling administrators to quickly locate the type of integration they need.
 
 ## Available Categories
 
@@ -16,17 +14,17 @@ The category panel on the left side of the VSDB interface allows filtering by:
 
 | Category | Typical Use |
 |---|---|
-| **CDR** | Call Detail Records, VoIP data (pairs with [[csv-extractor|CSV Connector]]) |
-| **ICMP** | Reachability monitoring via ping ([[icmp-extractor|ICMP Connector]]) |
+| **CDR** | Call Detail Records, VoIP data (pairs with [CSV Connector](../integraciones/csv-extractor.md)) |
+| **ICMP** | Reachability monitoring via ping ([ICMP Connector](../integraciones/icmp-extractor.md)) |
 | **My Category** | User-defined category for custom grouping |
 | **Network** | General network monitoring integrations |
 | **Optimization** | QoS and traffic optimization data |
-| **SNMP** | Metrics from SNMP-capable devices ([[snmp-extractor|SNMP Connector]]) |
-| **SSH** | Server monitoring over SSH ([[ssh-extractor|SSH Query Connector]]) |
-| **Sflow** | sFlow traffic data ([[sflow-extractor|sFlow Connector]]) |
-| **Syslog** | Log collection ([[syslog-extractor|Syslog Connector]]) |
-| **Viewtinet** | Internal Viewtinet integrations (e.g., [[flow-emitter|Flow Emitter]] for [[viewtimon-overview|ViewtiMon]]) |
-| **WMI** | Windows management data ([[wmi-extractor|WMI]] or [[windows-remote-management|WinRM]]) |
+| **SNMP** | Metrics from SNMP-capable devices ([SNMP Connector](../integraciones/snmp-extractor.md)) |
+| **SSH** | Server monitoring over SSH ([SSH Query Connector](../integraciones/ssh-extractor.md)) |
+| **Sflow** | sFlow traffic data ([sFlow Connector](../integraciones/sflow-extractor.md)) |
+| **Syslog** | Log collection ([Syslog Connector](../integraciones/syslog-extractor.md)) |
+| **Viewtinet** | Internal Viewtinet integrations (e.g., [Flow Emitter](../integraciones/flow-emitter.md) for [ViewtiMon](../productos/viewtimon-overview.md)) |
+| **WMI** | Windows management data ([WMI](../integraciones/wmi-extractor.md) or [WinRM](../integraciones/windows-remote-management.md)) |
 
 ## How Categories Work
 
@@ -34,11 +32,11 @@ When a user clicks on a category in the left panel, the main workspace filters t
 
 ## Assigning a Category
 
-When creating a [[customized-plugin|customized plugin]], the category is selected during the initial definition step in the Plugin Creator wizard. It is a required field. [[plugin-template|Plugin templates]] already have their categories pre-assigned by Viewtinet.
+When creating a [customized plugin](customized-plugin.md), the category is selected during the initial definition step in the Plugin Creator wizard. It is a required field. [Plugin templates](plugin-template.md) already have their categories pre-assigned by Viewtinet.
 
 ## Related Pages
 
-- [[plugin-architecture]] — Plugin structure and lifecycle
-- [[plugin-template]] — Pre-built plugins with categories assigned
-- [[customized-plugin]] — How to assign a category during creation
-- [[etl-pipeline]] — The pipeline inside each plugin
+- [Plugin Architecture](plugin-architecture.md) — Plugin structure and lifecycle
+- [Plugin Template](plugin-template.md) — Pre-built plugins with categories assigned
+- [Customized Plugin](customized-plugin.md) — How to assign a category during creation
+- [Etl Pipeline](etl-pipeline.md) — The pipeline inside each plugin

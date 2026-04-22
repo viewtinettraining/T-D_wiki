@@ -1,20 +1,18 @@
 ---
-tags: [instalacion, viewtimon]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiMon Installation"
+description: "This page covers the standalone installation of ViewtiMon and the performance fine-tuning steps required after installation. For a product overview, see view..."
+keywords: "instalacion, viewtimon"
 ---
 
 # ViewtiMon Installation
 
-This page covers the standalone installation of ViewtiMon and the performance fine-tuning steps required after installation. For a product overview, see [[viewtimon-overview]]. HA is not supported for ViewtiMon in the current release.
+This page covers the standalone installation of ViewtiMon and the performance fine-tuning steps required after installation. For a product overview, see [Viewtimon Overview](../productos/viewtimon-overview.md). HA is not supported for ViewtiMon in the current release.
 
 ## Prerequisites
 
-- [[viewtimanager-overview|ViewtiManager]] running with ViewtiMon licensed and visible in the sidebar
+- [ViewtiManager](../productos/viewtimanager-overview.md) running with ViewtiMon licensed and visible in the sidebar
 - An approved NIC (Intel X710, Mellanox ConnectX-4 LX, ConnectX-5 LX, or Cisco VIC)
-- Sufficient disk space at `/opt/vn/probe/var/` (600 GB recommended — see [[hdd-partitioning]])
+- Sufficient disk space at `/opt/vn/probe/var/` (600 GB recommended — see [Hdd Partitioning](hdd-partitioning.md))
 
 ## Standalone Installation
 
@@ -72,6 +70,6 @@ sudo /opt/vn/viewtinet-builder/scripts/compute-isolated-cpus.sh
 
 Then set `isolcpus`, `nohz_full`, and `rcu_nocbs` in GRUB accordingly. Reboot to apply all kernel parameters.
 
-For [[viewtiqos-installation|ViewtiQoS]] deployment, ViewtiMon must be stopped before NIC binding for QoS.
+For [ViewtiQoS](viewtiqos-installation.md) deployment, ViewtiMon must be stopped before NIC binding for QoS.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

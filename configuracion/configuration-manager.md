@@ -1,16 +1,14 @@
 ---
-tags: [configuracion, viewtimanager, configuration-manager]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Configuration Manager"
+description: "The Configuration Manager in Viewtinet is a comprehensive feature designed to simplify and automate the management of device configurations across your netwo..."
+keywords: "configuracion, viewtimanager, configuration-manager"
 ---
 
 # Configuration Manager
 
 The Configuration Manager in Viewtinet is a comprehensive feature designed to simplify and automate the management of device configurations across your network. It enables administrators to efficiently apply, update, and maintain configurations on multiple devices simultaneously, reducing manual effort and the risk of human error.
 
-The Configuration Manager is accessible via the [[gui-overview|left navigation menu]] when the corresponding license is active. The required permission is `VM_CONFIGURATION_MANAGER_MODULE` (see [[roles]]).
+The Configuration Manager is accessible via the [left navigation menu](gui-overview.md) when the corresponding license is active. The required permission is `VM_CONFIGURATION_MANAGER_MODULE` (see [Roles](roles.md)).
 
 ## Core Capabilities
 
@@ -24,9 +22,9 @@ Supported remote access protocols: **SSH** and **Telnet**.
 
 ## Prerequisites
 
-Before using the Configuration Manager, the following must be in place in the [[inventory-management|Inventory]]:
+Before using the Configuration Manager, the following must be in place in the [Inventory](inventory-management.md):
 
-1. **Devices added to Inventory** — via [[csv-provisioning|CSV]], [[autodiscovery|Autodiscovery]], or [[manual-provisioning|manual entry]].
+1. **Devices added to Inventory** — via [CSV](csv-provisioning.md), [Autodiscovery](autodiscovery.md), or [manual entry](manual-provisioning.md).
 2. **Device filter created** — a saved filter in Inventory that selects the target device subset. Filters can use logical operators (AND, OR, NOT) and any device attribute.
 3. **Access credentials configured** — SSH and/or Telnet credentials defined in Inventory → Credentials.
 4. **Device-credential relations assigned** — in the Inventory Relations tab, mapping devices to their credentials.
@@ -39,9 +37,9 @@ The Configuration Manager has three main sections:
 
 | Section | Purpose | Wiki Page |
 |---|---|---|
-| Commands | Define reusable command templates to run against devices | [[configuration-commands]] |
-| Tasks | Orchestrate recurring or one-off jobs against device groups | [[configuration-tasks]] |
-| Configurations | Browse, compare, download, and merge collected config files | [[configuration-manager]] (this page) |
+| Commands | Define reusable command templates to run against devices | [Configuration Commands](configuration-commands.md) |
+| Tasks | Orchestrate recurring or one-off jobs against device groups | [Configuration Tasks](configuration-tasks.md) |
+| Configurations | Browse, compare, download, and merge collected config files | [Configuration Manager](configuration-manager.md) (this page) |
 
 ## Configurations Archive
 
@@ -57,8 +55,8 @@ Use **Compare** before **Merge** to understand every change. Merged files appear
 
 ## Related Pages
 
-- [[configuration-commands]] — Command templates and types
-- [[configuration-tasks]] — Task scheduling and subtask flow editor
-- [[inventory-management]] — Prerequisite inventory setup
-- [[roles]] — VM_CONFIGURATION_MANAGER_MODULE permission
-- [[viewtimanager-overview]] — Platform overview
+- [Configuration Commands](configuration-commands.md) — Command templates and types
+- [Configuration Tasks](configuration-tasks.md) — Task scheduling and subtask flow editor
+- [Inventory Management](inventory-management.md) — Prerequisite inventory setup
+- [Roles](roles.md) — VM_CONFIGURATION_MANAGER_MODULE permission
+- [Viewtimanager Overview](../productos/viewtimanager-overview.md) — Platform overview

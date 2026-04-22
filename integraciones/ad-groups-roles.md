@@ -1,14 +1,12 @@
 ---
-tags: [integraciones, viewtimanager, active-directory, roles, rbac]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "AD Groups and Roles Mapping"
+description: "This page explains how to create ViewtiManager roles that map to Active Directory groups, enabling domain users to receive the correct access level automatic..."
+keywords: "integraciones, viewtimanager, active-directory, roles, rbac"
 ---
 
 # AD Groups and Roles Mapping
 
-This page explains how to create [[roles|ViewtiManager roles]] that map to Active Directory groups, enabling domain users to receive the correct access level automatically upon login. The [[active-directory|AD integration]] must be configured before this step.
+This page explains how to create [ViewtiManager roles](../configuracion/roles.md) that map to Active Directory groups, enabling domain users to receive the correct access level automatically upon login. The [AD integration](active-directory.md) must be configured before this step.
 
 AD groups must already exist in Active Directory before creating the role mappings. The role name in ViewtiManager **must match** the AD group name exactly.
 
@@ -24,7 +22,7 @@ For this guide, an OU named **Viewtinet_Users** contains three AD groups:
 
 ## Creating Roles for AD Groups
 
-1. Log in to [[viewtimanager-overview|ViewtiManager]] as admin.
+1. Log in to [ViewtiManager](../productos/viewtimanager-overview.md) as admin.
 2. Click **Admin → Roles** and then **Add New**.
 3. In the **Details** section, set the role **Name** to match the AD group name exactly (e.g., `Admins_Viewtinet`).
 4. In **Role Permissions**, assign the appropriate permissions using the dual-list selector.
@@ -34,7 +32,7 @@ For this guide, an OU named **Viewtinet_Users** contains three AD groups:
 
 | Role Name | Assigned Permissions | Result |
 |---|---|---|
-| Admins_Viewtinet | `VS_FULL_ACCESS` + `VM_FULL_ACCESS` | Full access to both ViewtiManager and [[viewtisight-overview|ViewtiSight]] |
+| Admins_Viewtinet | `VS_FULL_ACCESS` + `VM_FULL_ACCESS` | Full access to both ViewtiManager and [ViewtiSight](../productos/viewtisight-overview.md) |
 | Viewtisight_Viewtinet | `VS_FULL_ACCESS` | Full access to ViewtiSight only; ViewtiManager access denied |
 | ReadOnly_Viewtinet | `VS_READ_ONLY` | Read-only ViewtiSight; no dashboard creation; ViewtiManager denied |
 
@@ -49,7 +47,7 @@ Two predefined permissions grant complete access: `VS_FULL_ACCESS` and `VM_FULL_
 
 ## Behavior at Login
 
-Once the roles and [[active-directory|AD integration]] are configured, users log in at the Viewtiauth URL. ViewtiManager authenticates the user via AD, checks their AD group membership, and applies the matching role:
+Once the roles and [AD integration](active-directory.md) are configured, users log in at the Viewtiauth URL. ViewtiManager authenticates the user via AD, checks their AD group membership, and applies the matching role:
 
 | User | AD Group | Role Applied | Behavior |
 |---|---|---|---|
@@ -59,14 +57,14 @@ Once the roles and [[active-directory|AD integration]] are configured, users log
 
 ## Important Notes
 
-- Every AD group you want to authorize must have a corresponding [[roles|role]] in ViewtiManager with the exact matching name.
+- Every AD group you want to authorize must have a corresponding [role](../configuracion/roles.md) in ViewtiManager with the exact matching name.
 - The role name matching is case-sensitive.
 - Repeat the role creation process for each AD group that requires platform access.
 
 ## Related Pages
 
-- [[active-directory]] — AD integration setup and prerequisites
-- [[roles]] — Role permissions and data set configuration
-- [[viewtiauth]] — Authentication backend order and default roles
-- [[users]] — Manual user management
-- [[groups]] — Internal Viewtinet groups for bulk role assignment
+- [Active Directory](active-directory.md) — AD integration setup and prerequisites
+- [Roles](../configuracion/roles.md) — Role permissions and data set configuration
+- [Viewtiauth](viewtiauth.md) — Authentication backend order and default roles
+- [Users](../configuracion/users.md) — Manual user management
+- [Groups](../configuracion/groups.md) — Internal Viewtinet groups for bulk role assignment

@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, actualizaciones]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "System Updates"
+description: "ViewtiManager includes a built-in update mechanism that allows administrators to upgrade the entire Viewtinet platform — including all its modules — to the l..."
+keywords: "configuracion, viewtimanager, actualizaciones"
 ---
 
 # System Updates
 
-ViewtiManager includes a built-in update mechanism that allows administrators to upgrade the entire [[viewtimanager-overview|Viewtinet platform]] — including all its modules — to the latest version provided by Viewtinet. Updates are applied from **Admin → Updates**.
+ViewtiManager includes a built-in update mechanism that allows administrators to upgrade the entire [Viewtinet platform](../productos/viewtimanager-overview.md) — including all its modules — to the latest version provided by Viewtinet. Updates are applied from **Admin → Updates**.
 
 > Important: This update process applies to the whole platform. It is not possible to update individual modules selectively using this method. For CLI-based update instructions, refer to the Viewtinet CLI Guide.
 
@@ -45,7 +43,7 @@ All modules detected in the bundle are listed. By default, every licensed module
 
 - ViewtiManager, ViewtiSight, ViewtiAuth, ViewtiCore
 - ViewtiMon & ViewtifyQoS
-- [[viewtilog-overview|ViewtiLog]]
+- [ViewtiLog](../productos/viewtilog-overview.md)
 
 ### 4. Start the Update
 
@@ -67,7 +65,7 @@ After updating, each licensed and installed module must be restarted to apply th
 
 ## Related Pages
 
-- [[installation-bundle]] — Initial installation bundle overview
-- [[installation-bundle-steps]] — Bundle installation steps
-- [[license-management]] — License status after updates
-- [[viewtimanager-overview]] — Full platform module overview
+- [Installation Bundle](../instalacion/installation-bundle.md) — Initial installation bundle overview
+- [Installation Bundle Steps](../instalacion/installation-bundle-steps.md) — Bundle installation steps
+- [License Management](license-management.md) — License status after updates
+- [Viewtimanager Overview](../productos/viewtimanager-overview.md) — Full platform module overview

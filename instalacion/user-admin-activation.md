@@ -1,14 +1,12 @@
 ---
-tags: [instalacion, usuarios, autenticacion]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "User Admin Activation"
+description: "Once the three-step bundle installation is complete, the admin user must be activated before the platform can be used. This is a one-time procedure that sets..."
+keywords: "instalacion, usuarios, autenticacion"
 ---
 
 # User Admin Activation
 
-Once the [[installation-bundle-steps|three-step bundle installation]] is complete, the admin user must be activated before the platform can be used. This is a one-time procedure that sets the permanent admin password.
+Once the [three-step bundle installation](installation-bundle-steps.md) is complete, the admin user must be activated before the platform can be used. This is a one-time procedure that sets the permanent admin password.
 
 ## Default Credentials
 
@@ -34,14 +32,14 @@ These default credentials are used only for the first login and must be changed 
 
 Once the admin password is set:
 
-- Proceed to [[server-info]] to download the server-info.txt for licensing
-- Then [[upload-license]] to activate platform features via [[viewtimanager-overview|ViewtiManager]]
-- Configure additional [[users|user accounts]] and [[roles|user roles]] as needed
+- Proceed to [Server Info](server-info.md) to download the server-info.txt for licensing
+- Then [Upload License](upload-license.md) to activate platform features via [ViewtiManager](../productos/viewtimanager-overview.md)
+- Configure additional [user accounts](../configuracion/users.md) and [user roles](../configuracion/roles.md) as needed
 
 ## Notes on Cluster Deployments
 
-For [[standalone-vs-cluster|cluster deployments]], admin activation and license upload must be performed on each node independently. Refer to [[viewtisight-installation]] and [[viewtilog-installation]] for cluster-specific steps.
+For [cluster deployments](../conceptos/standalone-vs-cluster.md), admin activation and license upload must be performed on each node independently. Refer to [Viewtisight Installation](viewtisight-installation.md) and [Viewtilog Installation](viewtilog-installation.md) for cluster-specific steps.
 
-The admin user is the primary account for accessing [[gui-overview|the GUI]] and managing modules. For organizational setups, review [[active-directory|Active Directory]] or [[ldap-integration|LDAP integration]] for centralized authentication.
+The admin user is the primary account for accessing [the GUI](../configuracion/gui-overview.md) and managing modules. For organizational setups, review [Active Directory](../integraciones/active-directory.md) or [LDAP integration](../integraciones/ldap-integration.md) for centralized authentication.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

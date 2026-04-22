@@ -1,18 +1,16 @@
 ---
-tags: [configuracion, viewtimanager, inventario, provisionamiento]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Manual Provisioning"
+description: "Manual provisioning is the last resort for onboarding devices into the Inventory when CSV import or Autodiscovery are not feasible — for example, for isolate..."
+keywords: "configuracion, viewtimanager, inventario, provisionamiento"
 ---
 
 # Manual Provisioning
 
-Manual provisioning is the last resort for onboarding devices into the [[inventory-management|Inventory]] when [[csv-provisioning|CSV import]] or [[autodiscovery|Autodiscovery]] are not feasible — for example, for isolated devices or one-off entries. It allows you to add individual devices one at a time.
+Manual provisioning is the last resort for onboarding devices into the [Inventory](inventory-management.md) when [CSV import](csv-provisioning.md) or [Autodiscovery](autodiscovery.md) are not feasible — for example, for isolated devices or one-off entries. It allows you to add individual devices one at a time.
 
 ## Step 1: Open the Devices Overview
 
-1. In the [[viewtimanager-overview|ViewtiManager]] web console, click **Inventory** in the left menu.
+1. In the [ViewtiManager](../productos/viewtimanager-overview.md) web console, click **Inventory** in the left menu.
 2. Select the **OVERVIEW** tab.
 3. Ensure **DEVICES** is active.
 
@@ -58,18 +56,18 @@ After adding credentials, link them to your manually added device:
 
 ## Installing Plugins
 
-The final step is installing one or more Viewtinet [[plugin-architecture|plugins]] to map device data into processing pipelines:
+The final step is installing one or more Viewtinet [plugins](../conceptos/plugin-architecture.md) to map device data into processing pipelines:
 
 1. Click **PLUGINS** in the Inventory header.
 2. Optionally add a filter for your specific device.
 3. Expand **network monitoring** and select `snmp_device_config`, `snmp_if_config`, and `icmp`.
 4. Click **MODIFY AND INSTALL PLUGINS**, confirm the selections, and click **OK**.
-5. Click **FINISH INSTALLATION** in the [[vs-data-broker-overview|V.S. Data Broker]] console.
+5. Click **FINISH INSTALLATION** in the [V.S. Data Broker](../productos/vs-data-broker-overview.md) console.
 
 ## Related Pages
 
-- [[inventory-management]] — Inventory overview
-- [[autodiscovery]] — Automatic network scanning alternative
-- [[csv-provisioning]] — Bulk CSV import alternative
-- [[inventory-maintenance]] — Ongoing data management
-- [[configuration-manager]] — Uses inventory devices and credentials
+- [Inventory Management](inventory-management.md) — Inventory overview
+- [Autodiscovery](autodiscovery.md) — Automatic network scanning alternative
+- [Csv Provisioning](csv-provisioning.md) — Bulk CSV import alternative
+- [Inventory Maintenance](inventory-maintenance.md) — Ongoing data management
+- [Configuration Manager](configuration-manager.md) — Uses inventory devices and credentials

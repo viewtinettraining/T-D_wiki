@@ -1,14 +1,12 @@
 ---
-tags: [integracion, icmp, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ICMP Extractor"
+description: "The ICMP Connector enables the Visual Smart Data Broker (VSDB) to perform network reachability and latency checks using ping (ICMP echo requests). It monitor..."
+keywords: "integracion, icmp, extractor, vs-data-broker"
 ---
 
 # ICMP Extractor
 
-The **ICMP Connector** enables the [[vs-data-broker-overview|Visual Smart Data Broker (VSDB)]] to perform network reachability and latency checks using ping (ICMP echo requests). It monitors availability and packet loss across servers, routers, switches, and any IP-enabled device.
+The **ICMP Connector** enables the [Visual Smart Data Broker (VSDB)](../productos/vs-data-broker-overview.md) to perform network reachability and latency checks using ping (ICMP echo requests). It monitors availability and packet loss across servers, routers, switches, and any IP-enabled device.
 
 ## Configuration Parameters
 
@@ -39,15 +37,15 @@ Lost packets / Ping Count × 100
 ## Host Provisioning
 
 Hosts can be added in two ways:
-- **Mass provisioning via [[inventory-management|Inventory]]** (recommended for large environments)
+- **Mass provisioning via [Inventory](../configuracion/inventory-management.md)** (recommended for large environments)
 - **Manual entry** using the "Add Host" button
 
-The [[plugin-categories|ICMP category]] in the VSDB GUI groups all ICMP-based plugins together for easy filtering.
+The [ICMP category](../conceptos/plugin-categories.md) in the VSDB GUI groups all ICMP-based plugins together for easy filtering.
 
 ## Related Pages
 
-- [[snmp-extractor]] — Alternative for device metrics beyond reachability
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[inventory-management]] — Mass host provisioning
-- [[plugin-categories]] — ICMP is a dedicated plugin category
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Snmp Extractor](snmp-extractor.md) — Alternative for device metrics beyond reachability
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Inventory Management](../configuracion/inventory-management.md) — Mass host provisioning
+- [Plugin Categories](../conceptos/plugin-categories.md) — ICMP is a dedicated plugin category
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

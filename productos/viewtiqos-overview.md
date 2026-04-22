@@ -1,9 +1,7 @@
 ---
-tags: [productos, viewtiqos, qos, trafico]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiQoS Overview"
+description: "ViewtiQoS (also referred to as Viewtify QoS) extends Viewtinet's DPI capabilities into an enterprise-grade traffic management engine. It enables real-time cl..."
+keywords: "productos, viewtiqos, qos, trafico"
 ---
 
 # ViewtiQoS Overview
@@ -12,7 +10,7 @@ ViewtiQoS (also referred to as Viewtify QoS) extends Viewtinet's DPI capabilitie
 
 ## Purpose
 
-ViewtiQoS is deployed on top of [[viewtimon-overview|ViewtiMon]] — which is a hard prerequisite. It translates ViewtiMon's traffic intelligence into active policy enforcement, allowing network operators to control how bandwidth is allocated per application, user group, or business service.
+ViewtiQoS is deployed on top of [ViewtiMon](viewtimon-overview.md) — which is a hard prerequisite. It translates ViewtiMon's traffic intelligence into active policy enforcement, allowing network operators to control how bandwidth is allocated per application, user group, or business service.
 
 ## Key Capabilities
 
@@ -25,12 +23,12 @@ ViewtiQoS is deployed on top of [[viewtimon-overview|ViewtiMon]] — which is a 
 
 - ViewtiQoS is **normally deployed on Viewtinet's purpose-built appliances**. Partners and distributors generally do not perform this installation unless there is an explicit commercial exception
 - **HA is not supported** — only single-node deployment is available in the current release
-- Requires exclusive NIC binding, which means [[viewtimon-overview|ViewtiMon]] must be stopped and restarted during NIC assignment — see [[viewtiqos-installation]]
+- Requires exclusive NIC binding, which means [ViewtiMon](viewtimon-overview.md) must be stopped and restarted during NIC assignment — see [Viewtiqos Installation](../instalacion/viewtiqos-installation.md)
 
 ## Integration
 
-ViewtiQoS sits alongside [[viewtimon-overview|ViewtiMon]] on the same host and is managed through [[viewtimanager-overview|ViewtiManager]]. Traffic-shaping policies interact directly with the probe NICs that ViewtiMon uses for traffic capture.
+ViewtiQoS sits alongside [ViewtiMon](viewtimon-overview.md) on the same host and is managed through [ViewtiManager](viewtimanager-overview.md). Traffic-shaping policies interact directly with the probe NICs that ViewtiMon uses for traffic capture.
 
-For installation steps, see [[viewtiqos-installation]]. For deployment mode considerations, see [[standalone-vs-cluster]].
+For installation steps, see [Viewtiqos Installation](../instalacion/viewtiqos-installation.md). For deployment mode considerations, see [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md).
 
-See [[installation-guide-hub|Installation Guide Hub]] for related source documentation.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for related source documentation.

@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, inventario, mantenimiento]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Inventory Maintenance"
+description: "Beyond provisioning devices and credentials, the Inventory feature offers maintenance capabilities to keep data clean, organized, and tailored to your needs...."
+keywords: "configuracion, viewtimanager, inventario, mantenimiento"
 ---
 
 # Inventory Maintenance
 
-Beyond provisioning devices and credentials, the [[inventory-management|Inventory]] feature offers maintenance capabilities to keep data clean, organized, and tailored to your needs. These functions are available in the **Overview / Devices** tab of the Inventory section.
+Beyond provisioning devices and credentials, the [Inventory](inventory-management.md) feature offers maintenance capabilities to keep data clean, organized, and tailored to your needs. These functions are available in the **Overview / Devices** tab of the Inventory section.
 
 ## Toggling Visible Columns
 
@@ -20,7 +18,7 @@ The **Visible columns** picker controls which device attributes are shown in the
 
 ## Adding Custom Columns
 
-Extend the Inventory schema with new custom columns to capture attributes beyond those provided by [[csv-provisioning|CSV]], [[autodiscovery|Autodiscovery]], or [[manual-provisioning|manual provisioning]]:
+Extend the Inventory schema with new custom columns to capture attributes beyond those provided by [CSV](csv-provisioning.md), [Autodiscovery](autodiscovery.md), or [manual provisioning](manual-provisioning.md):
 
 1. Click **+ Add New Column** next to the column picker.
 2. In the modal, enter a **Name** (e.g., `rack_label`).
@@ -56,7 +54,7 @@ To remove obsolete entries:
 
 ## Finding Plugins for a Specific Device
 
-To know which [[plugin-architecture|plugins]] are collecting data from a given device:
+To know which [plugins](../conceptos/plugin-architecture.md) are collecting data from a given device:
 
 1. In **Overview → Devices**, find the target row.
 2. Click the **"Show plugins using this device"** icon on that row.
@@ -73,8 +71,8 @@ To audit which devices a specific pipeline targets:
 
 ## Related Pages
 
-- [[inventory-management]] — Inventory overview
-- [[autodiscovery]] — Auto-discovery and OID group assignment
-- [[csv-provisioning]] — CSV import and column mapping
-- [[manual-provisioning]] — Manual device entry
-- [[configuration-manager]] — Uses inventory devices for configuration tasks
+- [Inventory Management](inventory-management.md) — Inventory overview
+- [Autodiscovery](autodiscovery.md) — Auto-discovery and OID group assignment
+- [Csv Provisioning](csv-provisioning.md) — CSV import and column mapping
+- [Manual Provisioning](manual-provisioning.md) — Manual device entry
+- [Configuration Manager](configuration-manager.md) — Uses inventory devices for configuration tasks

@@ -1,18 +1,16 @@
 ---
-tags: [instalacion, configuracion, sistema]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "System Configuration"
+description: "This page describes the post-install system configuration steps required on Ubuntu Server 20.04 or 24.04 before proceeding with the Viewtinet bundle installa..."
+keywords: "instalacion, configuracion, sistema"
 ---
 
 # System Configuration
 
-This page describes the post-install system configuration steps required on [[ubuntu-compatibility|Ubuntu Server 20.04 or 24.04]] before proceeding with the [[installation-bundle|Viewtinet bundle installation]].
+This page describes the post-install system configuration steps required on [Ubuntu Server 20.04 or 24.04](../conceptos/ubuntu-compatibility.md) before proceeding with the [Viewtinet bundle installation](installation-bundle.md).
 
 ## User Profile Verification
 
-All Viewtinet modules and containers run under the `viewtinet` user, which must have been created during [[os-setup|OS setup]]. The username cannot be changed — verify it is exactly `viewtinet` before proceeding.
+All Viewtinet modules and containers run under the `viewtinet` user, which must have been created during [OS setup](os-setup.md). The username cannot be changed — verify it is exactly `viewtinet` before proceeding.
 
 ## SSH Service
 
@@ -26,7 +24,7 @@ Password authentication over SSH must be allowed for bundle upload (SCP) and rem
 
 ## NTP Configuration
 
-Correct time synchronization is critical for Viewtinet's clustering and logging features. Incorrect system time will cause issues in [[viewtilog-installation|ViewtiLog cluster]] and [[viewtisight-installation|ViewtiSight cluster]] deployments.
+Correct time synchronization is critical for Viewtinet's clustering and logging features. Incorrect system time will cause issues in [ViewtiLog cluster](viewtilog-installation.md) and [ViewtiSight cluster](viewtisight-installation.md) deployments.
 
 ### Install and configure NTP
 
@@ -57,8 +55,8 @@ NTP service: active
 
 Once SSH and NTP are confirmed operational, proceed to:
 
-1. [[server-info]] — Obtain the server-info.txt for licensing
-2. [[installation-bundle]] — Download, upload, and extract the installation bundle
-3. [[installation-bundle-steps]] — Execute the three-step installation process
+1. [Server Info](server-info.md) — Obtain the server-info.txt for licensing
+2. [Installation Bundle](installation-bundle.md) — Download, upload, and extract the installation bundle
+3. [Installation Bundle Steps](installation-bundle-steps.md) — Execute the three-step installation process
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

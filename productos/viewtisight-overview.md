@@ -1,14 +1,12 @@
 ---
-tags: [productos, viewtisight, analytics, bi]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiSight Overview"
+description: "ViewtiSight is the analytics and business intelligence layer of the Viewtinet platform. It transforms the high-volume data ingested by ViewtiLog into actiona..."
+keywords: "productos, viewtisight, analytics, bi"
 ---
 
 # ViewtiSight Overview
 
-ViewtiSight is the analytics and business intelligence layer of the Viewtinet platform. It transforms the high-volume data ingested by [[viewtilog-overview|ViewtiLog]] into actionable, visually engaging insights for network operations and management teams.
+ViewtiSight is the analytics and business intelligence layer of the Viewtinet platform. It transforms the high-volume data ingested by [ViewtiLog](viewtilog-overview.md) into actionable, visually engaging insights for network operations and management teams.
 
 ## Purpose
 
@@ -32,12 +30,12 @@ Alarms can trigger notifications for rapid incident response.
 
 ## Deployment
 
-ViewtiSight is installed automatically as part of the [[installation-bundle-steps|bundle installation]] in standalone mode. In [[standalone-vs-cluster|cluster deployments]], additional nodes are added via the [[viewtisight-installation|cluster installation procedure]].
+ViewtiSight is installed automatically as part of the [bundle installation](../instalacion/installation-bundle-steps.md) in standalone mode. In [cluster deployments](../conceptos/standalone-vs-cluster.md), additional nodes are added via the [cluster installation procedure](../instalacion/viewtisight-installation.md).
 
-It runs on [[ubuntu-compatibility|Ubuntu Server 20.04 or 24.04]] and is accessed via the [[gui-overview|Viewtinet GUI]] at port 8080 (HTTP) or 443 (HTTPS) in cluster mode.
+It runs on [Ubuntu Server 20.04 or 24.04](../conceptos/ubuntu-compatibility.md) and is accessed via the [Viewtinet GUI](../configuracion/gui-overview.md) at port 8080 (HTTP) or 443 (HTTPS) in cluster mode.
 
 ## Data Flow
 
-ViewtiSight consumes data from [[viewtilog-overview|ViewtiLog]] and [[viewtimon-overview|ViewtiMon]], presenting it through the [[viewtimanager-overview|ViewtiManager]] application selector.
+ViewtiSight consumes data from [ViewtiLog](viewtilog-overview.md) and [ViewtiMon](viewtimon-overview.md), presenting it through the [ViewtiManager](viewtimanager-overview.md) application selector.
 
-For installation steps, see [[viewtisight-installation]]. See [[installation-guide-hub|Installation Guide Hub]] for related source documentation.
+For installation steps, see [Viewtisight Installation](../instalacion/viewtisight-installation.md). See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for related source documentation.

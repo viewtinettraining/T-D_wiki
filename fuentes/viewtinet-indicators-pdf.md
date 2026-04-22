@@ -1,23 +1,21 @@
 ---
-tags: [fuentes, indicadores, metricas, kpi, viewtisight]
-tipo: fuente
-fuentes: ["Viewtinet Indicators"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Viewtinet Indicators PDF — Source Summary"
+description: "This page summarizes the Viewtinet Indicators document, which catalogs the key performance indicators (KPIs), metrics, and dimensions available within the Vi..."
+keywords: "fuentes, indicadores, metricas, kpi, viewtisight"
 ---
 
 # Viewtinet Indicators PDF — Source Summary
 
-This page summarizes the Viewtinet Indicators document, which catalogs the key performance indicators (KPIs), metrics, and dimensions available within the [[viewtinet-platform-overview|Viewtinet platform]]. It serves as a reference for teams configuring dashboards, alarms, and metrics in [[viewtisight-features|ViewtiSight]].
+This page summarizes the Viewtinet Indicators document, which catalogs the key performance indicators (KPIs), metrics, and dimensions available within the [Viewtinet platform](../productos/viewtinet-platform-overview.md). It serves as a reference for teams configuring dashboards, alarms, and metrics in [ViewtiSight](../productos/viewtisight-features.md).
 
 ## Purpose of the Document
 
 The Indicators document defines the measurable data points that Viewtinet collects, computes, and exposes through its analytics layer. These indicators are the foundation for:
 
-- Building [[viewtisight-features|Dashboard Composer]] widgets
-- Defining rules in the [[alarms-system|alarms system]]
+- Building [Dashboard Composer](../productos/viewtisight-features.md) widgets
+- Defining rules in the [alarms system](../conceptos/alarms-system.md)
 - Creating KPIs in the Metrics Composer
-- Querying data via the [[rest-api|REST API]]
+- Querying data via the [REST API](../productos/rest-api.md)
 
 ## Indicator Categories
 
@@ -38,11 +36,11 @@ Indicators are organized by the module or protocol that generates them:
 ### SNMP Device Indicators
 - Interface utilization (in/out bps, errors, discards)
 - CPU and memory utilization per device
-- Custom OID-based metrics via [[snmp-extractor|SNMP extractor]] configuration
+- Custom OID-based metrics via [SNMP extractor](../integraciones/snmp-extractor.md) configuration
 
 ### Syslog and Log Indicators
 - Event counts per severity, per source, per time window
-- Protocol distribution from [[netflow-extractor|NetFlow]] and [[sflow-extractor|sFlow]] data
+- Protocol distribution from [NetFlow](../integraciones/netflow-extractor.md) and [sFlow](../integraciones/sflow-extractor.md) data
 - CDR metrics for telephony environments
 
 ## Dimensions
@@ -54,20 +52,20 @@ Each indicator can be sliced by one or more **dimensions** — metadata fields t
 - Application / protocol
 - Direction (inbound / outbound)
 - Location / site
-- [[tenants|Tenant]] identifier (for multi-tenant deployments)
+- [Tenant](../configuracion/tenants.md) identifier (for multi-tenant deployments)
 
-Dimensions are defined in the [[plugin-architecture|plugin schema stage]] and become available in [[viewtisight-features|ViewtiSight]] and the [[rest-api|REST API]] query engine.
+Dimensions are defined in the [plugin schema stage](../conceptos/plugin-architecture.md) and become available in [ViewtiSight](../productos/viewtisight-features.md) and the [REST API](../productos/rest-api.md) query engine.
 
 ## Usage in ViewtiSight
 
-Indicators documented in this PDF map directly to the dataset fields visible in the [[viewtisight-features|QueryBuilder]]. When configuring a [[viewtisight-features|Metrics Composer]] metric or an [[alarms-system|alarm rule]], the list of available fields comes from this indicator catalog.
+Indicators documented in this PDF map directly to the dataset fields visible in the [QueryBuilder](../productos/viewtisight-features.md). When configuring a [Metrics Composer](../productos/viewtisight-features.md) metric or an [alarm rule](../conceptos/alarms-system.md), the list of available fields comes from this indicator catalog.
 
-Indicator data is stored in Viewticore's time-series database and is accessible through [[data-sources-integration|plugin datasets]] and the REST API.
+Indicator data is stored in Viewticore's time-series database and is accessible through [plugin datasets](../conceptos/data-sources-integration.md) and the REST API.
 
 ## Related Pages
 
-- [[viewtisight-features]] — how indicators are used in dashboards and metrics
-- [[alarms-system]] — using indicators to define alarm thresholds
-- [[data-sources-integration]] — how indicators are produced by plugins
-- [[snmp-extractor]], [[netflow-extractor]], [[sflow-extractor]] — protocol-specific indicator sources
-- [[rest-api]] — programmatic access to indicator data
+- [Viewtisight Features](../productos/viewtisight-features.md) — how indicators are used in dashboards and metrics
+- [Alarms System](../conceptos/alarms-system.md) — using indicators to define alarm thresholds
+- [Data Sources Integration](../conceptos/data-sources-integration.md) — how indicators are produced by plugins
+- [Snmp Extractor](../integraciones/snmp-extractor.md), [Netflow Extractor](../integraciones/netflow-extractor.md), [Sflow Extractor](../integraciones/sflow-extractor.md) — protocol-specific indicator sources
+- [Rest Api](../productos/rest-api.md) — programmatic access to indicator data

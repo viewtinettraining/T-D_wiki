@@ -1,14 +1,12 @@
 ---
-tags: [instalacion, hardware, almacenamiento]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "HDD Partitioning"
+description: "Viewtinet strongly recommends separating the operating system disk group from the data warehouse disk group for optimal performance and redundancy. This sche..."
+keywords: "instalacion, hardware, almacenamiento"
 ---
 
 # HDD Partitioning
 
-Viewtinet strongly recommends separating the operating system disk group from the data warehouse disk group for optimal performance and redundancy. This scheme must be applied during [[os-setup|Ubuntu Server installation]] before starting the [[installation-bundle]].
+Viewtinet strongly recommends separating the operating system disk group from the data warehouse disk group for optimal performance and redundancy. This scheme must be applied during [Ubuntu Server installation](os-setup.md) before starting the [Installation Bundle](installation-bundle.md).
 
 ## Disk Group Architecture
 
@@ -37,7 +35,7 @@ For servers with physical RAID controllers, configure RAID arrays directly on th
 | `/opt/vn` | 200 GB | Base Viewtinet data directory |
 | `/opt/vn/viewticore/` | 1.2 TB | Core analytics storage |
 | `/opt/vn/dhyana/var/data/` | 400 GB | Increase if more space is available |
-| `/opt/vn/probe/var/` | 600 GB | Required only if [[viewtimon-installation|ViewtiMon]] is deployed |
+| `/opt/vn/probe/var/` | 600 GB | Required only if [ViewtiMon](viewtimon-installation.md) is deployed |
 
 ## Virtual Machine Recommendations
 
@@ -49,6 +47,6 @@ This mirrors the physical disk group design and ensures manageability.
 
 ## Applying the Layout
 
-During Ubuntu Server installation, select **Custom storage layout** to manually define partitions. Apply the correct RAID type and filesystem per the tables above. Refer to [[system-configuration]] for post-partitioning steps, and [[ubuntu-compatibility]] for supported OS versions.
+During Ubuntu Server installation, select **Custom storage layout** to manually define partitions. Apply the correct RAID type and filesystem per the tables above. Refer to [System Configuration](system-configuration.md) for post-partitioning steps, and [Ubuntu Compatibility](../conceptos/ubuntu-compatibility.md) for supported OS versions.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

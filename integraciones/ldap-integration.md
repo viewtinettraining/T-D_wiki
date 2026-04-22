@@ -1,14 +1,12 @@
 ---
-tags: [integraciones, autenticacion]
-tipo: tecnica
-fuentes: ["ldap-integration", "prerequisites"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "LDAP Integration"
+description: "viewtiauth manages multiple authentication backends in Viewtinet, and LDAP is one of the supported external directory services. Integrating an LDAP server al..."
+keywords: "integraciones, autenticacion"
 ---
 
 # LDAP Integration
 
-[[viewtiauth]] manages multiple authentication backends in Viewtinet, and LDAP is one of the supported external directory services. Integrating an LDAP server allows users to log in with their corporate credentials and be auto-provisioned on first login.
+[Viewtiauth](viewtiauth.md) manages multiple authentication backends in Viewtinet, and LDAP is one of the supported external directory services. Integrating an LDAP server allows users to log in with their corporate credentials and be auto-provisioned on first login.
 
 ## Prerequisites
 
@@ -30,14 +28,14 @@ Gather the following details in advance:
 - Admin Access DN (service account DN)
 
 **Time Synchronization**
-Both Viewtimanager and the LDAP server must have synchronized clocks. Time drift causes authentication failures. See [[os-setup]] for NTP configuration guidance.
+Both Viewtimanager and the LDAP server must have synchronized clocks. Time drift causes authentication failures. See [Os Setup](../instalacion/os-setup.md) for NTP configuration guidance.
 
 **Default Role**
-Unlike [[active-directory]] integration, LDAP does not support group-to-role mapping. All LDAP users receive a single default [[roles|role]] on first login. Create the role beforehand if a custom one is needed.
+Unlike [Active Directory](active-directory.md) integration, LDAP does not support group-to-role mapping. All LDAP users receive a single default [role](../configuracion/roles.md) on first login. Create the role beforehand if a custom one is needed.
 
 ## Configuration Steps
 
-1. Navigate to **Admin → Auth** in the [[gui-overview|admin interface]].
+1. Navigate to **Admin → Auth** in the [admin interface](../configuracion/gui-overview.md).
 2. In the **Viewtiauth Integrations** section, locate the `ldap` row and check the **Active** box.
 3. Select a **Default Role** from the dropdown for the `ldap` entry (e.g., `My_Role_4_LDAP`).
 4. Scroll to the **LDAP Servers** section and click **+ ADD NEW LDAP SERVER**.
@@ -52,8 +50,8 @@ Unlike [[active-directory]] integration, LDAP does not support group-to-role map
 
 ## Post-Configuration
 
-LDAP users are auto-provisioned with the selected default role on first login. To assign a different role to a specific user, go to **Admin → [[users]]** or **Admin → [[groups]]** after the account has been created.
+LDAP users are auto-provisioned with the selected default role on first login. To assign a different role to a specific user, go to **Admin → [Users](../configuracion/users.md)** or **Admin → [Groups](../configuracion/groups.md)** after the account has been created.
 
-The authentication order among backends is controlled through [[viewtiauth]], where each provider is assigned an Order value and can be enabled or disabled independently.
+The authentication order among backends is controlled through [Viewtiauth](viewtiauth.md), where each provider is assigned an Order value and can be enabled or disabled independently.
 
-See also [[mfa-configuration]] for adding a second authentication factor on top of LDAP credentials.
+See also [Mfa Configuration](mfa-configuration.md) for adding a second authentication factor on top of LDAP credentials.

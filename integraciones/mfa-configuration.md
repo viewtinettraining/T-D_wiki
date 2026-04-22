@@ -1,23 +1,21 @@
 ---
-tags: [integraciones, autenticacion, seguridad]
-tipo: tecnica
-fuentes: ["mfa-configuration"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "MFA Configuration"
+description: "Multi-Factor Authentication (MFA) adds a second security layer to the login process in Viewtinet. After a successful primary authentication, users with MFA e..."
+keywords: "integraciones, autenticacion, seguridad"
 ---
 
 # MFA Configuration
 
-Multi-Factor Authentication (MFA) adds a second security layer to the [[login]] process in Viewtinet. After a successful primary authentication, users with MFA enabled receive a one-time code via email, which must be entered on a second screen before access is granted.
+Multi-Factor Authentication (MFA) adds a second security layer to the [Login](../configuracion/login.md) process in Viewtinet. After a successful primary authentication, users with MFA enabled receive a one-time code via email, which must be entered on a second screen before access is granted.
 
 ## How It Works
 
-1. A user submits their credentials through the standard [[login]] screen.
-2. Viewtinet validates the primary credentials against the active backend configured in [[viewtiauth]].
+1. A user submits their credentials through the standard [Login](../configuracion/login.md) screen.
+2. Viewtinet validates the primary credentials against the active backend configured in [Viewtiauth](viewtiauth.md).
 3. If MFA is enabled for the account, the system sends a one-time code to the user's registered email address.
 4. The user enters the code on the second authentication screen to complete login.
 
-MFA operates on top of any authentication method — [[ldap-integration|LDAP]], [[active-directory|Active Directory]], or local users managed through [[users]].
+MFA operates on top of any authentication method — [LDAP](ldap-integration.md), [Active Directory](active-directory.md), or local users managed through [Users](../configuracion/users.md).
 
 ## Prerequisites
 
@@ -28,7 +26,7 @@ Without a working SMTP configuration, MFA codes cannot be sent and users will be
 
 ## Configuring MFA
 
-1. Go to **Admin → Auth** in the [[gui-overview|administration interface]].
+1. Go to **Admin → Auth** in the [administration interface](../configuracion/gui-overview.md).
 2. Locate the **MFA Config** section.
 3. Configure the following fields:
 
@@ -46,8 +44,8 @@ If your environment requires special email delivery logic, enable **Use script f
 
 ## Relation to Other Auth Settings
 
-MFA is configured globally under the Auth section but applies per-user. Administrators can enable or disable MFA for individual accounts via **Admin → [[users]]**.
+MFA is configured globally under the Auth section but applies per-user. Administrators can enable or disable MFA for individual accounts via **Admin → [Users](../configuracion/users.md)**.
 
-For organizations using role-based access, see [[roles]] for how user permissions are assigned. The overall authentication pipeline, including the order of backends tried, is defined in [[viewtiauth]].
+For organizations using role-based access, see [Roles](../configuracion/roles.md) for how user permissions are assigned. The overall authentication pipeline, including the order of backends tried, is defined in [Viewtiauth](viewtiauth.md).
 
-For directory-based authentication that feeds into MFA, see [[ldap-integration]] or [[active-directory]].
+For directory-based authentication that feeds into MFA, see [Ldap Integration](ldap-integration.md) or [Active Directory](active-directory.md).

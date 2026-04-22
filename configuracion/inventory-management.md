@@ -1,9 +1,7 @@
 ---
-tags: [configuracion, viewtimanager, inventario]
-tipo: concepto
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Inventory Management"
+description: "The Inventory feature in Viewtinet provides a unified, authoritative repository of all network assets and their key properties. Rather than scattering device..."
+keywords: "configuracion, viewtimanager, inventario"
 ---
 
 # Inventory Management
@@ -25,13 +23,13 @@ Devices can be added to the inventory in three ways:
 
 | Method | Description | Wiki Page |
 |---|---|---|
-| Autodiscovery | Dynamically scans network ranges; discovers and imports devices automatically | [[autodiscovery]] |
-| CSV Import | Bulk onboarding from a structured CSV file | [[csv-provisioning]] |
-| Manual Entry | One device at a time; last resort for isolated or one-off devices | [[manual-provisioning]] |
+| Autodiscovery | Dynamically scans network ranges; discovers and imports devices automatically | [Autodiscovery](autodiscovery.md) |
+| CSV Import | Bulk onboarding from a structured CSV file | [Csv Provisioning](csv-provisioning.md) |
+| Manual Entry | One device at a time; last resort for isolated or one-off devices | [Manual Provisioning](manual-provisioning.md) |
 
 ## Inventory Tabs
 
-The Inventory section in [[viewtimanager-overview|ViewtiManager]] is organized into tabs:
+The Inventory section in [ViewtiManager](../productos/viewtimanager-overview.md) is organized into tabs:
 
 - **Overview / Devices** — main device table with filtering and column management
 - **Credentials** — protocol-specific authentication entries (SNMP, ICMP, SSH, Telnet)
@@ -41,17 +39,17 @@ The Inventory section in [[viewtimanager-overview|ViewtiManager]] is organized i
 
 ## Integration with Configuration Manager
 
-The Inventory is also a prerequisite for the [[configuration-manager]]. Devices must exist in inventory with proper credentials and device-credential relations before configuration tasks can be executed against them.
+The Inventory is also a prerequisite for the [Configuration Manager](configuration-manager.md). Devices must exist in inventory with proper credentials and device-credential relations before configuration tasks can be executed against them.
 
 ## Maintenance
 
-The [[inventory-maintenance]] page covers column management, custom column creation, merging duplicate rows, deleting records, CSV export, and pipeline/plugin lookup.
+The [Inventory Maintenance](inventory-maintenance.md) page covers column management, custom column creation, merging duplicate rows, deleting records, CSV export, and pipeline/plugin lookup.
 
 ## Related Pages
 
-- [[autodiscovery]] — Automatic device discovery
-- [[csv-provisioning]] — Bulk CSV import
-- [[manual-provisioning]] — Manual device entry
-- [[inventory-maintenance]] — Maintenance tasks and data hygiene
-- [[configuration-manager]] — Configuration Manager (requires inventory setup)
-- [[plugin-architecture]] — Plugin framework used in Inventory Plugins tab
+- [Autodiscovery](autodiscovery.md) — Automatic device discovery
+- [Csv Provisioning](csv-provisioning.md) — Bulk CSV import
+- [Manual Provisioning](manual-provisioning.md) — Manual device entry
+- [Inventory Maintenance](inventory-maintenance.md) — Maintenance tasks and data hygiene
+- [Configuration Manager](configuration-manager.md) — Configuration Manager (requires inventory setup)
+- [Plugin Architecture](../conceptos/plugin-architecture.md) — Plugin framework used in Inventory Plugins tab

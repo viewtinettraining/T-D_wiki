@@ -1,9 +1,7 @@
 ---
-tags: [clientes, vc-lda]
-tipo: tecnica
-fuentes: ["cursos-projects-corpus"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Junta de Andalucia"
+description: "The Junta de Andalucia is the regional government of Andalusia, the most populous autonomous community in Spain. It manages one of the largest public IT infr..."
+keywords: "clientes, vc-lda"
 ---
 
 # Junta de Andalucia
@@ -12,7 +10,7 @@ The Junta de Andalucia is the regional government of Andalusia, the most populou
 
 ## Course Delivered
 
-The training delivered was [[vc-de]] (formerly VC-LDA — Certified Data Engineer), the 16-hour technical course. Prior [[vc-oa]] certification is a prerequisite. This is the most comprehensive PDF-based VC-LDA delivery in the corpus, with separate Theory (T) and Practice (P) modules for key products — aligning with a structured, examination-grade course format per the [[vc-de-agenda]].
+The training delivered was [Vc De](../formacion/vc-de.md) (formerly VC-LDA — Certified Data Engineer), the 16-hour technical course. Prior [Vc Oa](../formacion/vc-oa.md) certification is a prerequisite. This is the most comprehensive PDF-based VC-LDA delivery in the corpus, with separate Theory (T) and Practice (P) modules for key products — aligning with a structured, examination-grade course format per the [Vc De Agenda](../cursos/vc-de-agenda.md).
 
 ## Training Materials
 
@@ -37,11 +35,11 @@ Note: Module 05 is absent from the PDF set, suggesting a possible LAB Access or 
 ## Notable Aspects
 
 - **Delivered via Telefonica**: The `Telefonica/` subfolder and `JdA.pptx` file indicate this training was coordinated through Telefonica as a reseller or system integrator partner — the only such channel delivery in the VC-LDA corpus.
-- **Theory + Practice split**: Separate T/P modules for [[viewtimanager-overview]], [[viewtilog-overview]], and [[viewtisight-overview]] indicate a lab-intensive delivery style.
-- The Practice Viewtilog module (`09-P-Viewtilog-VSDB`) explicitly covers the [[vs-data-broker-overview]], including [[etl-pipeline]] construction.
-- [[standalone-vs-cluster]] and [[ha-architecture]] are covered in the Architecture & Deployment Modes module.
-- [[autodiscovery]], [[inventory-management]], [[roles]], and [[tenants]] are addressed in the Viewtimanager modules.
+- **Theory + Practice split**: Separate T/P modules for [Viewtimanager Overview](../productos/viewtimanager-overview.md), [Viewtilog Overview](../productos/viewtilog-overview.md), and [Viewtisight Overview](../productos/viewtisight-overview.md) indicate a lab-intensive delivery style.
+- The Practice Viewtilog module (`09-P-Viewtilog-VSDB`) explicitly covers the [Vs Data Broker Overview](../productos/vs-data-broker-overview.md), including [Etl Pipeline](../conceptos/etl-pipeline.md) construction.
+- [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md) and [Ha Architecture](../conceptos/ha-architecture.md) are covered in the Architecture & Deployment Modes module.
+- [Autodiscovery](../configuracion/autodiscovery.md), [Inventory Management](../configuracion/inventory-management.md), [Roles](../configuracion/roles.md), and [Tenants](../configuracion/tenants.md) are addressed in the Viewtimanager modules.
 
 ## Related Clients
 
-Other Spanish public administration clients include [[ayto-madrid]], [[jccm]], [[mininterior-lda]], and [[ministerio-interior]]. The partner-delivered format is unique to this engagement.
+Other Spanish public administration clients include [Ayto Madrid](ayto-madrid.md), [Jccm](jccm.md), [Mininterior Lda](mininterior-lda.md), and [Ministerio Interior](ministerio-interior.md). The partner-delivered format is unique to this engagement.

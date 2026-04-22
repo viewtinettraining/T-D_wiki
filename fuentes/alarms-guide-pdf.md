@@ -1,18 +1,16 @@
 ---
-tags: [fuentes, alarmas, viewtisight]
-tipo: fuente
-fuentes: ["alarms-user-guide_en_v6.3.5_r1.1"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Alarms User Guide PDF — Source Summary"
+description: "This page summarizes the Alarms User Guide (v6.3.5, r1.1), which covers the full alarm management lifecycle in ViewtiSight and the Viewtinet Control Center. ..."
+keywords: "fuentes, alarmas, viewtisight"
 ---
 
 # Alarms User Guide PDF — Source Summary
 
-This page summarizes the Alarms User Guide (v6.3.5, r1.1), which covers the full alarm management lifecycle in [[viewtisight-features|ViewtiSight]] and the Viewtinet Control Center. It includes alarm filtering, acknowledgment, silencing, configuration, and notification setup.
+This page summarizes the Alarms User Guide (v6.3.5, r1.1), which covers the full alarm management lifecycle in [ViewtiSight](../productos/viewtisight-features.md) and the Viewtinet Control Center. It includes alarm filtering, acknowledgment, silencing, configuration, and notification setup.
 
 ## Alarm Panel Overview
 
-The alarm panel in the Control Center displays active alarms with columns for: Alarm Name, Severity (Critical / Major / Minor / Clear), Time Check, Duration, Applied Rule, Data Source, Dimensions, Metric, and Comments. The [[alarms-system|alarm system]] integrates with the ETL process executed by [[vs-data-broker-overview|the Dhyana pipeline]].
+The alarm panel in the Control Center displays active alarms with columns for: Alarm Name, Severity (Critical / Major / Minor / Clear), Time Check, Duration, Applied Rule, Data Source, Dimensions, Metric, and Comments. The [alarm system](../conceptos/alarms-system.md) integrates with the ETL process executed by [the Dhyana pipeline](../productos/vs-data-broker-overview.md).
 
 ## Alarm Management Operations
 
@@ -32,17 +30,17 @@ The Events Log provides a centralized historical view of all alarm events, inclu
 
 Two alarm types are described in this guide:
 
-1. **Real-time alarms** — evaluate metrics during each ETL cycle; created inside the [[data-sources-integration|VSDB plugin]] configuration
-2. **Scheduled alarms** — evaluate [[viewtisight-features|Metrics Composer]] metrics at configured intervals (e.g., every 1 minute, hourly)
+1. **Real-time alarms** — evaluate metrics during each ETL cycle; created inside the [VSDB plugin](../conceptos/data-sources-integration.md) configuration
+2. **Scheduled alarms** — evaluate [Metrics Composer](../productos/viewtisight-features.md) metrics at configured intervals (e.g., every 1 minute, hourly)
 
 ## Alarm Configuration
 
-Creating a scheduled alarm requires: a provisioned data source with active datasets, and a metric created in Metrics Composer. Configuration steps include selecting a dataset, adding the metric to evaluate, defining [[roles|dimensions]], setting column filters, creating rules with thresholds, and configuring a scheduler. See [[alarms-system]] for full configuration details.
+Creating a scheduled alarm requires: a provisioned data source with active datasets, and a metric created in Metrics Composer. Configuration steps include selecting a dataset, adding the metric to evaluate, defining [dimensions](../configuracion/roles.md), setting column filters, creating rules with thresholds, and configuring a scheduler. See [Alarms System](../conceptos/alarms-system.md) for full configuration details.
 
 ## Notifications
 
 Supported notification channels:
-- **Email** — requires SMTP server integration configured in [[viewtimanager-overview]]
+- **Email** — requires SMTP server integration configured in [Viewtimanager Overview](../productos/viewtimanager-overview.md)
 - **Telegram, Teams, WhatsApp** — require advanced configuration (contact support@viewtinet.com)
 - **Scripts** — automated response execution
 

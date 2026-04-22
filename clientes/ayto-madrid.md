@@ -1,9 +1,7 @@
 ---
-tags: [clientes, vc-lda]
-tipo: tecnica
-fuentes: ["cursos-projects-corpus"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Ayto Madrid — Ayuntamiento de Madrid"
+description: "The Ayuntamiento de Madrid (Madrid City Council) is the local government body for the city of Madrid, Spain. As a large public administration managing comple..."
+keywords: "clientes, vc-lda"
 ---
 
 # Ayto Madrid — Ayuntamiento de Madrid
@@ -12,7 +10,7 @@ The Ayuntamiento de Madrid (Madrid City Council) is the local government body fo
 
 ## Course Delivered
 
-The training delivered was [[vc-de]] (formerly VC-LDA — Certified Data Engineer), a 16-hour deep technical course targeting data and network engineers. This course requires prior [[vc-oa]] certification. The full course covers [[viewtilog-overview]], [[viewtimanager-overview]], and [[viewtisight-overview]], along with installation procedures and [[viewtiauth|authentication integration]].
+The training delivered was [Vc De](../formacion/vc-de.md) (formerly VC-LDA — Certified Data Engineer), a 16-hour deep technical course targeting data and network engineers. This course requires prior [Vc Oa](../formacion/vc-oa.md) certification. The full course covers [Viewtilog Overview](../productos/viewtilog-overview.md), [Viewtimanager Overview](../productos/viewtimanager-overview.md), and [Viewtisight Overview](../productos/viewtisight-overview.md), along with installation procedures and [authentication integration](../integraciones/viewtiauth.md).
 
 ## Training Materials
 
@@ -26,15 +24,15 @@ The project folder contains **5 PowerPoint presentations**:
 | 04 | Viewtilog |
 | 05 | ViewtiSight |
 
-This is a standard 5-module VC-LDA delivery covering the complete product portfolio. The set aligns with the [[vc-de-agenda]] standard curriculum structure.
+This is a standard 5-module VC-LDA delivery covering the complete product portfolio. The set aligns with the [Vc De Agenda](../cursos/vc-de-agenda.md) standard curriculum structure.
 
 ## Notable Aspects
 
-- Standard public administration deployment, likely involving [[inventory-management]] of city network assets and [[autodiscovery]] for large-scale infrastructure.
-- The Products module introduces the full Viewtinet ecosystem including the [[vs-data-broker-overview]].
-- Viewtimanager content covers [[users]], [[roles]], [[tenants]], and [[inventory-management]].
-- Viewtilog training covers [[etl-pipeline]] concepts and data broker configuration.
+- Standard public administration deployment, likely involving [Inventory Management](../configuracion/inventory-management.md) of city network assets and [Autodiscovery](../configuracion/autodiscovery.md) for large-scale infrastructure.
+- The Products module introduces the full Viewtinet ecosystem including the [Vs Data Broker Overview](../productos/vs-data-broker-overview.md).
+- Viewtimanager content covers [Users](../configuracion/users.md), [Roles](../configuracion/roles.md), [Tenants](../configuracion/tenants.md), and [Inventory Management](../configuracion/inventory-management.md).
+- Viewtilog training covers [Etl Pipeline](../conceptos/etl-pipeline.md) concepts and data broker configuration.
 
 ## Related Clients
 
-Other public sector clients in the training program include [[jccm]] (regional government), [[junta-andalucia]] (regional government), [[mininterior-lda]] (central government), and [[ministerio-interior]] (central government, Wire Data track). These share similar compliance and infrastructure management requirements.
+Other public sector clients in the training program include [Jccm](jccm.md) (regional government), [Junta Andalucia](junta-andalucia.md) (regional government), [Mininterior Lda](mininterior-lda.md) (central government), and [Ministerio Interior](ministerio-interior.md) (central government, Wire Data track). These share similar compliance and infrastructure management requirements.

@@ -1,20 +1,18 @@
 ---
-tags: [instalacion, viewtiqos]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiQoS Installation"
+description: "ViewtiQoS (also referred to as Viewtify QoS) extends ViewtiMon's DPI capabilities into enterprise-grade traffic management. HA is not supported in the curren..."
+keywords: "instalacion, viewtiqos"
 ---
 
 # ViewtiQoS Installation
 
-ViewtiQoS (also referred to as Viewtify QoS) extends [[viewtimon-overview|ViewtiMon]]'s DPI capabilities into enterprise-grade traffic management. HA is not supported in the current release — only single-node deployment is available. For a product overview, see [[viewtiqos-overview]].
+ViewtiQoS (also referred to as Viewtify QoS) extends [ViewtiMon](../productos/viewtimon-overview.md)'s DPI capabilities into enterprise-grade traffic management. HA is not supported in the current release — only single-node deployment is available. For a product overview, see [Viewtiqos Overview](../productos/viewtiqos-overview.md).
 
 ## Prerequisites
 
-- [[viewtimon-installation|ViewtiMon must be installed and running]] on the target host
+- [ViewtiMon must be installed and running](viewtimon-installation.md) on the target host
 - The ViewtiQoS feature must be licensed and visible in the sidebar under **Viewtify QoS**
-- [[upload-license|License activated]] with the Viewtify QoS entitlement
+- [License activated](upload-license.md) with the Viewtify QoS entitlement
 
 ## Installation Procedure
 
@@ -56,8 +54,8 @@ ViewtiQoS requires exclusive NIC binding, which conflicts with ViewtiMon. Follow
 1. Return to **Viewtimon → STATUS**
 2. Click **RESTART** (or START if still stopped)
 3. Confirm → **YES**
-4. Both [[viewtimon-overview|ViewtiMon]] and ViewtiQoS status indicators will turn green when active
+4. Both [ViewtiMon](../productos/viewtimon-overview.md) and ViewtiQoS status indicators will turn green when active
 
 ViewtiQoS is now installed. Traffic-shaping and prioritization policies can be configured via the Viewtify QoS interface.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

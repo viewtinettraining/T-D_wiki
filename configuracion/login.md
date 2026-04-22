@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, autenticacion]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Login"
+description: "Access to the Viewtinet platform is handled through the Viewtiauth module, which provides centralized authentication for all components. Users must authentic..."
+keywords: "configuracion, viewtimanager, autenticacion"
 ---
 
 # Login
 
-Access to the Viewtinet platform is handled through the [[viewtiauth|Viewtiauth]] module, which provides centralized authentication for all components. Users must authenticate before being allowed to access [[viewtimanager-overview|ViewtiManager]], [[viewtisight-overview|ViewtiSight]], or other system modules.
+Access to the Viewtinet platform is handled through the [Viewtiauth](../integraciones/viewtiauth.md) module, which provides centralized authentication for all components. Users must authenticate before being allowed to access [ViewtiManager](../productos/viewtimanager-overview.md), [ViewtiSight](../productos/viewtisight-overview.md), or other system modules.
 
 ## Access URLs
 
@@ -33,9 +31,9 @@ Click **Login** to submit credentials for validation by Viewtiauth.
 
 ## Authentication Flow
 
-1. Credentials are validated by the [[viewtiauth|Viewtiauth]] module.
+1. Credentials are validated by the [Viewtiauth](../integraciones/viewtiauth.md) module.
 2. On success, the user is redirected to the **App Selector** screen.
-3. The App Selector shows all modules the user has permission to access based on their assigned [[roles|role]].
+3. The App Selector shows all modules the user has permission to access based on their assigned [role](roles.md).
 
 Available modules in the App Selector:
 - **ViewtiSight** — visualization and dashboards
@@ -53,11 +51,11 @@ When accessing these ports without an existing browser session, the user is auto
 
 ## Default Credentials
 
-After initial installation, the default admin credentials are activated during the [[user-admin-activation|admin user activation]] step. Passwords must comply with the [[users|password policy]] (12+ characters, digit, uppercase, special character).
+After initial installation, the default admin credentials are activated during the [admin user activation](../instalacion/user-admin-activation.md) step. Passwords must comply with the [password policy](users.md) (12+ characters, digit, uppercase, special character).
 
 ## Related Pages
 
-- [[viewtiauth]] — Authentication backends and integration options
-- [[mfa-configuration]] — Enable two-factor authentication
-- [[active-directory]] — AD-based login for domain users
-- [[ldap-integration]] — LDAP-based authentication setup
+- [Viewtiauth](../integraciones/viewtiauth.md) — Authentication backends and integration options
+- [Mfa Configuration](../integraciones/mfa-configuration.md) — Enable two-factor authentication
+- [Active Directory](../integraciones/active-directory.md) — AD-based login for domain users
+- [Ldap Integration](../integraciones/ldap-integration.md) — LDAP-based authentication setup

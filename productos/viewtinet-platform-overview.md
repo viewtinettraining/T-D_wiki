@@ -1,9 +1,7 @@
 ---
-tags: [productos, plataforma, arquitectura, overview]
-tipo: concepto
-fuentes: ["Viewtinet Solution Description 052019v2", "viewtimanager-user-guide_en_v6.3"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Viewtinet Platform Overview"
+description: "Viewtinet is an integrated network monitoring, analytics, and management platform designed for enterprises, service providers, and operators that need unifie..."
+keywords: "productos, plataforma, arquitectura, overview"
 ---
 
 # Viewtinet Platform Overview
@@ -16,14 +14,14 @@ The Viewtinet platform is composed of several specialized modules, all managed t
 
 | Module | Role |
 |--------|------|
-| [[viewtimanager-overview|ViewtiManager]] | Central administration GUI — user management, configuration, licensing |
-| [[viewtisight-overview|ViewtiSight]] | Analytics and BI layer — dashboards, metrics, reports, alarms |
-| [[viewtilog-overview|ViewtiLog]] | Log management and analysis — syslog, NetFlow, CDR, SNMP |
-| [[viewtimon-overview|ViewtiMon]] | Deep packet inspection and real-time traffic monitoring |
-| [[viewtiqos-overview|ViewtiQoS]] | Traffic shaping and QoS policy enforcement |
-| [[vs-data-broker-overview|VS Data Broker]] | Visual ETL engine — plugin-based data ingestion pipeline |
-| [[viewtibot-overview|ViewtiBot]] | Automation and chatbot integration module |
-| [[viewtiauth|ViewtiAuth]] | Authentication service with MFA, LDAP, and AD support |
+| [ViewtiManager](viewtimanager-overview.md) | Central administration GUI — user management, configuration, licensing |
+| [ViewtiSight](viewtisight-overview.md) | Analytics and BI layer — dashboards, metrics, reports, alarms |
+| [ViewtiLog](viewtilog-overview.md) | Log management and analysis — syslog, NetFlow, CDR, SNMP |
+| [ViewtiMon](viewtimon-overview.md) | Deep packet inspection and real-time traffic monitoring |
+| [ViewtiQoS](viewtiqos-overview.md) | Traffic shaping and QoS policy enforcement |
+| [VS Data Broker](vs-data-broker-overview.md) | Visual ETL engine — plugin-based data ingestion pipeline |
+| [ViewtiBot](viewtibot-overview.md) | Automation and chatbot integration module |
+| [ViewtiAuth](../integraciones/viewtiauth.md) | Authentication service with MFA, LDAP, and AD support |
 
 ## Target Audience
 
@@ -34,17 +32,17 @@ The Viewtinet platform is composed of several specialized modules, all managed t
 
 ## Architecture
 
-The Viewtinet platform runs as Docker containers on [[ubuntu-compatibility|Ubuntu Server 20.04 or 24.04]]. All components are installed from the [[installation-bundle|installation bundle]] and managed by [[viewtimanager-overview|ViewtiManager]].
+The Viewtinet platform runs as Docker containers on [Ubuntu Server 20.04 or 24.04](../conceptos/ubuntu-compatibility.md). All components are installed from the [installation bundle](../instalacion/installation-bundle.md) and managed by [ViewtiManager](viewtimanager-overview.md).
 
 Core infrastructure components:
 - **Viewticore** — the central data engine and time-series database (TimescaleDB-backed)
-- **ViewtiAuth** — handles authentication across all modules; supports [[active-directory|Active Directory]], [[ldap-integration|LDAP]], and [[mfa-configuration|MFA]]
-- **[[etl-pipeline|ETL Pipeline]]** — driven by the [[vs-data-broker-overview|VS Data Broker]] plugin system
-- **[[ha-architecture|High Availability]]** — active-passive cluster using Keepalived (VIP) and HAProxy (load balancing) for supported modules
+- **ViewtiAuth** — handles authentication across all modules; supports [Active Directory](../integraciones/active-directory.md), [LDAP](../integraciones/ldap-integration.md), and [MFA](../integraciones/mfa-configuration.md)
+- **[ETL Pipeline](../conceptos/etl-pipeline.md)** — driven by the [VS Data Broker](vs-data-broker-overview.md) plugin system
+- **[High Availability](../conceptos/ha-architecture.md)** — active-passive cluster using Keepalived (VIP) and HAProxy (load balancing) for supported modules
 
 ## Deployment Modes
 
-Two deployment modes are available — see [[standalone-vs-cluster]]:
+Two deployment modes are available — see [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md):
 
 - **Standalone** — single server; suitable for dev/test or smaller deployments
 - **Cluster (HA)** — two or more nodes with automatic failover; recommended for production
@@ -53,10 +51,10 @@ ViewtiMon and ViewtiQoS support standalone mode only.
 
 ## Data Flow Summary
 
-1. Data is ingested through [[data-sources-integration|protocol extractors]] (SNMP, NetFlow, Syslog, etc.) configured in [[vs-data-broker-overview|VS Data Broker]] plugins
-2. The [[etl-pipeline|ETL pipeline]] transforms and loads data into Viewticore's time-series database
-3. [[viewtisight-overview|ViewtiSight]] presents the data through dashboards, metrics, and the [[rest-api|REST API]]
-4. [[alarms-system|Alarms]] notify operations teams via email, Telegram, Teams, or WhatsApp
+1. Data is ingested through [protocol extractors](../conceptos/data-sources-integration.md) (SNMP, NetFlow, Syslog, etc.) configured in [VS Data Broker](vs-data-broker-overview.md) plugins
+2. The [ETL pipeline](../conceptos/etl-pipeline.md) transforms and loads data into Viewticore's time-series database
+3. [ViewtiSight](viewtisight-overview.md) presents the data through dashboards, metrics, and the [REST API](rest-api.md)
+4. [Alarms](../conceptos/alarms-system.md) notify operations teams via email, Telegram, Teams, or WhatsApp
 
 ## Use Cases
 
@@ -65,4 +63,4 @@ ViewtiMon and ViewtiQoS support standalone mode only.
 - NetFlow/IPFIX traffic accounting and reporting
 - Multi-vendor device monitoring via SNMP and SSH
 - Centralized syslog collection and security correlation
-- Configuration management and [[autodiscovery|device autodiscovery]]
+- Configuration management and [device autodiscovery](../configuracion/autodiscovery.md)

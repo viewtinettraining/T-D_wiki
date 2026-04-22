@@ -1,24 +1,22 @@
 ---
-tags: [productos, api, rest, viewtisight, integracion]
-tipo: tecnica
-fuentes: ["Viewtinet_Viewtisight_REST_API_Specification-v1.5"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "ViewtiSight REST API"
+description: "The ViewtiSight REST API is a JSON-based HTTP interface that enables programmatic access to ViewtiSight data, dashboards, metrics, and alarms. It is exposed ..."
+keywords: "productos, api, rest, viewtisight, integracion"
 ---
 
 # ViewtiSight REST API
 
-The ViewtiSight REST API is a JSON-based HTTP interface that enables programmatic access to [[viewtisight-overview|ViewtiSight]] data, dashboards, metrics, and alarms. It is exposed by the `viewtinet-viewticore-gateway` container and follows standard REST conventions.
+The ViewtiSight REST API is a JSON-based HTTP interface that enables programmatic access to [ViewtiSight](viewtisight-overview.md) data, dashboards, metrics, and alarms. It is exposed by the `viewtinet-viewticore-gateway` container and follows standard REST conventions.
 
 ## Authentication
 
-The API uses **Bearer token authentication**. Tokens are obtained from [[viewtimanager-overview|ViewtiManager]] and must be included in every request:
+The API uses **Bearer token authentication**. Tokens are obtained from [ViewtiManager](viewtimanager-overview.md) and must be included in every request:
 
 ```
 Authorization: Bearer <api-token>
 ```
 
-- Tokens are scoped per [[tenants|tenant]] and enforce [[roles|role-based permissions]]
+- Tokens are scoped per [tenant](../configuracion/tenants.md) and enforce [role-based permissions](../configuracion/roles.md)
 - A token grants access only to the data and operations permitted by the associated user role
 - Tokens are revocable from ViewtiManager's admin panel
 
@@ -28,7 +26,7 @@ Authorization: Bearer <api-token>
 https://<VIP-or-host>:<port>/api/v1/
 ```
 
-In [[ha-architecture|HA cluster deployments]], the base URL resolves to the floating Virtual IP managed by Keepalived. In standalone mode, it resolves directly to the server IP.
+In [HA cluster deployments](../conceptos/ha-architecture.md), the base URL resolves to the floating Virtual IP managed by Keepalived. In standalone mode, it resolves directly to the server IP.
 
 ## Key Endpoint Categories
 
@@ -36,15 +34,15 @@ In [[ha-architecture|HA cluster deployments]], the base URL resolves to the floa
 |----------|-------------|-------------|
 | Authentication | `/auth/` | Obtain and validate API tokens |
 | Datasets (Sets) | `/sets/` | Query time-series data from ingested datasets |
-| Metrics | `/metrics/` | Retrieve computed [[viewtisight-features|Metrics Composer]] values |
+| Metrics | `/metrics/` | Retrieve computed [Metrics Composer](viewtisight-features.md) values |
 | Dashboards | `/dashboards/` | List and export dashboard definitions |
 | Alarms | `/alarms/` | Query active alarms and alarm history |
 | Dimensions | `/dimensions/` | Filter and group data by dimension values |
-| Plugins | `/plugins/` | List active [[plugin-architecture|plugins]] and their datasets |
+| Plugins | `/plugins/` | List active [plugins](../conceptos/plugin-architecture.md) and their datasets |
 
 ## Data Query Pattern
 
-All dataset queries follow a consistent structure matching the [[viewtisight-features|QueryBuilder]] logic:
+All dataset queries follow a consistent structure matching the [QueryBuilder](viewtisight-features.md) logic:
 
 ```json
 {
@@ -77,15 +75,15 @@ All responses return JSON with HTTP 200 on success. Errors return standard HTTP 
 
 - Integrating Viewtinet data into third-party dashboards (e.g., Grafana, Kibana)
 - Automating report generation and data export to data lakes
-- Triggering or querying [[alarms-system|alarms]] from ITSM or SIEM tools
-- Building custom portals that surface [[data-sources-integration|plugin]] data to end users
+- Triggering or querying [alarms](../conceptos/alarms-system.md) from ITSM or SIEM tools
+- Building custom portals that surface [plugin](../conceptos/data-sources-integration.md) data to end users
 - Feeding network telemetry into ML pipelines
 
 ## Related Pages
 
-- [[viewtisight-features]] — GUI features powered by the same data engine
-- [[alarms-system]] — alarm endpoints and notification channels
-- [[data-sources-integration]] — how data flows into queryable datasets
-- [[tenants]] — multi-tenant access scoping
-- [[roles]] — role-based API token permissions
-- [[ha-architecture]] — cluster endpoint resolution via VIP
+- [Viewtisight Features](viewtisight-features.md) — GUI features powered by the same data engine
+- [Alarms System](../conceptos/alarms-system.md) — alarm endpoints and notification channels
+- [Data Sources Integration](../conceptos/data-sources-integration.md) — how data flows into queryable datasets
+- [Tenants](../configuracion/tenants.md) — multi-tenant access scoping
+- [Roles](../configuracion/roles.md) — role-based API token permissions
+- [Ha Architecture](../conceptos/ha-architecture.md) — cluster endpoint resolution via VIP

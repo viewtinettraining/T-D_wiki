@@ -1,14 +1,12 @@
 ---
-tags: [fuentes, active-directory, autenticacion, roles]
-tipo: fuente
-fuentes: ["active-directory-integration-guide_en_v6.3"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Active Directory Integration Guide PDF — Source Summary"
+description: "This page summarizes the Active Directory Integration Guide (v6.3), covering how to connect ViewtiManager to an Active Directory (AD) domain for centralized ..."
+keywords: "fuentes, active-directory, autenticacion, roles"
 ---
 
 # Active Directory Integration Guide PDF — Source Summary
 
-This page summarizes the Active Directory Integration Guide (v6.3), covering how to connect [[viewtimanager-overview|ViewtiManager]] to an Active Directory (AD) domain for centralized authentication and role-based access control.
+This page summarizes the Active Directory Integration Guide (v6.3), covering how to connect [ViewtiManager](../productos/viewtimanager-overview.md) to an Active Directory (AD) domain for centralized authentication and role-based access control.
 
 ## Prerequisites
 
@@ -22,7 +20,7 @@ Before configuring AD integration, the following must be in place:
 
 ## Role Mapping
 
-[[roles|Roles]] in ViewtiManager are mapped to AD groups by matching role names exactly to AD group names. The [[active-directory|Active Directory]] group membership determines which Viewtinet role a user receives.
+[Roles](../configuracion/roles.md) in ViewtiManager are mapped to AD groups by matching role names exactly to AD group names. The [Active Directory](../integraciones/active-directory.md) group membership determines which Viewtinet role a user receives.
 
 Permission structure: `Module_Menu_Tab_Permission`, where:
 - `VM` = ViewtiManager, `VS` = ViewtiSight
@@ -50,9 +48,9 @@ AD users access Viewtinet at port `4200` (HTTP) or `4201` (HTTPS). Credentials a
 
 ## Related Pages
 
-- [[active-directory]] — AD integration concept page
-- [[ldap-integration]] — LDAP alternative
-- [[roles]] — role configuration
-- [[users]] — user management
-- [[mfa-configuration]] — multi-factor authentication
-- [[viewtimanager-overview]] — ViewtiManager module
+- [Active Directory](../integraciones/active-directory.md) — AD integration concept page
+- [Ldap Integration](../integraciones/ldap-integration.md) — LDAP alternative
+- [Roles](../configuracion/roles.md) — role configuration
+- [Users](../configuracion/users.md) — user management
+- [Mfa Configuration](../integraciones/mfa-configuration.md) — multi-factor authentication
+- [Viewtimanager Overview](../productos/viewtimanager-overview.md) — ViewtiManager module

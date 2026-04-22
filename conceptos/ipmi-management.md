@@ -1,14 +1,12 @@
 ---
-tags: [conceptos, hardware, ipmi, gestion-remota]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "IPMI Management"
+description: "The Intelligent Platform Management Interface (IPMI) provides out-of-band remote access to the Viewtinet appliance, independent of the operating system. It a..."
+keywords: "conceptos, hardware, ipmi, gestion-remota"
 ---
 
 # IPMI Management
 
-The Intelligent Platform Management Interface (IPMI) provides out-of-band remote access to the [[viewtinet-appliance|Viewtinet appliance]], independent of the operating system. It allows administrators to monitor system health, manage boot processes, and control the server even when the OS is unresponsive.
+The Intelligent Platform Management Interface (IPMI) provides out-of-band remote access to the [Viewtinet appliance](../productos/viewtinet-appliance.md), independent of the operating system. It allows administrators to monitor system health, manage boot processes, and control the server even when the OS is unresponsive.
 
 ## What IPMI Provides
 
@@ -18,7 +16,7 @@ The Intelligent Platform Management Interface (IPMI) provides out-of-band remote
 - Console redirection (keyboard and video over network)
 - OS-independent management — functions even when the server is down
 
-IPMI is essential before running the management IP change script (`change-management-ip.sh`) on the [[viewtinet-appliance]], as it provides recovery access if the network configuration fails.
+IPMI is essential before running the management IP change script (`change-management-ip.sh`) on the [Viewtinet Appliance](../productos/viewtinet-appliance.md), as it provides recovery access if the network configuration fails.
 
 ## Configuring the IPMI IP Address
 
@@ -26,7 +24,7 @@ IPMI IP configuration is performed via the BIOS Setup Utility at server boot —
 
 ### Procedure
 
-1. Connect a keyboard and monitor to the appliance (see rear port layout in [[viewtinet-appliance]])
+1. Connect a keyboard and monitor to the appliance (see rear port layout in [Viewtinet Appliance](../productos/viewtinet-appliance.md))
 2. Power on the appliance
 3. When the SuperMicro message appears, press `DEL` to enter the Setup Utility
 4. Use the right arrow key to navigate to the **IPMI** menu
@@ -60,8 +58,8 @@ Login credentials are provided by Viewtinet support (`support@viewtinet.com`) or
 
 Default CLI credentials for the console: user `viewtinet`, password `viewtinet`. Contact support if these credentials fail.
 
-## Relationship to [[os-setup]] and Management IP
+## Relationship to [Os Setup](../instalacion/os-setup.md) and Management IP
 
-IPMI is separate from the OS management network. Always verify IPMI connectivity before changing the Viewtinet management IP via the `change-management-ip.sh` script. See [[viewtinet-appliance]] for the full appliance setup context.
+IPMI is separate from the OS management network. Always verify IPMI connectivity before changing the Viewtinet management IP via the `change-management-ip.sh` script. See [Viewtinet Appliance](../productos/viewtinet-appliance.md) for the full appliance setup context.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

@@ -1,16 +1,14 @@
 ---
-tags: [integraciones, vsdb, load]
-tipo: tecnica
-fuentes: ["producers"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Data Producers"
+description: "Producers are the Load-stage components of the VS Data Broker etl-pipeline. Once records have been extracted and transformed, a Producer delivers them to the..."
+keywords: "integraciones, vsdb, load"
 ---
 
 # Data Producers
 
-Producers are the Load-stage components of the [[vs-data-broker-overview|VS Data Broker]] [[etl-pipeline]]. Once records have been extracted and transformed, a Producer delivers them to their final destination — local storage, a database, a remote file system, a message queue, or an external log receiver.
+Producers are the Load-stage components of the [VS Data Broker](../productos/vs-data-broker-overview.md) [Etl Pipeline](../conceptos/etl-pipeline.md). Once records have been extracted and transformed, a Producer delivers them to their final destination — local storage, a database, a remote file system, a message queue, or an external log receiver.
 
-Configuring a Producer is the final step in building a [[customized-plugin]].
+Configuring a Producer is the final step in building a [Customized Plugin](../conceptos/customized-plugin.md).
 
 ## Available Producer Types
 
@@ -26,13 +24,13 @@ Writes transformed records to a CSV file on the local Viewtilog server filesyste
 Similar to the CSV Writer but automatically rotates the output file at configured intervals (e.g., hourly or daily). Prevents unbounded file growth and facilitates periodic ingestion by external systems.
 
 ### Syslog Producer
-Sends records as Syslog messages to an external Syslog receiver. Useful for forwarding enriched data to a SIEM, log aggregator, or [[syslog-extractor]]-compatible system.
+Sends records as Syslog messages to an external Syslog receiver. Useful for forwarding enriched data to a SIEM, log aggregator, or [Syslog Extractor](syslog-extractor.md)-compatible system.
 
 ### SCP Producer
-Transfers files securely via SCP (Secure Copy Protocol) to a remote destination. Most commonly paired with the [[file-list-extractor]] connector to move collected files to external systems.
+Transfers files securely via SCP (Secure Copy Protocol) to a remote destination. Most commonly paired with the [File List Extractor](file-list-extractor.md) connector to move collected files to external systems.
 
 ### ViewtinetDB Producer
-Writes records directly into the internal Viewtinet database. This is the standard output for data destined for dashboards, [[rest-api]] queries, and reports within the [[viewtimanager-overview]] ecosystem.
+Writes records directly into the internal Viewtinet database. This is the standard output for data destined for dashboards, [Rest Api](../productos/rest-api.md) queries, and reports within the [Viewtimanager Overview](../productos/viewtimanager-overview.md) ecosystem.
 
 ### Kafka Producer
 Publishes records to an Apache Kafka topic. Enables integration with streaming analytics platforms and external data pipelines that consume from Kafka.
@@ -57,8 +55,8 @@ Extract (Connector) → Transform (Grid Handlers) → Load (Producer)
 ```
 
 Examples:
-- [[snmp-extractor]] → [[column-constant-adder]] → ViewtinetDB Producer
-- [[ethernet-streamer]] → [[netflow-extractor]] → Kafka Producer
-- [[file-list-extractor]] → CSV Writer → SCP Producer
+- [Snmp Extractor](snmp-extractor.md) → [Column Constant Adder](column-constant-adder.md) → ViewtinetDB Producer
+- [Ethernet Streamer](ethernet-streamer.md) → [Netflow Extractor](netflow-extractor.md) → Kafka Producer
+- [File List Extractor](file-list-extractor.md) → CSV Writer → SCP Producer
 
-For full plugin construction details, see [[customized-plugin]] and [[plugin-template]]. For an overview of all Extract-stage options, see [[data-sources-overview]].
+For full plugin construction details, see [Customized Plugin](../conceptos/customized-plugin.md) and [Plugin Template](../conceptos/plugin-template.md). For an overview of all Extract-stage options, see [Data Sources Overview](data-sources-overview.md).

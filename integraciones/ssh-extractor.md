@@ -1,14 +1,12 @@
 ---
-tags: [integracion, ssh, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "SSH Extractor"
+description: "The SSH Query Connector allows the Visual Smart Data Broker (VSDB) to connect to remote devices using SSH and retrieve system metrics or execute custom comma..."
+keywords: "integracion, ssh, extractor, vs-data-broker"
 ---
 
 # SSH Extractor
 
-The **SSH Query Connector** allows the [[vs-data-broker-overview|Visual Smart Data Broker (VSDB)]] to connect to remote devices using SSH and retrieve system metrics or execute custom commands. It is especially useful for monitoring servers or network devices where [[snmp-extractor|SNMP]] or other protocols are not enabled but SSH access is available.
+The **SSH Query Connector** allows the [Visual Smart Data Broker (VSDB)](../productos/vs-data-broker-overview.md) to connect to remote devices using SSH and retrieve system metrics or execute custom commands. It is especially useful for monitoring servers or network devices where [SNMP](snmp-extractor.md) or other protocols are not enabled but SSH access is available.
 
 ## Key Features
 
@@ -52,8 +50,8 @@ Use restricted, read-only accounts rather than root for production environments.
 
 ## Related Pages
 
-- [[etl-pipeline]] — ETL pipeline context
-- [[snmp-extractor]] — Alternative polling connector for SNMP-capable devices
-- [[wmi-extractor]] — Windows alternative (deprecated)
-- [[windows-remote-management]] — Preferred Windows monitoring alternative
-- [[plugin-categories]] — SSH is a dedicated category in VSDB
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — ETL pipeline context
+- [Snmp Extractor](snmp-extractor.md) — Alternative polling connector for SNMP-capable devices
+- [Wmi Extractor](wmi-extractor.md) — Windows alternative (deprecated)
+- [Windows Remote Management](windows-remote-management.md) — Preferred Windows monitoring alternative
+- [Plugin Categories](../conceptos/plugin-categories.md) — SSH is a dedicated category in VSDB

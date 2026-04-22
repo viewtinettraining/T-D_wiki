@@ -1,23 +1,21 @@
 ---
-tags: [instalacion, viewtilog]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiLog Installation"
+description: "This page covers both standalone and cluster (High-Availability) installation modes for ViewtiLog. For a conceptual overview of the product, see viewtilog-ov..."
+keywords: "instalacion, viewtilog"
 ---
 
 # ViewtiLog Installation
 
-This page covers both standalone and cluster (High-Availability) installation modes for ViewtiLog. For a conceptual overview of the product, see [[viewtilog-overview]].
+This page covers both standalone and cluster (High-Availability) installation modes for ViewtiLog. For a conceptual overview of the product, see [Viewtilog Overview](../productos/viewtilog-overview.md).
 
 ## Prerequisites
 
-- A running [[viewtimanager-overview|ViewtiManager]] instance with admin GUI access
+- A running [ViewtiManager](../productos/viewtimanager-overview.md) instance with admin GUI access
 - SSH credentials for the target host (the `viewtinet` user password)
-- [[upload-license|License activated]] with the ViewtiLog feature enabled
+- [License activated](upload-license.md) with the ViewtiLog feature enabled
 - Network connectivity between browser and ViewtiManager
 
-For HA clusters, NTP synchronization across all nodes is mandatory — see [[system-configuration]].
+For HA clusters, NTP synchronization across all nodes is mandatory — see [System Configuration](system-configuration.md).
 
 ## Standalone Installation
 
@@ -37,7 +35,7 @@ Result: ViewtiLog is installed and available to run ETL tasks.
 
 ## Cluster (HA) Installation
 
-See [[standalone-vs-cluster]] for an overview of the differences. Cluster mode requires at least two nodes with a floating Virtual IP (VIP) managed by Keepalived and load-balanced by HAProxy.
+See [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md) for an overview of the differences. Cluster mode requires at least two nodes with a floating Virtual IP (VIP) managed by Keepalived and load-balanced by HAProxy.
 
 ### Additional HA Requirements
 
@@ -58,6 +56,6 @@ See [[standalone-vs-cluster]] for an overview of the differences. Cluster mode r
 7. Click Save and confirm
 8. Wait for "Installation Finished"
 
-Each cluster node requires its own license. Retrieve [[server-info]] from each node and obtain separate `.key` files.
+Each cluster node requires its own license. Retrieve [Server Info](server-info.md) from each node and obtain separate `.key` files.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

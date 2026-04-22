@@ -1,9 +1,7 @@
 ---
-tags: [formacion, overview]
-tipo: concepto
-fuentes: ["portfolio-training-2026"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Viewtinet Training & Certification Overview"
+description: "The Viewtinet Training & Certification program provides a structured, practical learning pathway for professionals working with the Viewtinet unified observa..."
+keywords: "formacion, overview"
 ---
 
 # Viewtinet Training & Certification Overview
@@ -12,28 +10,28 @@ The Viewtinet Training & Certification program provides a structured, practical 
 
 ## Mission and Scope
 
-The training department's mission is to equip partners, end customers, and internal teams with the skills needed to deploy, manage, and sell Viewtinet solutions effectively. The portfolio spans five certification verticals: Sales, Presales, [[viewtisight-overview|ViewtiSight]], [[viewtilog-overview|Viewtilog]], and [[viewtimon-overview|ViewtiMon]] & ViewtifyQoS. See [[certification-paths]] for the full progression map.
+The training department's mission is to equip partners, end customers, and internal teams with the skills needed to deploy, manage, and sell Viewtinet solutions effectively. The portfolio spans five certification verticals: Sales, Presales, [ViewtiSight](../productos/viewtisight-overview.md), [Viewtilog](../productos/viewtilog-overview.md), and [ViewtiMon](../productos/viewtimon-overview.md) & ViewtifyQoS. See [Certification Paths](certification-paths.md) for the full progression map.
 
 ## Practical-First Philosophy
 
-Every technical course combines theory with hands-on lab sessions. Engineers are expected to operate real platform components — including [[viewtimanager-overview]], [[viewtisight-overview]], and [[viewtilog-overview]] — during training. This reduces time-to-productivity after certification.
+Every technical course combines theory with hands-on lab sessions. Engineers are expected to operate real platform components — including [Viewtimanager Overview](../productos/viewtimanager-overview.md), [Viewtisight Overview](../productos/viewtisight-overview.md), and [Viewtilog Overview](../productos/viewtilog-overview.md) — during training. This reduces time-to-productivity after certification.
 
 ## Beginner to Expert Pathway
 
 The portfolio is structured so learners can grow progressively:
 
-1. **Entry point (Sales/Presales):** [[vsp]] (1 hour) and [[vc-psp]] (8 hours) cover commercial positioning and solution architecture at a high level.
-2. **Analytical Core:** [[vc-oa]] (16 hours) is the mandatory foundation for all technical verticals. It covers the [[gui-overview]], [[alarms-system]], and advanced visualization using the Metrics Composer.
-3. **Specialization tracks:** After obtaining the VC-OA certification, professionals may pursue [[vc-de]] (data engineering / Viewtilog) or [[vc-wde]] (network traffic / ViewtiMon & ViewtifyQoS).
+1. **Entry point (Sales/Presales):** [Vsp](vsp.md) (1 hour) and [Vc Psp](vc-psp.md) (8 hours) cover commercial positioning and solution architecture at a high level.
+2. **Analytical Core:** [Vc Oa](vc-oa.md) (16 hours) is the mandatory foundation for all technical verticals. It covers the [Gui Overview](../configuracion/gui-overview.md), [Alarms System](../conceptos/alarms-system.md), and advanced visualization using the Metrics Composer.
+3. **Specialization tracks:** After obtaining the VC-OA certification, professionals may pursue [Vc De](vc-de.md) (data engineering / Viewtilog) or [Vc Wde](vc-wde.md) (network traffic / ViewtiMon & ViewtifyQoS).
 
 ## Delivery Formats
 
-Courses are delivered online via the Viewtinet portal, in live online sessions, or on-site at partner and customer facilities. The [[vc-oa]] course, for example, includes six modules mixing theory and lab work, detailed in [[vcoa-modules]].
+Courses are delivered online via the Viewtinet portal, in live online sessions, or on-site at partner and customer facilities. The [Vc Oa](vc-oa.md) course, for example, includes six modules mixing theory and lab work, detailed in [Vcoa Modules](../cursos/vcoa-modules.md).
 
 ## Assessment and Certification
 
-All technical courses require a minimum score of 70% on an examination presentation to earn a formal certificate. The [[vsp]] program is the only track without a formal assessment, reflecting its introductory sales focus.
+All technical courses require a minimum score of 70% on an examination presentation to earn a formal certificate. The [Vsp](vsp.md) program is the only track without a formal assessment, reflecting its introductory sales focus.
 
 ## Key Platform Areas Covered
 
-Training spans the full Viewtinet suite: [[viewtisight-overview]] for dashboarding, [[viewtilog-overview]] for log management, [[viewtimon-overview]] for network traffic visibility, [[viewtiqos-overview]] for traffic prioritization, and [[viewtimanager-overview]] for centralized administration.
+Training spans the full Viewtinet suite: [Viewtisight Overview](../productos/viewtisight-overview.md) for dashboarding, [Viewtilog Overview](../productos/viewtilog-overview.md) for log management, [Viewtimon Overview](../productos/viewtimon-overview.md) for network traffic visibility, [Viewtiqos Overview](../productos/viewtiqos-overview.md) for traffic prioritization, and [Viewtimanager Overview](../productos/viewtimanager-overview.md) for centralized administration.

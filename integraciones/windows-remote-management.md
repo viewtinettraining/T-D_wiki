@@ -1,14 +1,12 @@
 ---
-tags: [integracion, winrm, windows, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Windows Remote Management (WinRM) Connector"
+description: "The Windows Remote Management (WinRM) Connector enables agentless monitoring of Windows servers by leveraging Microsoft's native WinRM protocol. It collects ..."
+keywords: "integracion, winrm, windows, vs-data-broker"
 ---
 
 # Windows Remote Management (WinRM) Connector
 
-The **Windows Remote Management (WinRM) Connector** enables agentless monitoring of Windows servers by leveraging Microsoft's native WinRM protocol. It collects performance metrics, system information, and event logs without requiring additional software on the target hosts. This connector is the recommended replacement for the deprecated [[wmi-extractor|WMI Connector]].
+The **Windows Remote Management (WinRM) Connector** enables agentless monitoring of Windows servers by leveraging Microsoft's native WinRM protocol. It collects performance metrics, system information, and event logs without requiring additional software on the target hosts. This connector is the recommended replacement for the deprecated [WMI Connector](wmi-extractor.md).
 
 ## Key Capabilities
 
@@ -40,12 +38,12 @@ Before configuring the WinRM Connector, the following steps must be completed on
 
 - Monitoring resource consumption on critical Windows servers
 - Collecting logon and security events from domain controllers
-- Tracking disk usage on application servers within the [[etl-pipeline|ETL pipeline]]
+- Tracking disk usage on application servers within the [ETL pipeline](../conceptos/etl-pipeline.md)
 
 ## Related Pages
 
-- [[wmi-extractor]] — Deprecated predecessor; not functional on modern Windows
-- [[ssh-extractor]] — Linux/Unix equivalent for agentless remote monitoring
-- [[etl-pipeline]] — ETL pipeline context
-- [[plugin-categories]] — WMI category in VSDB includes WinRM
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Wmi Extractor](wmi-extractor.md) — Deprecated predecessor; not functional on modern Windows
+- [Ssh Extractor](ssh-extractor.md) — Linux/Unix equivalent for agentless remote monitoring
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — ETL pipeline context
+- [Plugin Categories](../conceptos/plugin-categories.md) — WMI category in VSDB includes WinRM
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

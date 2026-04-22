@@ -1,14 +1,12 @@
 ---
-tags: [configuracion, viewtimanager, gui]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "GUI Overview"
+description: "The ViewtiManager graphical user interface is divided into three main zones: the top bar, the left sidebar navigation menu, and the main content panel. Toget..."
+keywords: "configuracion, viewtimanager, gui"
 ---
 
 # GUI Overview
 
-The ViewtiManager graphical user interface is divided into three main zones: the top bar, the left sidebar navigation menu, and the main content panel. Together they provide centralized access to all [[viewtimanager-overview|ViewtiManager]] modules and system controls.
+The ViewtiManager graphical user interface is divided into three main zones: the top bar, the left sidebar navigation menu, and the main content panel. Together they provide centralized access to all [ViewtiManager](../productos/viewtimanager-overview.md) modules and system controls.
 
 ## Top Bar
 
@@ -29,16 +27,16 @@ The vertical sidebar lists all accessible modules. The following items are alway
 | Inventory | Register and manage devices and data sources |
 | V.S. Data Broker | Configure data routing and telemetry transport |
 | Networking | IP addresses, DNS, routing, and interface settings |
-| Admin | Manage [[users]], [[roles]], [[groups]], [[tenants]], and auth |
-| License | Apply and monitor platform [[license-management|licenses]] |
+| Admin | Manage [Users](users.md), [Roles](roles.md), [Groups](groups.md), [Tenants](tenants.md), and auth |
+| License | Apply and monitor platform [licenses](license-management.md) |
 
 The following items appear **only when the corresponding feature is licensed**:
 
 | Menu Item | Description |
 |---|---|
-| [[viewtilog-overview|ViewtiLog]] | Log ingestion module monitoring and configuration |
-| [[viewtimon-overview|ViewtiMon]] | Deep traffic monitoring module |
-| [[viewtiqos-overview|ViewtiQoS]] | QoS policy engine with bypass controls |
+| [ViewtiLog](../productos/viewtilog-overview.md) | Log ingestion module monitoring and configuration |
+| [ViewtiMon](../productos/viewtimon-overview.md) | Deep traffic monitoring module |
+| [ViewtiQoS](../productos/viewtiqos-overview.md) | QoS policy engine with bypass controls |
 | Configuration Manager | Import, export, and replicate configuration templates |
 
 ## Main Content Panel
@@ -53,6 +51,6 @@ The central panel renders the content for the selected module. Common panel elem
 
 ## Navigation Flow
 
-After [[login|authenticating via Viewtiauth]], users see an App Selector that routes them to either ViewtiManager or [[viewtisight-overview|ViewtiSight]] depending on their assigned [[roles|role permissions]]. Once inside ViewtiManager, the sidebar allows navigation between all modules without re-authentication.
+After [authenticating via Viewtiauth](login.md), users see an App Selector that routes them to either ViewtiManager or [ViewtiSight](../productos/viewtisight-overview.md) depending on their assigned [role permissions](roles.md). Once inside ViewtiManager, the sidebar allows navigation between all modules without re-authentication.
 
-For licensing-related display changes, see [[license-management]].
+For licensing-related display changes, see [License Management](license-management.md).

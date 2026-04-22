@@ -1,9 +1,7 @@
 ---
-tags: [formacion, certificacion]
-tipo: concepto
-fuentes: ["portfolio-training-2026"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Viewtinet Certification Paths"
+description: "The Viewtinet certification program is organized into five verticals, each targeting a distinct professional role or technical domain. The paths are designed..."
+keywords: "formacion, certificacion"
 ---
 
 # Viewtinet Certification Paths
@@ -14,17 +12,17 @@ The Viewtinet certification program is organized into five verticals, each targe
 
 | Vertical | Certification(s) | Hours |
 |---|---|---|
-| Sales | [[vsp]] | 1h |
-| Presales | [[vc-psp]] | 8h |
-| ViewtiSight | VC-VIA → [[vc-oa]] | 16h |
-| Viewtilog | [[vc-de]] | 16h |
-| ViewtiMon & Viewtify | [[vc-wde]] | 8h |
+| Sales | [Vsp](vsp.md) | 1h |
+| Presales | [Vc Psp](vc-psp.md) | 8h |
+| ViewtiSight | VC-VIA → [Vc Oa](vc-oa.md) | 16h |
+| Viewtilog | [Vc De](vc-de.md) | 16h |
+| ViewtiMon & Viewtify | [Vc Wde](vc-wde.md) | 8h |
 
 ## VCOA: The Mandatory Analytical Core
 
-The [[vc-oa]] certification (Viewtinet Certified Observability Analyst, also called VCOA) is the cornerstone of the technical track. It is a **strict prerequisite** for the [[vc-de]] certification and is strongly recommended before [[vc-psp]]. Without VCOA, engineers cannot enroll in the Viewtilog specialization or the Wire Data track prerequisites.
+The [Vc Oa](vc-oa.md) certification (Viewtinet Certified Observability Analyst, also called VCOA) is the cornerstone of the technical track. It is a **strict prerequisite** for the [Vc De](vc-de.md) certification and is strongly recommended before [Vc Psp](vc-psp.md). Without VCOA, engineers cannot enroll in the Viewtilog specialization or the Wire Data track prerequisites.
 
-VCOA equips professionals with mastery of [[viewtisight-overview]] — including [[gui-overview]] navigation, the Metrics Composer, Dashboard Composer, and the [[alarms-system]]. The detailed module breakdown is covered in [[vcoa-modules]].
+VCOA equips professionals with mastery of [Viewtisight Overview](../productos/viewtisight-overview.md) — including [Gui Overview](../configuracion/gui-overview.md) navigation, the Metrics Composer, Dashboard Composer, and the [Alarms System](../conceptos/alarms-system.md). The detailed module breakdown is covered in [Vcoa Modules](../cursos/vcoa-modules.md).
 
 ## Progression Flow
 
@@ -39,24 +37,24 @@ VC-OA (VCOA) ─┬──► VC-DE  ───────────  (Viewtilo
 
 ## Sales Track: VSP
 
-The [[vsp]] is a one-hour entry-level course for professionals involved in commercial engagements. It covers Viewtinet's value proposition, target personas, and key use cases. No formal exam is required.
+The [Vsp](vsp.md) is a one-hour entry-level course for professionals involved in commercial engagements. It covers Viewtinet's value proposition, target personas, and key use cases. No formal exam is required.
 
 ## Presales Track: VC-PSP
 
-The [[vc-psp]] (8 hours) covers the full product portfolio including [[viewtilog-overview]], [[viewtimon-overview]], [[viewtiqos-overview]], and [[viewtimanager-overview]], plus sizing guidelines and case studies. It requires a 70% examination pass. See [[vc-psp]] for the full agenda.
+The [Vc Psp](vc-psp.md) (8 hours) covers the full product portfolio including [Viewtilog Overview](../productos/viewtilog-overview.md), [Viewtimon Overview](../productos/viewtimon-overview.md), [Viewtiqos Overview](../productos/viewtiqos-overview.md), and [Viewtimanager Overview](../productos/viewtimanager-overview.md), plus sizing guidelines and case studies. It requires a 70% examination pass. See [Vc Psp](vc-psp.md) for the full agenda.
 
 ## ViewtiSight Track: VC-OA
 
-See [[vc-oa]] and [[vcoa-modules]] for full detail on modules, labs, and assessment criteria.
+See [Vc Oa](vc-oa.md) and [Vcoa Modules](../cursos/vcoa-modules.md) for full detail on modules, labs, and assessment criteria.
 
 ## Viewtilog Track: VC-DE
 
-The [[vc-de]] (16 hours) focuses exclusively on [[viewtilog-overview]], the Smart Data Broker, and [[etl-pipeline]] workflows. It requires a prior [[vc-oa]] certification. The detailed agenda is in [[vc-de-agenda]].
+The [Vc De](vc-de.md) (16 hours) focuses exclusively on [Viewtilog Overview](../productos/viewtilog-overview.md), the Smart Data Broker, and [Etl Pipeline](../conceptos/etl-pipeline.md) workflows. It requires a prior [Vc Oa](vc-oa.md) certification. The detailed agenda is in [Vc De Agenda](../cursos/vc-de-agenda.md).
 
 ## ViewtiMon & Viewtify Track: VC-WDE
 
-The [[vc-wde]] (8 hours) covers [[viewtimon-overview]], [[viewtiqos-overview]], hardware appliances, and deployment modes (Sniffer/Inline). It requires basic Linux terminal knowledge. See [[vc-wde-agenda]] for the full agenda.
+The [Vc Wde](vc-wde.md) (8 hours) covers [Viewtimon Overview](../productos/viewtimon-overview.md), [Viewtiqos Overview](../productos/viewtiqos-overview.md), hardware appliances, and deployment modes (Sniffer/Inline). It requires basic Linux terminal knowledge. See [Vc Wde Agenda](../cursos/vc-wde-agenda.md) for the full agenda.
 
 ## Reference
 
-For a broader context on the training program mission and delivery formats, see [[training-overview]].
+For a broader context on the training program mission and delivery formats, see [Training Overview](training-overview.md).

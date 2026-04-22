@@ -1,27 +1,25 @@
 ---
-tags: [instalacion, viewtisight]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiSight Installation"
+description: "ViewtiSight is installed automatically as part of the standard bundle installation alongside ViewtiManager and ViewtiAuth in standalone mode — there is no se..."
+keywords: "instalacion, viewtisight"
 ---
 
 # ViewtiSight Installation
 
-ViewtiSight is installed automatically as part of the standard [[installation-bundle-steps|bundle installation]] alongside ViewtiManager and ViewtiAuth in standalone mode — there is no separate standalone installation step. This page focuses on the cluster (HA) deployment. For a product overview, see [[viewtisight-overview]].
+ViewtiSight is installed automatically as part of the standard [bundle installation](installation-bundle-steps.md) alongside ViewtiManager and ViewtiAuth in standalone mode — there is no separate standalone installation step. This page focuses on the cluster (HA) deployment. For a product overview, see [Viewtisight Overview](../productos/viewtisight-overview.md).
 
 ## Standalone Deployment
 
-In a [[standalone-vs-cluster|standalone deployment]], ViewtiSight, ViewtiManager, and Viewticore are all installed together during the [[installation-bundle-steps|three-step bundle installation]]. No additional steps are required for standalone mode.
+In a [standalone deployment](../conceptos/standalone-vs-cluster.md), ViewtiSight, ViewtiManager, and Viewticore are all installed together during the [three-step bundle installation](installation-bundle-steps.md). No additional steps are required for standalone mode.
 
 ## Cluster (HA) Installation
 
 ### Mandatory Requirements
 
-- The primary node must be fully installed and licensed via the [[installation-bundle]]
+- The primary node must be fully installed and licensed via the [Installation Bundle](installation-bundle.md)
 - At least 2 nodes (one master, one mirror)
 - A dedicated floating VIP address (e.g., `10.30.23.21`) managed by Keepalived
-- NTP synchronization on all nodes — see [[system-configuration]]
+- NTP synchronization on all nodes — see [System Configuration](system-configuration.md)
 
 ### Recommended
 
@@ -62,6 +60,6 @@ For geographically distributed or firewalled clusters, open these ports between 
 
 ### Licensing the Second Node
 
-Each node requires its own license. Retrieve [[server-info]] from Node 2, request a `.key` file, then perform [[user-admin-activation]] and [[upload-license]] on Node 2.
+Each node requires its own license. Retrieve [Server Info](server-info.md) from Node 2, request a `.key` file, then perform [User Admin Activation](user-admin-activation.md) and [Upload License](upload-license.md) on Node 2.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

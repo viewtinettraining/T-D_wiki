@@ -1,9 +1,7 @@
 ---
-tags: [integracion, csv, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "CSV Extractor"
+description: "The CSV Connector ingests records from CSV files stored on the local Viewtilog server. Despite its name, the field separator is configurable, allowing it to ..."
+keywords: "integracion, csv, extractor, vs-data-broker"
 ---
 
 # CSV Extractor
@@ -12,7 +10,7 @@ The **CSV Connector** ingests records from CSV files stored on the local Viewtil
 
 ## How It Works
 
-An external or scheduled process must deposit CSV files into the configured Collected Path. The connector reads these files, processes them, and moves them to the Processed Path to avoid reprocessing. This file-based approach decouples the data producer from the [[etl-pipeline|ETL pipeline]].
+An external or scheduled process must deposit CSV files into the configured Collected Path. The connector reads these files, processes them, and moves them to the Processed Path to avoid reprocessing. This file-based approach decouples the data producer from the [ETL pipeline](../conceptos/etl-pipeline.md).
 
 ## Configuration Parameters
 
@@ -41,8 +39,8 @@ Fields must be defined before the connector can parse files. Two methods are ava
 
 ## Related Pages
 
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[plugin-categories]] — CDR is a dedicated category for VoIP CSV data
-- [[command-executor]] — Alternative for command-generated CSV-like output
-- [[data-producers]] — Load stage destinations after CSV processing
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Plugin Categories](../conceptos/plugin-categories.md) — CDR is a dedicated category for VoIP CSV data
+- [Command Executor](command-executor.md) — Alternative for command-generated CSV-like output
+- [Data Producers](data-producers.md) — Load stage destinations after CSV processing
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

@@ -1,16 +1,14 @@
 ---
-tags: [integracion, sflow, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "sFlow Extractor"
+description: "The sFlow Connector processes flow data exported in the sFlow protocol from network switches and routers. Like the NetFlow Connector, it requires a prerequis..."
+keywords: "integracion, sflow, extractor, vs-data-broker"
 ---
 
 # sFlow Extractor
 
-The **sFlow Connector** processes flow data exported in the **sFlow protocol** from network switches and routers. Like the [[netflow-extractor|NetFlow Connector]], it requires a prerequisite [[ethernet-streamer|Ethernet Streamer]] pipeline to be configured first — the Ethernet Streamer listens on the sFlow port (commonly UDP/6343), captures binary traffic, and deposits it in the Collected Path for the sFlow Connector to decode.
+The **sFlow Connector** processes flow data exported in the **sFlow protocol** from network switches and routers. Like the [NetFlow Connector](netflow-extractor.md), it requires a prerequisite [Ethernet Streamer](ethernet-streamer.md) pipeline to be configured first — the Ethernet Streamer listens on the sFlow port (commonly UDP/6343), captures binary traffic, and deposits it in the Collected Path for the sFlow Connector to decode.
 
-**Note**: Viewtinet provides a [[plugin-template|Plugin Template]] for sFlow integrations. In most cases the template already includes a functional setup.
+**Note**: Viewtinet provides a [Plugin Template](../conceptos/plugin-template.md) for sFlow integrations. In most cases the template already includes a functional setup.
 
 ## Configuration Parameters
 
@@ -28,14 +26,14 @@ The **sFlow Connector** processes flow data exported in the **sFlow protocol** f
 
 ## Relationship to Ethernet Streamer
 
-The Ethernet Streamer and sFlow Connector work as a two-stage pair within the [[etl-pipeline|ETL pipeline]]:
+The Ethernet Streamer and sFlow Connector work as a two-stage pair within the [ETL pipeline](../conceptos/etl-pipeline.md):
 1. **Ethernet Streamer** — Passive listener; captures raw sFlow UDP traffic continuously.
 2. **sFlow Connector** — Scheduled decoder; reads binary dumps and extracts structured fields.
 
 ## Related Pages
 
-- [[ethernet-streamer]] — Required prerequisite for traffic capture
-- [[netflow-extractor]] — Similar connector for NetFlow/JFlow/NetStream
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[plugin-template]] — Pre-built sFlow plugin template
-- [[plugin-categories]] — Sflow is a dedicated category in VSDB
+- [Ethernet Streamer](ethernet-streamer.md) — Required prerequisite for traffic capture
+- [Netflow Extractor](netflow-extractor.md) — Similar connector for NetFlow/JFlow/NetStream
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Plugin Template](../conceptos/plugin-template.md) — Pre-built sFlow plugin template
+- [Plugin Categories](../conceptos/plugin-categories.md) — Sflow is a dedicated category in VSDB

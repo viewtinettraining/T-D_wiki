@@ -1,14 +1,12 @@
 ---
-tags: [integraciones, vsdb, extractor]
-tipo: tecnica
-fuentes: ["file-list"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "File List Extractor"
+description: "The File List Connector is a scheduled extractor in the VS Data Broker Extract stage. It reads files from a designated \"to-collect\" directory on the Viewtilo..."
+keywords: "integraciones, vsdb, extractor"
 ---
 
 # File List Extractor
 
-The File List Connector is a scheduled extractor in the [[vs-data-broker-overview|VS Data Broker]] Extract stage. It reads files from a designated "to-collect" directory on the Viewtilog server and moves them to a "to-send" directory, preparing them for downstream processing or delivery.
+The File List Connector is a scheduled extractor in the [VS Data Broker](../productos/vs-data-broker-overview.md) Extract stage. It reads files from a designated "to-collect" directory on the Viewtilog server and moves them to a "to-send" directory, preparing them for downstream processing or delivery.
 
 This connector is designed for scenarios where external systems drop files — such as CSV logs, call detail records, or reports — into a shared directory for collection. It pairs naturally with the SCP Producer in the Load stage for secure delivery to remote destinations.
 
@@ -22,11 +20,11 @@ This connector is designed for scenarios where external systems drop files — s
 
 ## Difference from Continuous Connectors
 
-Unlike [[ethernet-streamer]], which runs as a constant listener, the File List Connector operates on a schedule. It activates at defined intervals, processes up to the configured number of files, and then waits until the next execution cycle. This makes it efficient for batch-oriented file ingestion patterns.
+Unlike [Ethernet Streamer](ethernet-streamer.md), which runs as a constant listener, the File List Connector operates on a schedule. It activates at defined intervals, processes up to the configured number of files, and then waits until the next execution cycle. This makes it efficient for batch-oriented file ingestion patterns.
 
 ## Configuration Steps
 
-1. In the **Editing Extract Stage** window within the [[plugin-architecture|plugin editor]], choose **File List Connector** from the Connector Type dropdown.
+1. In the **Editing Extract Stage** window within the [plugin editor](../conceptos/plugin-architecture.md), choose **File List Connector** from the Connector Type dropdown.
 2. Enter a unique **Pipeline Name** (e.g., `my_file_list_connector`).
 3. Set the **Frequency Type**:
    - **Periodic** — runs every N seconds (set via Refresh Time)
@@ -54,6 +52,6 @@ Unlike [[ethernet-streamer]], which runs as a constant listener, the File List C
 
 ## Integration with the ETL Pipeline
 
-After files are moved to the to-send directory, they can be processed through the [[etl-pipeline]] Transform stage for field normalization, then delivered via a [[data-producers|Producer]]. The SCP Producer is the most common pairing with this connector, as it securely transfers files to remote destinations.
+After files are moved to the to-send directory, they can be processed through the [Etl Pipeline](../conceptos/etl-pipeline.md) Transform stage for field normalization, then delivered via a [Producer](data-producers.md). The SCP Producer is the most common pairing with this connector, as it securely transfers files to remote destinations.
 
-For context on how this connector fits into a full plugin, see [[customized-plugin]] and [[plugin-template]]. For other file-based extraction alternatives, see [[csv-extractor]].
+For context on how this connector fits into a full plugin, see [Customized Plugin](../conceptos/customized-plugin.md) and [Plugin Template](../conceptos/plugin-template.md). For other file-based extraction alternatives, see [Csv Extractor](csv-extractor.md).

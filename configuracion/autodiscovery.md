@@ -1,18 +1,16 @@
 ---
-tags: [configuracion, viewtimanager, inventario, autodiscovery]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Autodiscovery"
+description: "Autodiscovery allows ViewtiManager to dynamically scan network ranges and automatically onboard devices into the Inventory — no CSV file required. Unlike CSV..."
+keywords: "configuracion, viewtimanager, inventario, autodiscovery"
 ---
 
 # Autodiscovery
 
-Autodiscovery allows ViewtiManager to dynamically scan network ranges and automatically onboard devices into the [[inventory-management|Inventory]] — no CSV file required. Unlike [[csv-provisioning|CSV import]], Autodiscovery discovers unknown devices on the fly, gathers live SNMP/ICMP data during the scan, and auto-populates inventory fields such as MAC address, sysObjectID, and systemName.
+Autodiscovery allows ViewtiManager to dynamically scan network ranges and automatically onboard devices into the [Inventory](inventory-management.md) — no CSV file required. Unlike [CSV import](csv-provisioning.md), Autodiscovery discovers unknown devices on the fly, gathers live SNMP/ICMP data during the scan, and auto-populates inventory fields such as MAC address, sysObjectID, and systemName.
 
 ## Launch Autodiscovery
 
-1. In the [[viewtimanager-overview|ViewtiManager]] web console, click **Inventory → AUTODISCOVERY**.
+1. In the [ViewtiManager](../productos/viewtimanager-overview.md) web console, click **Inventory → AUTODISCOVERY**.
 2. Click **LAUNCH NEW AUTO DISCOVERY**.
 
 ## Specify Targets
@@ -60,9 +58,9 @@ Autodiscovery results and the main Inventory view both support a Query Builder f
 
 ## Related Pages
 
-- [[inventory-management]] — Inventory overview and tab structure
-- [[csv-provisioning]] — Alternative bulk provisioning via CSV
-- [[manual-provisioning]] — Manual one-by-one device entry
-- [[inventory-maintenance]] — Column management and data hygiene
-- [[plugin-architecture]] — Plugin framework underlying the Plugins tab
-- [[vs-data-broker-overview]] — Data routing after plugin installation
+- [Inventory Management](inventory-management.md) — Inventory overview and tab structure
+- [Csv Provisioning](csv-provisioning.md) — Alternative bulk provisioning via CSV
+- [Manual Provisioning](manual-provisioning.md) — Manual one-by-one device entry
+- [Inventory Maintenance](inventory-maintenance.md) — Column management and data hygiene
+- [Plugin Architecture](../conceptos/plugin-architecture.md) — Plugin framework underlying the Plugins tab
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — Data routing after plugin installation

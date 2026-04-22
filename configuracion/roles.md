@@ -1,16 +1,14 @@
 ---
-tags: [configuracion, viewtimanager, admin, roles, rbac]
-tipo: tecnica
-fuentes: ["viewtimanager-user-guide"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Roles"
+description: "Roles define custom permission sets that control what actions users and groups can perform within the Viewtinet platform. Once a role is created, it can be a..."
+keywords: "configuracion, viewtimanager, admin, roles, rbac"
 ---
 
 # Roles
 
-Roles define custom permission sets that control what actions [[users]] and [[groups]] can perform within the Viewtinet platform. Once a role is created, it can be assigned to individual users or to user groups. Roles are managed at **Admin → Roles**.
+Roles define custom permission sets that control what actions [Users](users.md) and [Groups](groups.md) can perform within the Viewtinet platform. Once a role is created, it can be assigned to individual users or to user groups. Roles are managed at **Admin → Roles**.
 
-Roles are also the mechanism used to map [[active-directory|Active Directory]] groups to Viewtinet access levels. See [[ad-groups-roles]] for the mapping procedure.
+Roles are also the mechanism used to map [Active Directory](../integraciones/active-directory.md) groups to Viewtinet access levels. See [Ad Groups Roles](../integraciones/ad-groups-roles.md) for the mapping procedure.
 
 ## Creating a Role
 
@@ -34,12 +32,12 @@ Use the dual-list interface to grant or revoke granular permissions. Key permiss
 | Permission | Description |
 |---|---|
 | `VM_FULL_ACCESS` | Full access to ViewtiManager (excluding R&D) |
-| `VS_FULL_ACCESS` | Full access to [[viewtisight-overview|ViewtiSight]] |
+| `VS_FULL_ACCESS` | Full access to [ViewtiSight](../productos/viewtisight-overview.md) |
 | `VS_READ_ONLY` | Read-only access to all ViewtiSight views |
 | `VM_ADMIN_MODULE` | Access to ViewtiManager Admin module |
 | `VM_INVENTORY_MODULE` | Access to ViewtiManager Inventory module |
-| `VM_CONFIGURATION_MANAGER_MODULE` | Access to [[configuration-manager]] |
-| `VM_VIEWTIMON_MODULE` | Access to [[viewtimon-overview|ViewtiMon]] module |
+| `VM_CONFIGURATION_MANAGER_MODULE` | Access to [Configuration Manager](configuration-manager.md) |
+| `VM_VIEWTIMON_MODULE` | Access to [ViewtiMon](../productos/viewtimon-overview.md) module |
 | `VM_QOS_MODULE` | Access to ViewtifyQoS module |
 | `VM_PLUGINS_MODULE` | Access to V.S. Data Broker |
 | `VM_ADMIN_USERS_FILTERED` | Removes Users tab from Admin area |
@@ -58,13 +56,13 @@ In the **Role Sets** section, determine which database tables ("sets") this role
 
 ## Role Groups and Role Users
 
-The **Role Groups** panel lists user groups associated with this role (read-only here — manage from [[groups]]). The **Role Users** panel lists individual users with this role (manage from [[users]]).
+The **Role Groups** panel lists user groups associated with this role (read-only here — manage from [Groups](groups.md)). The **Role Users** panel lists individual users with this role (manage from [Users](users.md)).
 
 After updating any section, click **Save Changes** to apply.
 
 ## Related Pages
 
-- [[users]] — Assigning roles to individual users
-- [[groups]] — Assigning roles to user groups
-- [[ad-groups-roles]] — Mapping AD groups to Viewtinet roles
-- [[tenants]] — Data access scoping per tenant
+- [Users](users.md) — Assigning roles to individual users
+- [Groups](groups.md) — Assigning roles to user groups
+- [Ad Groups Roles](../integraciones/ad-groups-roles.md) — Mapping AD groups to Viewtinet roles
+- [Tenants](tenants.md) — Data access scoping per tenant

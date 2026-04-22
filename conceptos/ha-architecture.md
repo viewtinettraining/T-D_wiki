@@ -1,14 +1,12 @@
 ---
-tags: [conceptos, ha, alta-disponibilidad, cluster, arquitectura]
-tipo: tecnica
-fuentes: ["HA Architecture 0619v2", "viewtinet-cli-guide_en_v6.3.5_v1.0"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "High Availability Architecture"
+description: "The Viewtinet platform supports a High Availability (HA) deployment model for ViewtiSight and ViewtiLog. HA mode provides automatic failover, load balancing,..."
+keywords: "conceptos, ha, alta-disponibilidad, cluster, arquitectura"
 ---
 
 # High Availability Architecture
 
-The Viewtinet platform supports a High Availability (HA) deployment model for [[viewtisight-overview|ViewtiSight]] and [[viewtilog-overview|ViewtiLog]]. HA mode provides automatic failover, load balancing, and service continuity without manual intervention, making it the recommended deployment pattern for production environments.
+The Viewtinet platform supports a High Availability (HA) deployment model for [ViewtiSight](../productos/viewtisight-overview.md) and [ViewtiLog](../productos/viewtilog-overview.md). HA mode provides automatic failover, load balancing, and service continuity without manual intervention, making it the recommended deployment pattern for production environments.
 
 ## Active-Passive Model
 
@@ -18,13 +16,13 @@ Viewtinet HA follows an **active-passive** design:
 - **Secondary node (passive/mirror)** — remains synchronized and ready to take over
 - Failover is automatic; no operator action is required when the primary node fails
 
-Both nodes run identical software stacks installed from the [[installation-bundle|installation bundle]] and must use homogeneous hardware (matching CPU, RAM, and storage is strongly recommended).
+Both nodes run identical software stacks installed from the [installation bundle](../instalacion/installation-bundle.md) and must use homogeneous hardware (matching CPU, RAM, and storage is strongly recommended).
 
 ## Key Components
 
 ### Keepalived (VIP Management)
 
-Keepalived manages the **Virtual IP (VIP)** — a floating IPv4 address that always points to the active node. External clients, the [[rest-api|REST API]], and the [[gui-overview|Viewtinet GUI]] all connect through the VIP, so they are unaffected by a node switch.
+Keepalived manages the **Virtual IP (VIP)** — a floating IPv4 address that always points to the active node. External clients, the [REST API](../productos/rest-api.md), and the [Viewtinet GUI](../configuracion/gui-overview.md) all connect through the VIP, so they are unaffected by a node switch.
 
 - VIP is configured during cluster installation
 - Keepalived uses VRRP (Virtual Router Redundancy Protocol) to elect the active node
@@ -35,8 +33,8 @@ Keepalived manages the **Virtual IP (VIP)** — a floating IPv4 address that alw
 HAProxy sits in front of the cluster and distributes inbound connections across nodes. It performs health checks on each node and removes unhealthy nodes from the pool automatically.
 
 HAProxy handles:
-- HTTP and HTTPS traffic to [[viewtisight-overview|ViewtiSight]] (ports 8080, 443)
-- API traffic to the [[rest-api|REST API]] gateway
+- HTTP and HTTPS traffic to [ViewtiSight](../productos/viewtisight-overview.md) (ports 8080, 443)
+- API traffic to the [REST API](../productos/rest-api.md) gateway
 - Internal service-to-service traffic in multi-node clusters
 
 ### Inter-Node Network Interface
@@ -56,22 +54,22 @@ A dedicated network interface is recommended for heartbeat traffic, state synchr
 |-------------|--------|
 | Nodes | Minimum 2, identical hardware recommended |
 | VIP | One floating IPv4 address per cluster |
-| NTP | All nodes synchronized — see [[os-setup]] |
-| Licenses | Each node requires its own license — see [[upload-license]] |
+| NTP | All nodes synchronized — see [Os Setup](../instalacion/os-setup.md) |
+| Licenses | Each node requires its own license — see [Upload License](../instalacion/upload-license.md) |
 | Dedicated NIC | Separate interface for inter-node traffic (recommended) |
 
 ## Module HA Support
 
-Not all Viewtinet modules support HA. See [[standalone-vs-cluster]] for the full matrix:
+Not all Viewtinet modules support HA. See [Standalone Vs Cluster](standalone-vs-cluster.md) for the full matrix:
 
-- [[viewtilog-overview|ViewtiLog]] — HA supported
-- [[viewtisight-overview|ViewtiSight]] — HA supported
-- [[viewtimon-overview|ViewtiMon]] — standalone only
-- [[viewtiqos-overview|ViewtiQoS]] — standalone only
+- [ViewtiLog](../productos/viewtilog-overview.md) — HA supported
+- [ViewtiSight](../productos/viewtisight-overview.md) — HA supported
+- [ViewtiMon](../productos/viewtimon-overview.md) — standalone only
+- [ViewtiQoS](../productos/viewtiqos-overview.md) — standalone only
 
 ## CLI Tools for HA
 
-The [[cli-reference|CLI]] provides scripts to check HA status:
+The [CLI](cli-reference.md) provides scripts to check HA status:
 
 - `check_vrrp.sh` — shows current VRRP state and VIP ownership
 - `check_ip.sh` — verifies IP binding on each node

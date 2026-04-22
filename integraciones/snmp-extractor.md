@@ -1,14 +1,12 @@
 ---
-tags: [integracion, snmp, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "SNMP Extractor"
+description: "The SNMP Connector is one of the most widely used connectors in the Visual Smart Data Broker (VSDB). It polls network devices, servers, and any SNMP-capable ..."
+keywords: "integracion, snmp, extractor, vs-data-broker"
 ---
 
 # SNMP Extractor
 
-The **SNMP Connector** is one of the most widely used connectors in the [[vs-data-broker-overview|Visual Smart Data Broker (VSDB)]]. It polls network devices, servers, and any SNMP-capable system to extract metrics via OIDs. It operates in the Extract stage of the [[etl-pipeline|ETL pipeline]] within a [[plugin-architecture|plugin]].
+The **SNMP Connector** is one of the most widely used connectors in the [Visual Smart Data Broker (VSDB)](../productos/vs-data-broker-overview.md). It polls network devices, servers, and any SNMP-capable system to extract metrics via OIDs. It operates in the Extract stage of the [ETL pipeline](../conceptos/etl-pipeline.md) within a [plugin](../conceptos/plugin-architecture.md).
 
 ## Configuration Parameters
 
@@ -38,12 +36,12 @@ When polling large numbers of devices, `hostPartitionSize` and `partitionDelay` 
 
 ## Host Provisioning
 
-Hosts are typically provisioned through the [[inventory-management|Inventory module]] for large-scale deployments. Individual hosts can also be added manually via the "Add Host" button with a specific OID Group.
+Hosts are typically provisioned through the [Inventory module](../configuracion/inventory-management.md) for large-scale deployments. Individual hosts can also be added manually via the "Add Host" button with a specific OID Group.
 
 ## Related Pages
 
-- [[etl-pipeline]] — Full pipeline context
-- [[plugin-architecture]] — Plugin as container
-- [[plugin-categories]] — SNMP is a dedicated category
-- [[snmp-trap-connector]] — Separate connector for trap-based integration
-- [[inventory-management]] — Mass host provisioning
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full pipeline context
+- [Plugin Architecture](../conceptos/plugin-architecture.md) — Plugin as container
+- [Plugin Categories](../conceptos/plugin-categories.md) — SNMP is a dedicated category
+- [Snmp Trap Connector](snmp-trap-connector.md) — Separate connector for trap-based integration
+- [Inventory Management](../configuracion/inventory-management.md) — Mass host provisioning

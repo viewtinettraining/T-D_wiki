@@ -1,9 +1,7 @@
 ---
-tags: [productos, viewtimon, monitoreo, dpi]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiMon Overview"
+description: "ViewtiMon is the high-performance traffic monitoring engine of the Viewtinet platform. It uses Deep Packet Inspection (DPI) and scalable probe architectures ..."
+keywords: "productos, viewtimon, monitoreo, dpi"
 ---
 
 # ViewtiMon Overview
@@ -12,7 +10,7 @@ ViewtiMon is the high-performance traffic monitoring engine of the Viewtinet pla
 
 ## Purpose
 
-ViewtiMon is deployed on Viewtinet's purpose-built appliances (or certified hardware with approved NICs). It provides the raw traffic intelligence that feeds the entire Viewtinet analytics stack — including [[viewtisight-overview|ViewtiSight]] for reporting and [[viewtiqos-overview|ViewtiQoS]] for traffic management.
+ViewtiMon is deployed on Viewtinet's purpose-built appliances (or certified hardware with approved NICs). It provides the raw traffic intelligence that feeds the entire Viewtinet analytics stack — including [ViewtiSight](viewtisight-overview.md) for reporting and [ViewtiQoS](viewtiqos-overview.md) for traffic management.
 
 ## Key Capabilities
 
@@ -42,8 +40,8 @@ ViewtiMon's real-time analytics enable teams to:
 
 ## Integration
 
-ViewtiMon data feeds into [[viewtisight-overview|ViewtiSight]] for visualization, alarms, and long-term reporting. It is a prerequisite for [[viewtiqos-overview|ViewtiQoS]] deployment.
+ViewtiMon data feeds into [ViewtiSight](viewtisight-overview.md) for visualization, alarms, and long-term reporting. It is a prerequisite for [ViewtiQoS](viewtiqos-overview.md) deployment.
 
-HA is not supported for ViewtiMon — only [[standalone-vs-cluster|standalone deployment]] is available. See [[viewtimon-installation]] for installation steps and fine-tuning details.
+HA is not supported for ViewtiMon — only [standalone deployment](../conceptos/standalone-vs-cluster.md) is available. See [Viewtimon Installation](../instalacion/viewtimon-installation.md) for installation steps and fine-tuning details.
 
-See [[installation-guide-hub|Installation Guide Hub]] for related source documentation.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for related source documentation.

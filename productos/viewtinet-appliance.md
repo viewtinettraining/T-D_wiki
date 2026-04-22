@@ -1,14 +1,12 @@
 ---
-tags: [productos, hardware, appliance]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Viewtinet Appliance"
+description: "The Viewtinet appliance is a purpose-built hardware platform designed to run the Viewtinet software stack, including ViewtiMon and ViewtiQoS. It ships with a..."
+keywords: "productos, hardware, appliance"
 ---
 
 # Viewtinet Appliance
 
-The Viewtinet appliance is a purpose-built hardware platform designed to run the Viewtinet software stack, including [[viewtimon-overview|ViewtiMon]] and [[viewtiqos-overview|ViewtiQoS]]. It ships with a default management IP that must be updated before deployment.
+The Viewtinet appliance is a purpose-built hardware platform designed to run the Viewtinet software stack, including [ViewtiMon](viewtimon-overview.md) and [ViewtiQoS](viewtiqos-overview.md). It ships with a default management IP that must be updated before deployment.
 
 ## Physical Layout
 
@@ -18,7 +16,7 @@ The Viewtinet appliance is a purpose-built hardware platform designed to run the
 2. Power Supply (redundant)
 3. Management Interface (network)
 4. Serial Port for monitor
-5. **IPMI Interface** (out-of-band management) — see [[ipmi-management]]
+5. **IPMI Interface** (out-of-band management) — see [Ipmi Management](../conceptos/ipmi-management.md)
 6. USB Ports (keyboard or bypass)
 
 ## Racking the Appliance
@@ -49,14 +47,14 @@ The script prompts for IPMI access confirmation, then for current and new IP/mas
 sudo netplan apply
 ```
 
-After the IP change, use the new IP for both SSH and [[gui-overview|GUI]] access. Confirm [[ipmi-management|IPMI access]] is available before running this script — if the process fails, IPMI provides recovery access.
+After the IP change, use the new IP for both SSH and [GUI](../configuracion/gui-overview.md) access. Confirm [IPMI access](../conceptos/ipmi-management.md) is available before running this script — if the process fails, IPMI provides recovery access.
 
 ## IPMI Configuration
 
-IPMI is configured via the BIOS Setup Utility at boot. See [[ipmi-management]] for the full IPMI setup and remote console procedures.
+IPMI is configured via the BIOS Setup Utility at boot. See [Ipmi Management](../conceptos/ipmi-management.md) for the full IPMI setup and remote console procedures.
 
 ## Software Installation
 
-After physical setup and IP configuration, proceed with [[os-setup]], [[hdd-partitioning]], [[system-configuration]], and [[installation-bundle]] to deploy the Viewtinet software.
+After physical setup and IP configuration, proceed with [Os Setup](../instalacion/os-setup.md), [Hdd Partitioning](../instalacion/hdd-partitioning.md), [System Configuration](../instalacion/system-configuration.md), and [Installation Bundle](../instalacion/installation-bundle.md) to deploy the Viewtinet software.
 
-See [[installation-guide-hub|Installation Guide Hub]] for the full source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the full source index.

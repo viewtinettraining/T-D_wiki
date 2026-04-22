@@ -1,14 +1,12 @@
 ---
-tags: [integraciones, vsdb, transform]
-tipo: tecnica
-fuentes: ["column-constant-adder"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Column Constant Adder"
+description: "The Column Constant Adder is a Transform handler in the VS Data Broker etl-pipeline. It applies a fixed constant value to every record in a specified column,..."
+keywords: "integraciones, vsdb, transform"
 ---
 
 # Column Constant Adder
 
-The Column Constant Adder is a Transform handler in the [[vs-data-broker-overview|VS Data Broker]] [[etl-pipeline]]. It applies a fixed constant value to every record in a specified column, either as a numeric addition or as a string concatenation.
+The Column Constant Adder is a Transform handler in the [VS Data Broker](../productos/vs-data-broker-overview.md) [Etl Pipeline](../conceptos/etl-pipeline.md). It applies a fixed constant value to every record in a specified column, either as a numeric addition or as a string concatenation.
 
 ## What It Does
 
@@ -31,7 +29,7 @@ Append a constant text string to every value in a string column. Common applicat
 
 ## How to Configure
 
-In the **Editing Transform Stage** window within the [[plugin-architecture|plugin editor]]:
+In the **Editing Transform Stage** window within the [plugin editor](../conceptos/plugin-architecture.md):
 
 1. Select **Column Constant Adder** from the list of available Grid Handlers.
 2. Enter the **column name** to operate on.
@@ -48,10 +46,10 @@ The operation is immediately reflected in the transform output preview if a samp
 
 ## Context in the ETL Pipeline
 
-The Column Constant Adder sits in the Transform stage between the Extract and Load phases of the [[etl-pipeline]]. Typical pipeline patterns:
+The Column Constant Adder sits in the Transform stage between the Extract and Load phases of the [Etl Pipeline](../conceptos/etl-pipeline.md). Typical pipeline patterns:
 
-- [[snmp-extractor]] → Column Constant Adder (add site label) → [[data-producers|Producer]]
-- [[flow-emitter]] → Column Constant Adder (normalize volume units) → [[data-producers|Producer]]
-- [[csv-extractor]] → Column Constant Adder → [[data-producers|Producer]]
+- [Snmp Extractor](snmp-extractor.md) → Column Constant Adder (add site label) → [Producer](data-producers.md)
+- [Flow Emitter](flow-emitter.md) → Column Constant Adder (normalize volume units) → [Producer](data-producers.md)
+- [Csv Extractor](csv-extractor.md) → Column Constant Adder → [Producer](data-producers.md)
 
-For more complex transformations involving conditional logic or field renaming, other Grid Handlers available in the [[customized-plugin]] editor should be used alongside or instead of this handler.
+For more complex transformations involving conditional logic or field renaming, other Grid Handlers available in the [Customized Plugin](../conceptos/customized-plugin.md) editor should be used alongside or instead of this handler.

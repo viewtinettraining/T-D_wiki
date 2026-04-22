@@ -1,14 +1,12 @@
 ---
-tags: [formacion, certificacion, observabilidad]
-tipo: tecnica
-fuentes: ["portfolio-training-2026"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "VC-OA — Viewtinet Certified Observability Analyst (VCOA)"
+description: "The VC-OA, also known as VCOA (Viewtinet Certified Observability Analyst), is the mandatory analytical core of the Viewtinet certification program. It is a p..."
+keywords: "formacion, certificacion, observabilidad"
 ---
 
 # VC-OA — Viewtinet Certified Observability Analyst (VCOA)
 
-The VC-OA, also known as VCOA (Viewtinet Certified Observability Analyst), is the **mandatory analytical core** of the Viewtinet certification program. It is a prerequisite for the [[vc-de]] and [[vc-wde]] specialization tracks and is strongly recommended before [[vc-psp]].
+The VC-OA, also known as VCOA (Viewtinet Certified Observability Analyst), is the **mandatory analytical core** of the Viewtinet certification program. It is a prerequisite for the [Vc De](vc-de.md) and [Vc Wde](vc-wde.md) specialization tracks and is strongly recommended before [Vc Psp](vc-psp.md).
 
 ## Course Details
 
@@ -23,20 +21,20 @@ The VC-OA, also known as VCOA (Viewtinet Certified Observability Analyst), is th
 
 ## Overview
 
-The VC-OA represents the new "Analytical Core" of the Viewtinet platform. It equips professionals with advanced skills for data exploitation, visualization, and automation. The central concept is the **"Single Pane of Glass"** — a unified operational view across all monitored environments via [[viewtisight-overview]].
+The VC-OA represents the new "Analytical Core" of the Viewtinet platform. It equips professionals with advanced skills for data exploitation, visualization, and automation. The central concept is the **"Single Pane of Glass"** — a unified operational view across all monitored environments via [Viewtisight Overview](../productos/viewtisight-overview.md).
 
-Participants learn to construct complex metrics using the Metrics Composer, design highly interactive dashboards, and implement an "Automation First" strategy using scripts, webhooks, and advanced alerting through the [[alarms-system]].
+Participants learn to construct complex metrics using the Metrics Composer, design highly interactive dashboards, and implement an "Automation First" strategy using scripts, webhooks, and advanced alerting through the [Alarms System](../conceptos/alarms-system.md).
 
 ## Learning Objectives
 
-- **Workspace and GUI Mastery:** Navigate fluently through the Single Pane of Glass via [[gui-overview]], manage favorites, understand the hierarchy between Data Sources and Dashboards
+- **Workspace and GUI Mastery:** Navigate fluently through the Single Pane of Glass via [Gui Overview](../configuracion/gui-overview.md), manage favorites, understand the hierarchy between Data Sources and Dashboards
 - **Metrics Theory and Application:** Use the Metrics Composer to build simple metrics (mathematical functions) and complex, multi-layered metrics
 - **Advanced Visualization:** Master the Dashboard Composer and Query Builder to create interactive visual cards (Aggregates, Time Series, Maps) with thresholds and event subscriptions
 - **Active Intelligence & Automation:** Configure real-time and query-based alarms, trigger automated actions (scripts and webhooks), integrate notifications (Teams, WhatsApp), automate reporting
 
 ## Module Structure
 
-The course is organized into 6 modules. See [[vcoa-modules]] for the full detailed breakdown.
+The course is organized into 6 modules. See [Vcoa Modules](../cursos/vcoa-modules.md) for the full detailed breakdown.
 
 - **Modules 0 & 1:** Welcome and Viewtinet Products (THEORY)
 - **Module 2:** Architecture — Logical and Physical (THEORY)
@@ -49,19 +47,19 @@ The course is organized into 6 modules. See [[vcoa-modules]] for the full detail
 
 The VCOA is the gateway to all advanced technical certifications. After obtaining VC-OA:
 
-- Enroll in [[vc-de]] to specialize in [[viewtilog-overview]] and [[etl-pipeline]] workflows
-- Enroll in [[vc-wde]] to specialize in [[viewtimon-overview]] and [[viewtiqos-overview]] traffic management
+- Enroll in [Vc De](vc-de.md) to specialize in [Viewtilog Overview](../productos/viewtilog-overview.md) and [Etl Pipeline](../conceptos/etl-pipeline.md) workflows
+- Enroll in [Vc Wde](vc-wde.md) to specialize in [Viewtimon Overview](../productos/viewtimon-overview.md) and [Viewtiqos Overview](../productos/viewtiqos-overview.md) traffic management
 
-See [[certification-paths]] for the full progression diagram.
+See [Certification Paths](certification-paths.md) for the full progression diagram.
 
 ## Platform Coverage
 
-The course covers the full [[viewtisight-overview]] feature set, including the [[alarms-system]], data visualization, and integration with [[viewtimanager-overview]] for centralized operations. Real deployments at organizations like [[junta-andalucia]] and [[ministerio-interior]] demonstrate the platform at scale.
+The course covers the full [Viewtisight Overview](../productos/viewtisight-overview.md) feature set, including the [Alarms System](../conceptos/alarms-system.md), data visualization, and integration with [Viewtimanager Overview](../productos/viewtimanager-overview.md) for centralized operations. Real deployments at organizations like [Junta Andalucia](../clientes/junta-andalucia.md) and [Ministerio Interior](../clientes/ministerio-interior.md) demonstrate the platform at scale.
 
 ## Related Pages
 
-- [[training-overview]] — Program mission and scope
-- [[vcoa-modules]] — Detailed module-by-module breakdown
-- [[certification-paths]] — Full certification path overview
-- [[vc-de]] — Next step for Viewtilog specialization
-- [[vc-wde]] — Next step for ViewtiMon & ViewtifyQoS specialization
+- [Training Overview](training-overview.md) — Program mission and scope
+- [Vcoa Modules](../cursos/vcoa-modules.md) — Detailed module-by-module breakdown
+- [Certification Paths](certification-paths.md) — Full certification path overview
+- [Vc De](vc-de.md) — Next step for Viewtilog specialization
+- [Vc Wde](vc-wde.md) — Next step for ViewtiMon & ViewtifyQoS specialization

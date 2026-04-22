@@ -1,14 +1,12 @@
 ---
-tags: [instalacion, bundle, procedimiento]
-tipo: tecnica
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Installation Bundle Steps"
+description: "This page details the three-step process for installing the Viewtinet platform from the extracted bundle. Internet access is mandatory throughout all three s..."
+keywords: "instalacion, bundle, procedimiento"
 ---
 
 # Installation Bundle Steps
 
-This page details the three-step process for installing the Viewtinet platform from the [[installation-bundle|extracted bundle]]. Internet access is mandatory throughout all three steps.
+This page details the three-step process for installing the Viewtinet platform from the [extracted bundle](installation-bundle.md). Internet access is mandatory throughout all three steps.
 
 ## Step 1 — Deploy (deploy.sh)
 
@@ -47,17 +45,17 @@ This second run loads the container images, configures internal networking, sets
 
 After all three steps complete:
 
-1. [[user-admin-activation]] — Activate the admin user at `http://<SERVER_IP>:4200`
-2. [[server-info]] — Retrieve the server-info.txt for licensing
-3. [[upload-license]] — Upload the `.key` license file via [[viewtimanager-overview|ViewtiManager]]
+1. [User Admin Activation](user-admin-activation.md) — Activate the admin user at `http://<SERVER_IP>:4200`
+2. [Server Info](server-info.md) — Retrieve the server-info.txt for licensing
+3. [Upload License](upload-license.md) — Upload the `.key` license file via [ViewtiManager](../productos/viewtimanager-overview.md)
 
 ## Module Installations
 
 Once the base platform is running, install individual modules as needed:
 
-- [[viewtilog-installation]] — ViewtiLog log management
-- [[viewtimon-installation]] — ViewtiMon traffic monitoring
-- [[viewtiqos-installation]] — ViewtiQoS traffic shaping
-- [[viewtisight-installation]] — ViewtiSight analytics
+- [Viewtilog Installation](viewtilog-installation.md) — ViewtiLog log management
+- [Viewtimon Installation](viewtimon-installation.md) — ViewtiMon traffic monitoring
+- [Viewtiqos Installation](viewtiqos-installation.md) — ViewtiQoS traffic shaping
+- [Viewtisight Installation](viewtisight-installation.md) — ViewtiSight analytics
 
-See [[installation-guide-hub|Installation Guide Hub]] for the complete source index.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for the complete source index.

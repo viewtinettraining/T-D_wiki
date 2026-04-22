@@ -1,9 +1,7 @@
 ---
-tags: [productos, viewtilog, logs]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "ViewtiLog Overview"
+description: "ViewtiLog is Viewtinet's comprehensive log management and analysis solution. It centralizes log collection from diverse infrastructure sources and transforms..."
+keywords: "productos, viewtilog, logs"
 ---
 
 # ViewtiLog Overview
@@ -25,15 +23,15 @@ ViewtiLog addresses the challenge of managing log data at scale across heterogen
 
 ## Integration
 
-ViewtiLog is designed to integrate seamlessly with the Viewtinet platform. It feeds data into [[viewtisight-overview|ViewtiSight]] for analytics and visualization, and is managed through [[viewtimanager-overview|ViewtiManager]].
+ViewtiLog is designed to integrate seamlessly with the Viewtinet platform. It feeds data into [ViewtiSight](viewtisight-overview.md) for analytics and visualization, and is managed through [ViewtiManager](viewtimanager-overview.md).
 
-In HA deployments, ViewtiLog operates as a cluster with a floating VIP managed by Keepalived and HAProxy for load balancing and automatic failover. See [[standalone-vs-cluster]] for deployment modes.
+In HA deployments, ViewtiLog operates as a cluster with a floating VIP managed by Keepalived and HAProxy for load balancing and automatic failover. See [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md) for deployment modes.
 
 ## Deployment
 
-ViewtiLog runs on [[ubuntu-compatibility|Ubuntu Server 20.04 or 24.04]] as containerized services. It requires the [[installation-bundle]] to be installed first and uses the [[viewtimanager-overview|ViewtiManager]] GUI for module installation and configuration.
+ViewtiLog runs on [Ubuntu Server 20.04 or 24.04](../conceptos/ubuntu-compatibility.md) as containerized services. It requires the [Installation Bundle](../instalacion/installation-bundle.md) to be installed first and uses the [ViewtiManager](viewtimanager-overview.md) GUI for module installation and configuration.
 
-For installation steps, see [[viewtilog-installation]].
+For installation steps, see [Viewtilog Installation](../instalacion/viewtilog-installation.md).
 
 ## Data Sources
 
@@ -44,4 +42,4 @@ For installation steps, see [[viewtilog-installation]].
 | Telephony | CDR (Call Detail Records) |
 | APIs | REST API polling |
 
-See [[installation-guide-hub|Installation Guide Hub]] for related source documentation.
+See [Installation Guide Hub](../fuentes/installation-guide-hub.md) for related source documentation.

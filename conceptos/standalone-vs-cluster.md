@@ -1,9 +1,7 @@
 ---
-tags: [conceptos, arquitectura, ha, cluster]
-tipo: concepto
-fuentes: ["documentation_hub"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Standalone vs Cluster Deployment"
+description: "Viewtinet supports two primary deployment modes for its modules: standalone (single-node) and cluster (High Availability). Choosing the right mode depends on..."
+keywords: "conceptos, arquitectura, ha, cluster"
 ---
 
 # Standalone vs Cluster Deployment
@@ -12,13 +10,13 @@ Viewtinet supports two primary deployment modes for its modules: standalone (sin
 
 ## Standalone Mode
 
-In standalone mode, all services run on a single server. ViewtiSight, ViewtiManager, ViewtiAuth, and Viewticore are all installed together as part of the [[installation-bundle-steps|standard bundle installation]].
+In standalone mode, all services run on a single server. ViewtiSight, ViewtiManager, ViewtiAuth, and Viewticore are all installed together as part of the [standard bundle installation](../instalacion/installation-bundle-steps.md).
 
 **When to use:**
 - Development, test, or proof-of-concept environments
 - Smaller deployments where downtime is acceptable
-- [[viewtimon-overview|ViewtiMon]] (HA not supported — standalone only)
-- [[viewtiqos-overview|ViewtiQoS]] (HA not supported — standalone only)
+- [ViewtiMon](../productos/viewtimon-overview.md) (HA not supported — standalone only)
+- [ViewtiQoS](../productos/viewtiqos-overview.md) (HA not supported — standalone only)
 
 **Limitations:**
 - Single point of failure
@@ -31,8 +29,8 @@ In cluster mode, two or more nodes operate together with automatic failover. A f
 
 **When to use:**
 - Production environments requiring continuous availability
-- [[viewtilog-overview|ViewtiLog]] with high ingest volumes
-- [[viewtisight-overview|ViewtiSight]] for uninterrupted analytics access
+- [ViewtiLog](../productos/viewtilog-overview.md) with high ingest volumes
+- [ViewtiSight](../productos/viewtisight-overview.md) for uninterrupted analytics access
 
 ### Cluster Architecture
 
@@ -48,17 +46,17 @@ In cluster mode, two or more nodes operate together with automatic failover. A f
 
 - At least 2 nodes with homogeneous hardware (identical CPU, RAM, storage recommended)
 - A dedicated floating VIP (IPv4)
-- NTP synchronization on all nodes — see [[system-configuration]]
-- Each node requires its own license — see [[server-info]] and [[upload-license]]
+- NTP synchronization on all nodes — see [System Configuration](../instalacion/system-configuration.md)
+- Each node requires its own license — see [Server Info](../instalacion/server-info.md) and [Upload License](../instalacion/upload-license.md)
 - Dedicated inter-node network interface for heartbeat (recommended)
 
 ## Module HA Support Matrix
 
 | Module | Standalone | Cluster/HA |
 |---|---|---|
-| ViewtiSight | Yes (default) | Yes — [[viewtisight-installation]] |
-| ViewtiLog | Yes | Yes — [[viewtilog-installation]] |
+| ViewtiSight | Yes (default) | Yes — [Viewtisight Installation](../instalacion/viewtisight-installation.md) |
+| ViewtiLog | Yes | Yes — [Viewtilog Installation](../instalacion/viewtilog-installation.md) |
 | ViewtiMon | Yes | No — standalone only |
 | ViewtiQoS | Yes | No — standalone only |
 
-See [[ha-architecture]] for the broader HA architecture overview, and [[installation-guide-hub|Installation Guide Hub]] for source documentation.
+See [Ha Architecture](ha-architecture.md) for the broader HA architecture overview, and [Installation Guide Hub](../fuentes/installation-guide-hub.md) for source documentation.

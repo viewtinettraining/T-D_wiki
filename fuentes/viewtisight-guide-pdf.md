@@ -1,18 +1,16 @@
 ---
-tags: [fuentes, viewtisight, guia, usuario, analytics]
-tipo: fuente
-fuentes: ["viewtisight-user-guide_en_v6.3"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "ViewtiSight User Guide PDF — Source Summary"
+description: "This page summarizes the ViewtiSight User Guide (v6.3), the official end-user reference for ViewtiSight — Viewtinet's analytics and business intelligence lay..."
+keywords: "fuentes, viewtisight, guia, usuario, analytics"
 ---
 
 # ViewtiSight User Guide PDF — Source Summary
 
-This page summarizes the ViewtiSight User Guide (v6.3), the official end-user reference for [[viewtisight-overview|ViewtiSight]] — Viewtinet's analytics and business intelligence layer. The guide covers all major features accessible through the ViewtiSight interface.
+This page summarizes the ViewtiSight User Guide (v6.3), the official end-user reference for [ViewtiSight](../productos/viewtisight-overview.md) — Viewtinet's analytics and business intelligence layer. The guide covers all major features accessible through the ViewtiSight interface.
 
 ## Scope and Audience
 
-The guide targets analysts, NOC operators, and administrators who use [[viewtisight-features|ViewtiSight]] to build dashboards, define metrics, configure alarms, and generate reports. It assumes the platform has been installed (see [[installation-bundle]]) and data is flowing through the [[etl-pipeline|ETL pipeline]].
+The guide targets analysts, NOC operators, and administrators who use [ViewtiSight](../productos/viewtisight-features.md) to build dashboards, define metrics, configure alarms, and generate reports. It assumes the platform has been installed (see [Installation Bundle](../instalacion/installation-bundle.md)) and data is flowing through the [ETL pipeline](../conceptos/etl-pipeline.md).
 
 ## Key Sections Covered
 
@@ -21,19 +19,19 @@ The guide targets analysts, NOC operators, and administrators who use [[viewtisi
 The guide details how to create, organize, and share dashboards. Topics include:
 
 - Creating a new dashboard and adding widgets
-- Configuring widget data sources using the [[viewtisight-features|QueryBuilder]]
+- Configuring widget data sources using the [QueryBuilder](../productos/viewtisight-features.md)
 - Setting time ranges, granularity, and auto-refresh intervals
 - Applying dimension filters and grouping
-- Sharing dashboards across [[groups|user groups]] and [[tenants|tenants]]
+- Sharing dashboards across [user groups](../configuracion/groups.md) and [tenants](../configuracion/tenants.md)
 - Drill-down navigation between summary and detail views
 
 ### Metrics Composer
 
 Step-by-step instructions for defining custom KPIs:
 
-- Selecting a dataset from a [[data-sources-integration|VSDB plugin]]
+- Selecting a dataset from a [VSDB plugin](../conceptos/data-sources-integration.md)
 - Choosing aggregation functions and dimension grouping
-- Saving and naming metrics for reuse in dashboards and [[alarms-system|alarms]]
+- Saving and naming metrics for reuse in dashboards and [alarms](../conceptos/alarms-system.md)
 
 ### Control Center (Alarms)
 
@@ -44,7 +42,7 @@ The guide covers the full alarm management workflow as documented in the Alarms 
 - Adding shared comments to alarm records
 - Accessing the Events Log for historical alarm data
 
-See [[alarms-system]] for the full alarms conceptual overview.
+See [Alarms System](../conceptos/alarms-system.md) for the full alarms conceptual overview.
 
 ### PDF Reporter
 
@@ -52,29 +50,29 @@ Instructions for scheduling and generating PDF reports:
 
 - Selecting dashboards to include in a report
 - Configuring cron-based delivery schedules
-- Setting up email delivery (requires SMTP in [[viewtimanager-overview|ViewtiManager]])
+- Setting up email delivery (requires SMTP in [ViewtiManager](../productos/viewtimanager-overview.md))
 
 ### REST API Access
 
-The guide references the [[rest-api|ViewtiSight REST API]] for users who need programmatic data access. API tokens are obtained from [[viewtimanager-overview|ViewtiManager]] and scoped to [[tenants|tenant]] and [[roles|role]] permissions.
+The guide references the [ViewtiSight REST API](../productos/rest-api.md) for users who need programmatic data access. API tokens are obtained from [ViewtiManager](../productos/viewtimanager-overview.md) and scoped to [tenant](../configuracion/tenants.md) and [role](../configuracion/roles.md) permissions.
 
 ## Authentication and Access Control
 
-All ViewtiSight access is authenticated via [[viewtiauth|ViewtiAuth]]. The guide covers:
+All ViewtiSight access is authenticated via [ViewtiAuth](../integraciones/viewtiauth.md). The guide covers:
 
 - Login flow and session management
-- Role-based feature visibility — some features require admin [[roles|roles]]
-- [[mfa-configuration|Multi-factor authentication]] prompts if enabled
-- [[active-directory|Active Directory]] and [[ldap-integration|LDAP]] SSO behavior
+- Role-based feature visibility — some features require admin [roles](../configuracion/roles.md)
+- [Multi-factor authentication](../integraciones/mfa-configuration.md) prompts if enabled
+- [Active Directory](../integraciones/active-directory.md) and [LDAP](../integraciones/ldap-integration.md) SSO behavior
 
 ## Deployment Context
 
-The guide applies to ViewtiSight running in both [[standalone-vs-cluster|standalone and cluster (HA)]] modes. In HA mode, users connect through the [[ha-architecture|floating VIP]] managed by Keepalived. The application is accessible at port 8080 (HTTP) or 443 (HTTPS).
+The guide applies to ViewtiSight running in both [standalone and cluster (HA)](../conceptos/standalone-vs-cluster.md) modes. In HA mode, users connect through the [floating VIP](../conceptos/ha-architecture.md) managed by Keepalived. The application is accessible at port 8080 (HTTP) or 443 (HTTPS).
 
 ## Related Pages
 
-- [[viewtisight-features]] — detailed feature reference for ViewtiSight
-- [[rest-api]] — REST API specification and endpoint catalog
-- [[alarms-system]] — alarms configuration and notification channels
-- [[data-sources-integration]] — data flowing into ViewtiSight
-- [[viewtimanager-overview]] — managing ViewtiSight from the admin GUI
+- [Viewtisight Features](../productos/viewtisight-features.md) — detailed feature reference for ViewtiSight
+- [Rest Api](../productos/rest-api.md) — REST API specification and endpoint catalog
+- [Alarms System](../conceptos/alarms-system.md) — alarms configuration and notification channels
+- [Data Sources Integration](../conceptos/data-sources-integration.md) — data flowing into ViewtiSight
+- [Viewtimanager Overview](../productos/viewtimanager-overview.md) — managing ViewtiSight from the admin GUI

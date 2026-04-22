@@ -1,14 +1,12 @@
 ---
-tags: [integracion, python, extractor, vs-data-broker]
-tipo: tecnica
-fuentes: ["snazzydocs-vsdb"]
-fecha_creacion: 2026-04-21
-fecha_actualizacion: 2026-04-21
+title: "Python Task Extractor"
+description: "The Python Task Connector allows users to integrate custom Python programs into the Visual Smart Data Broker (VSDB). It is the most flexible extraction metho..."
+keywords: "integracion, python, extractor, vs-data-broker"
 ---
 
 # Python Task Extractor
 
-The **Python Task Connector** allows users to integrate custom Python programs into the [[vs-data-broker-overview|Visual Smart Data Broker (VSDB)]]. It is the most flexible extraction method, enabling collection of metrics, logs, or any data accessible via Python code when no standard connector covers the use case.
+The **Python Task Connector** allows users to integrate custom Python programs into the [Visual Smart Data Broker (VSDB)](../productos/vs-data-broker-overview.md). It is the most flexible extraction method, enabling collection of metrics, logs, or any data accessible via Python code when no standard connector covers the use case.
 
 ## Script Requirements
 
@@ -62,8 +60,8 @@ Example field configuration:
 
 ## Related Pages
 
-- [[etl-pipeline]] — Full ETL pipeline context
-- [[command-executor]] — Alternative for shell-based custom extraction
-- [[csv-extractor]] — File-based alternative for structured data
-- [[plugin-architecture]] — Plugin container
-- [[vs-data-broker-overview]] — VSDB product overview
+- [Etl Pipeline](../conceptos/etl-pipeline.md) — Full ETL pipeline context
+- [Command Executor](command-executor.md) — Alternative for shell-based custom extraction
+- [Csv Extractor](csv-extractor.md) — File-based alternative for structured data
+- [Plugin Architecture](../conceptos/plugin-architecture.md) — Plugin container
+- [Vs Data Broker Overview](../productos/vs-data-broker-overview.md) — VSDB product overview

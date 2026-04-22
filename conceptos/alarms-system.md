@@ -1,26 +1,24 @@
 ---
-tags: [conceptos, alarmas, alertas, notificaciones, viewtisight]
-tipo: tecnica
-fuentes: ["alarms-user-guide_en_v6.3_1.0"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Alarms System"
+description: "The Viewtinet alarms system provides real-time and scheduled alerting based on data processed by the ETL pipeline and metrics defined in ViewtiSight. Alarms ..."
+keywords: "conceptos, alarmas, alertas, notificaciones, viewtisight"
 ---
 
 # Alarms System
 
-The Viewtinet alarms system provides real-time and scheduled alerting based on data processed by the [[etl-pipeline|ETL pipeline]] and metrics defined in [[viewtisight-features|ViewtiSight]]. Alarms notify operations teams of threshold violations and anomalous conditions, enabling rapid incident response.
+The Viewtinet alarms system provides real-time and scheduled alerting based on data processed by the [ETL pipeline](etl-pipeline.md) and metrics defined in [ViewtiSight](../productos/viewtisight-features.md). Alarms notify operations teams of threshold violations and anomalous conditions, enabling rapid incident response.
 
 ## Alarm Types
 
 ### Real-Time Alarms
 
-Real-time alarms are evaluated during each ETL cycle executed by the [[vs-data-broker-overview|VS Data Broker]] plugin. They are configured inside the plugin definition and fire as soon as a condition is detected in the incoming data stream. These alarms are suitable for high-frequency, low-latency alerting on raw telemetry.
+Real-time alarms are evaluated during each ETL cycle executed by the [VS Data Broker](../productos/vs-data-broker-overview.md) plugin. They are configured inside the plugin definition and fire as soon as a condition is detected in the incoming data stream. These alarms are suitable for high-frequency, low-latency alerting on raw telemetry.
 
 ### Scheduled Alarms
 
-Scheduled alarms evaluate [[viewtisight-features|Metrics Composer]] outputs at configurable intervals (e.g., every 1 minute, hourly, or daily). They require:
+Scheduled alarms evaluate [Metrics Composer](../productos/viewtisight-features.md) outputs at configurable intervals (e.g., every 1 minute, hourly, or daily). They require:
 
-1. A provisioned [[data-sources-integration|data source]] with active datasets
+1. A provisioned [data source](data-sources-integration.md) with active datasets
 2. A metric defined in the Metrics Composer
 3. A rule specifying threshold conditions and severity
 
@@ -39,7 +37,7 @@ Severity is defined per rule during alarm configuration.
 
 ## Alarm Configuration
 
-Creating a scheduled alarm involves these steps in the [[gui-overview|ViewtiSight Control Center]]:
+Creating a scheduled alarm involves these steps in the [ViewtiSight Control Center](../configuracion/gui-overview.md):
 
 1. Select a dataset (set) from an installed plugin
 2. Add the metric to evaluate
@@ -48,7 +46,7 @@ Creating a scheduled alarm involves these steps in the [[gui-overview|ViewtiSigh
 5. Configure a scheduler (polling interval)
 6. Attach a notification channel
 
-Only [[roles|users with the appropriate role]] can create or modify alarm rules. Alarms are scoped per [[tenants|tenant]].
+Only [users with the appropriate role](../configuracion/roles.md) can create or modify alarm rules. Alarms are scoped per [tenant](../configuracion/tenants.md).
 
 ## Alarm Management Operations
 
@@ -72,7 +70,7 @@ The Events Log provides a centralized historical view of all alarm events, inclu
 
 | Channel | Requirements |
 |---------|-------------|
-| Email | SMTP server configured in [[viewtimanager-overview|ViewtiManager]] |
+| Email | SMTP server configured in [ViewtiManager](../productos/viewtimanager-overview.md) |
 | Telegram | Advanced configuration — contact Viewtinet support |
 | Microsoft Teams | Advanced configuration — contact Viewtinet support |
 | WhatsApp | Advanced configuration — contact Viewtinet support |
@@ -82,4 +80,4 @@ The Notifications Panel displays execution status for each triggered notificatio
 
 ## API Access
 
-Active alarms and alarm history are also accessible via the [[rest-api|ViewtiSight REST API]] `/alarms/` endpoints, enabling integration with ITSM and SIEM platforms.
+Active alarms and alarm history are also accessible via the [ViewtiSight REST API](../productos/rest-api.md) `/alarms/` endpoints, enabling integration with ITSM and SIEM platforms.

@@ -1,3 +1,9 @@
+---
+title: "Wiki Log — Viewtinet Documentation"
+description: "- Agent: WikiForge (claude-sonnet-4-6)"
+keywords: ""
+---
+
 # Wiki Log — Viewtinet Documentation
 
 ## [2026-04-22] wikiforge | Customer training client pages created
@@ -83,7 +89,7 @@ These link to original source document filenames (not wiki pages). No wiki equiv
 - standalone-installation (viewtilog), standalone-installation (viewtimon), standalone-installation (viewtiqos)
 - fine-tuning, installation-step1, installation-step2, installation-step3, preparing-the-installation-bundle
 
-**Critical bug fixed (not ghost links):** 29 wikilinks across 8 files had a `\|` (backslash-pipe) corruption inside `[[target\|alias]]` — Obsidian would have treated the entire string as the target name. All 29 were repaired to `[[target|alias]]`.
+**Critical bug fixed (not ghost links):** 29 wikilinks across 8 files had a `\|` (backslash-pipe) corruption inside `\[alias\](target\.md)` — Obsidian would have treated the entire string as the target name. All 29 were repaired to `\[alias\](target.md)`.
 Affected files: configuracion/gui-overview.md, configuracion/license-management.md, configuracion/roles.md, configuracion/users.md, fuentes/solution-description-pdf.md, integraciones/ad-groups-roles.md, productos/viewtimanager-overview.md, productos/viewtinet-platform-overview.md
 
 ### 4. Link Density Check (15-page sample)
@@ -133,11 +139,11 @@ Pages below 8-link threshold in full wiki scan (15 pages total):
 
 ### 6. Fixes Applied This Run
 
-1. **29 backslash-pipe link corruptions fixed** across 8 files — `[[page\|alias]]` → `[[page|alias]]`
+1. **29 backslash-pipe link corruptions fixed** across 8 files — `\[alias\](page\.md)` → `\[alias\](page.md)`
 2. **3 ghost link naming mismatches fixed** in fuentes/installation-guide-hub.md:
-   - `[[operating-system-setup|...]]` → `[[os-setup|...]]`
-   - `[[getting-server-info|...]]` → `[[server-info|...]]`
-   - `[[ipmi-ip-address-configuration|...]]` → `[[ipmi-management|...]]`
+   - `\[...\](operating-system-setup.md)` → `\[...\](instalacion/os-setup.md)`
+   - `\[...\](getting-server-info.md)` → `\[...\](instalacion/server-info.md)`
+   - `\[...\](ipmi-ip-address-configuration.md)` → `\[...\](conceptos/ipmi-management.md)`
 
 ## [2026-04-21] setup | Vault initialized
 - Structure created: wiki/{fuentes,productos,instalacion,configuracion,integraciones,conceptos}

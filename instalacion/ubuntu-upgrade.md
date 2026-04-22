@@ -1,16 +1,14 @@
 ---
-tags: [instalacion, sistema-operativo, ubuntu]
-tipo: tecnica
-fuentes: ["intro", "upgrade-stage-1", "upgrade-stage-2"]
-fecha_creacion: 2026-04-22
-fecha_actualizacion: 2026-04-22
+title: "Ubuntu Upgrade: 20.04 to 24.04"
+description: "This page documents the two-stage procedure for upgrading a Viewtinet appliance from Ubuntu 20.04 LTS to Ubuntu 24.04 LTS. A direct upgrade path does not exi..."
+keywords: "instalacion, sistema-operativo, ubuntu"
 ---
 
 # Ubuntu Upgrade: 20.04 to 24.04
 
 This page documents the two-stage procedure for upgrading a Viewtinet appliance from Ubuntu 20.04 LTS to Ubuntu 24.04 LTS. A direct upgrade path does not exist; the upgrade must pass through Ubuntu 22.04 LTS as an intermediate step.
 
-For the supported OS versions in Viewtinet, see [[ubuntu-compatibility]]. For initial OS configuration after a fresh install, see [[os-setup]].
+For the supported OS versions in Viewtinet, see [Ubuntu Compatibility](../conceptos/ubuntu-compatibility.md). For initial OS configuration after a fresh install, see [Os Setup](os-setup.md).
 
 > **Requirement**: IPMI access or direct physical access to the appliance is mandatory. The upgrade cannot be completed without it.
 
@@ -173,4 +171,4 @@ Expected output: `Ubuntu 24.04 LTS \n \l`
 
 ---
 
-After completing both stages, the appliance is running Ubuntu 24.04 LTS. Verify that all Viewtinet services are operational. For [[standalone-vs-cluster]] deployments, perform the upgrade on each node sequentially. For [[ha-architecture]] clusters, coordinate maintenance windows accordingly.
+After completing both stages, the appliance is running Ubuntu 24.04 LTS. Verify that all Viewtinet services are operational. For [Standalone Vs Cluster](../conceptos/standalone-vs-cluster.md) deployments, perform the upgrade on each node sequentially. For [Ha Architecture](../conceptos/ha-architecture.md) clusters, coordinate maintenance windows accordingly.
